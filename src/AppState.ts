@@ -1,9 +1,9 @@
 import { action, observable } from 'mobx';
 
 export class AppState {
-  @observable public count = 0;
+  @observable public inputText = "";
 
-  @action incCount() {
-    this.count++;
+  @action public setInputText(text: string) {
+    this.inputText = text;
   }
 }
