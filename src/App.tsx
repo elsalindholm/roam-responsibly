@@ -11,7 +11,7 @@ export class App extends React.PureComponent {
   public render() {
     return (
       <div>
-        <DesktopApp />
+        <DesktopApp appState={this.appState} />
       </div>
     );
   }

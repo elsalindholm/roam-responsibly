@@ -12,22 +12,26 @@ interface HeaderProps {
 @observer
 export class Header extends React.PureComponent<HeaderProps> {
   render() {
+    const { appState } = this.props;
+
     return (
-      <div className={'header-container'}>
+      <header className={'header-container'}>
         <div className={'header-filter'}></div>
         <div className={'navbar-container'}>
           <div className={'navbar-logo'}>LOGO</div>
-          <div className={'navbar-button-container'}>
-            <button>HOME</button>
+          <nav className={'navbar-button-container'}>
+            <button onClick={() => appState.setCurrentPage(Page.HOME)}>HOME</button>
             <button>ABOUT</button>
             <button>CHARTER</button>
             <button>SCOTTISH OUTDOOR ACCESS CODE</button>
             <button>BLOG</button>
-            <button>SPREAD THE WORD</button>
-          </div>
+            <button onClick={() => appState.setCurrentPage(Page.SPREADWORD)}>
+              SPREAD THE WORD
+            </button>
+          </nav>
         </div>
         {this.renderHeaderBanner()}
-      </div>
+      </header>
     );
   }
 

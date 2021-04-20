@@ -3,7 +3,8 @@
 .header-container {
   height: 75%;
   width: 100%;
-  border: 1px solid red;
+  flex-shrink: 0;
+
   background-image: url('../../../dist/assets/testBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,8 +37,6 @@
     right: 0;
     left: 0;
 
-    border: 1px solid green;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,9 +64,10 @@
         background: none;
         border: none;
 
-        font-family: $roboto;
+        font-family: $navbar;
         font-weight: 500;
         font-size: 1vw;
+        letter-spacing: 0.1vw;
         color: $light-text;
 
         &:hover {
@@ -105,7 +105,7 @@
       margin: 1%;
       font-family: $montserrat;
       font-weight: 600;
-      font-size: 5vw;
+      font-size: 4.5vw;
     }
   }
 }
