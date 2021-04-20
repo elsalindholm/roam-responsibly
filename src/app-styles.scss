@@ -1,0 +1,35 @@
+///////////////FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+$montserrat: 'Montserrat', sans-serif;
+
+//regular 400 and regular 400 italic
+$pt-serif: 'PT Serif', serif;
+
+//regular 400 and regular 400 italic
+$lora: 'Lora', serif;
+
+// 300, 400, 600, 700
+$open-sans: 'Open Sans', sans-serif;
+
+//400
+$ovo: 'Ovo', serif;
+
+//500, 600, 700
+$source-code-pro: 'Source Code Pro', monospace;
+
+// 100, 200, 300, 400, 600, 700
+$roboto: 'Roboto', sans-serif;
+
+//////////////COLOURS
+
+$light-text: #ffffff;
+
+$banner-filter: #5e5a5c;
