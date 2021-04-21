@@ -10,6 +10,7 @@ import { SpreadWord } from './pages/spreadTheWord/SpreadTheWord';
 import { Blog } from './pages/blog/Blog';
 import { Soac } from './pages/soac/Soac';
 import { Charter } from './pages/charter/Charter';
+import { About } from './pages/about/About';
 
 export interface DesktopAppProps {
   appState: AppState;
@@ -25,6 +26,9 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
       case Page.HOME:
         page = <Home />;
         break;
+      case Page.ABOUT:
+        page = <About />;
+        break;
       case Page.CHARTER:
         page = <Charter />;
         break;
@@ -36,6 +40,10 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
         break;
       case Page.SPREADWORD:
         page = <SpreadWord />;
+        break;
+      default:
+        page = <Home />;
+        break;
     }
 
     return (

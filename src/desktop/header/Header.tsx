@@ -21,7 +21,7 @@ export class Header extends React.PureComponent<HeaderProps> {
           <div className={'navbar-logo'}>LOGO</div>
           <nav className={'navbar-button-container'}>
             <button onClick={() => appState.setCurrentPage(Page.HOME)}>HOME</button>
-            <button>ABOUT</button>
+            <button onClick={() => appState.setCurrentPage(Page.ABOUT)}>ABOUT</button>
             <button onClick={() => appState.setCurrentPage(Page.CHARTER)}>CHARTER</button>
             <button onClick={() => appState.setCurrentPage(Page.SOAC)}>
               SCOTTISH OUTDOOR ACCESS CODE

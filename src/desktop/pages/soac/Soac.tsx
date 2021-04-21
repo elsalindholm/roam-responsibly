@@ -24,6 +24,7 @@ export class Soac extends React.PureComponent {
             respect and protect the Scottish wildlife and nature and to take responsibility of your
             own actions when you are out and about.
           </p>
+          <a className={'soac-link'}>Read more about the Scottish Outdoor Access Code here</a>
         </section>
       </main>
     );

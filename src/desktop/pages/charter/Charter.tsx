@@ -20,7 +20,7 @@ export class Charter extends React.PureComponent {
           </p>
           <ol className={'main-charter-list'}>
             <li>
-              We commit to #roamresponsibly and take responsibility for our actions when in nature.
+              We commit to #RoamResponsibly and take responsibility for our actions when in nature.
             </li>
             <li>We commit to leaving NO trace of our visit out in nature by</li>
             <ol className={'nested-charter-list'}>
