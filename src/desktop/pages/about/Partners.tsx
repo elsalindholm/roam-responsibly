@@ -14,6 +14,7 @@ export class Partners extends React.PureComponent {
         </section>
         <section>
           <h2>PARTNERS</h2>
+          <div></div>
         </section>
       </main>
     );
