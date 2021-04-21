@@ -22,9 +22,11 @@ export class Header extends React.PureComponent<HeaderProps> {
           <nav className={'navbar-button-container'}>
             <button onClick={() => appState.setCurrentPage(Page.HOME)}>HOME</button>
             <button>ABOUT</button>
-            <button>CHARTER</button>
-            <button>SCOTTISH OUTDOOR ACCESS CODE</button>
-            <button>BLOG</button>
+            <button onClick={() => appState.setCurrentPage(Page.CHARTER)}>CHARTER</button>
+            <button onClick={() => appState.setCurrentPage(Page.SOAC)}>
+              SCOTTISH OUTDOOR ACCESS CODE
+            </button>
+            <button onClick={() => appState.setCurrentPage(Page.BLOG)}>BLOG</button>
             <button onClick={() => appState.setCurrentPage(Page.SPREADWORD)}>
               SPREAD THE WORD
             </button>

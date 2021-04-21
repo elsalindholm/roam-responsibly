@@ -1,0 +1,26 @@
+@import '../../../app-styles.scss';
+
+.charter-page {
+  height: auto;
+  width: 100%;
+  padding: 2% 0;
+
+  section {
+    margin: 0 0 7% 0;
+    text-align: center;
+  }
+}
+
+.main-charter-list {
+  padding: 3% 10%;
+  text-align: left;
+
+  font-family: $pt-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+
+  .nested-charter-list {
+    padding: 0 5%;
+    list-style-type: lower-alpha;
+  }
+}

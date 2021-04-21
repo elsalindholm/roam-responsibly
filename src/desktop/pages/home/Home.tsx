@@ -15,12 +15,16 @@ export class Home extends React.PureComponent {
             beautiful as they are for future generations to enjoy.
           </p>
         </section>
-        <section>
-          <h2>What is the Scottish Outdoor Access Code?</h2>
-        </section>
-        <section>
-          <h2>Want to know more about our social media campaign?</h2>
-        </section>
+        <div className={'home-page-links'}>
+          <section>
+            <h2>What is the Scottish Outdoor Access Code?</h2>
+            <a>Read more here</a>
+          </section>
+          <section>
+            <h2>Want to know more about our social media campaign?</h2>
+            <a>Read more here</a>
+          </section>
+        </div>
       </main>
     );
   }
