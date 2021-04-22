@@ -19,6 +19,7 @@ export class PartnerComp extends React.PureComponent<PartnerCompProps> {
         <a
           className={'partner-logo-container ' + campaignPartner.styleClass}
           href={campaignPartner.link}
+          target={'_blank'}
         ></a>
       </div>
     );

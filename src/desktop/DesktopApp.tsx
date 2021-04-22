@@ -1,8 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import './desktop-app.scss';
-
 import { AppState, Page } from '../AppState';
 import { Header } from './header/Header';
 import { Home } from './pages/home/Home';
@@ -11,6 +9,9 @@ import { Blog } from './pages/blog/Blog';
 import { Soac } from './pages/soac/Soac';
 import { Charter } from './pages/charter/Charter';
 import { About } from './pages/about/About';
+import { Footer } from './footer/Footer';
+
+import './desktop-app.scss';
 
 export interface DesktopAppProps {
   appState: AppState;
@@ -51,6 +52,7 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
         <Header appState={appState} />
         <div className={'body'}>
           <div className={'main-page-container'}>{page}</div>
+          <Footer />
         </div>
       </div>
     );

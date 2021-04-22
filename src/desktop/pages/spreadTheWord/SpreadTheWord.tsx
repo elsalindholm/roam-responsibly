@@ -9,8 +9,12 @@ export class SpreadWord extends React.PureComponent {
         <section>
           <h2>Help us spread the word</h2>
           <p>
-            Follow us on Instagram <a>@RoamResponsibly</a> and tag your photos and stories of the
-            Scottish Outdoors with <strong>#roamresponsibly</strong>.
+            Follow us on Instagram{' '}
+            <a href={'https://www.instagram.com/roamresponsibly/?hl=en'} target={'_blank'}>
+              @RoamResponsibly
+            </a>{' '}
+            and tag your photos and stories of the Scottish Outdoors with{' '}
+            <strong>#roamresponsibly</strong>.
           </p>
           <p>
             Help us spread the word by telling your friends and family about the Scottish Outdoor
