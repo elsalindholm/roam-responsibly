@@ -18,7 +18,7 @@ export class Header extends React.PureComponent<HeaderProps> {
       <header className={'header-container'}>
         <div className={'header-filter'}></div>
         <div className={'navbar-container'}>
-          <div className={'navbar-logo'}>LOGO</div>
+          <div className={'navbar-logo'}></div>
           <nav className={'navbar-button-container'}>
             <button onClick={() => appState.setCurrentPage(Page.HOME)}>HOME</button>
             <button onClick={() => appState.setCurrentPage(Page.ABOUT)}>ABOUT</button>

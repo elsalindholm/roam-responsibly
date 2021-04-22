@@ -1,0 +1,78 @@
+@import '../../../app-styles.scss';
+
+.partner-comp {
+  height: 10vw;
+  width: 15vw;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .partner-logo-container {
+    display: block;
+
+    &.an-cridhe {
+      height: 65%;
+      width: 100%;
+
+      background-image: url('../../../../dist/assets/AnCridheLogo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.coll-bunkhouse {
+      height: 100%;
+      width: 85%;
+
+      background-image: url('../../../../dist/assets/BunkhouseLogo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.calmac {
+      height: 65%;
+      width: 100%;
+
+      background-image: url('../../../../dist/assets/CaledonianMacBrayneLogo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.hidden-scotland {
+      height: 100%;
+      width: 65%;
+
+      background-image: url('../../../../dist/assets/HiddenScotlandLogo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.jmtrust {
+      height: 100%;
+      width: 100%;
+
+      background-image: url('../../../../dist/assets/JMTLogo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.arran {
+      height: 100%;
+      width: 90%;
+
+      background-image: url('../../../../dist/assets/ArranLogo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.msc {
+      height: 90%;
+      width: 100%;
+
+      background-image: url('../../../../dist/assets/MSCLogo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

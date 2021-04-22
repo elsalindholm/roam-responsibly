@@ -1,11 +1,24 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
+import './partners.scss';
+
+import {
+  anCridhe,
+  calMac,
+  collBunkhouse,
+  hiddenScotland,
+  jmTrust,
+  msc,
+  visitArran,
+} from './CampaignPartners';
+import { PartnerComp } from './PartnerComp';
+
 @observer
 export class Partners extends React.PureComponent {
   render() {
     return (
-      <main>
+      <main className={'partners-page'}>
         <section>
           <p>
             With the #RoamResponsibly campaign we aim to emphasize the importance of preserving the
@@ -14,7 +27,15 @@ export class Partners extends React.PureComponent {
         </section>
         <section>
           <h2>PARTNERS</h2>
-          <div></div>
+          <div className={'partner-logos'}>
+            <PartnerComp campaignPartner={anCridhe} />
+            <PartnerComp campaignPartner={calMac} />
+            <PartnerComp campaignPartner={collBunkhouse} />
+            <PartnerComp campaignPartner={hiddenScotland} />
+            <PartnerComp campaignPartner={jmTrust} />
+            <PartnerComp campaignPartner={msc} />
+            <PartnerComp campaignPartner={visitArran} />
+          </div>
         </section>
       </main>
     );

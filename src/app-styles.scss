@@ -47,7 +47,7 @@ h2 {
 h3 {
   margin: 3%;
 
-  font-family: $montserrat;
+  font-family: $lato;
   font-size: 1.8vw;
   font-weight: 500;
   line-height: 2.7vw;
@@ -58,7 +58,7 @@ h3 {
 p {
   margin: 3%;
 
-  font-family: $pt-serif;
+  font-family: $navbar;
   font-size: 1.2vw;
   line-height: 2vw;
   color: $black-text;
@@ -69,7 +69,7 @@ a {
 
   font-family: $lora;
   font-style: italic;
-
+  text-decoration: none;
   color: $links;
 
   &:hover {

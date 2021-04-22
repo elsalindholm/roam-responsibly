@@ -1,0 +1,23 @@
+@import '../../../app-styles.scss';
+
+.partners-page {
+  height: auto;
+  width: 100%;
+  padding: 2% 0;
+
+  section {
+    margin: 0 0 7% 0;
+    text-align: left;
+  }
+
+  .partner-logos {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

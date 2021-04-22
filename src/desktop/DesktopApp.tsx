@@ -27,7 +27,7 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
         page = <Home />;
         break;
       case Page.ABOUT:
-        page = <About />;
+        page = <About appState={appState} />;
         break;
       case Page.CHARTER:
         page = <Charter />;

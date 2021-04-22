@@ -27,7 +27,7 @@
   }
   .navbar-container {
     z-index: 100;
-    height: 12%;
+    height: 14%;
     width: 100%;
     padding: 0px 5% 0px 2%;
 
@@ -42,10 +42,11 @@
     align-items: center;
 
     .navbar-logo {
-      height: 80%;
+      height: 67%;
       width: 10%;
-
-      border: 1px solid purple;
+      background-image: url('../../../dist/assets/RR_Stacked_Logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
     .navbar-button-container {
@@ -61,22 +62,34 @@
         outline: none;
         background: none;
         border: none;
+        margin-bottom: 2px;
 
         font-family: $navbar;
         font-weight: 500;
         font-size: 1vw;
         letter-spacing: 0.1vw;
+
         color: $light-text;
 
         &:hover {
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+
+        &::after {
+          display: block;
+          content: '';
           border-bottom: 2px solid white;
+          transform: scaleX(0);
+          transition: transform 220ms ease-in-out;
         }
       }
     }
   }
 
   .header-banner {
-    height: 88%;
+    height: 86%;
     width: 100%;
 
     position: absolute;
