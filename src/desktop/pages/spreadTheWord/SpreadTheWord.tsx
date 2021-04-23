@@ -25,7 +25,6 @@ export class SpreadWord extends React.PureComponent {
             Access Code and preserve Scotland as beautiful as it is.
           </p>
         </section>
-        <img src={'https://www.instagram.com/p/CN8CAMQj939/'}></img>
       </main>
     );
   }
