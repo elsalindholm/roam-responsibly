@@ -33,6 +33,24 @@ export class Contact extends React.PureComponent {
           </a>
         </p>
         <p>elsaannukka@gmail.com</p>
+        <section>
+          <h2>LOGO</h2>
+          <div></div>
+          <p>
+            Our brilliant logo is the work of Michael MacDonald.
+            <br></br>@ruanaich
+            <br></br>Link to website
+          </p>
+        </section>
+        <section>
+          <h2>WEBSITE AND IMAGES</h2>
+          <p>
+            Website and images used on this website (unless otherwise stated) are the work of Elsa
+            Lindholm.
+            <br></br>@elsaannukka
+            <br></br>Link to website
+          </p>
+        </section>
       </main>
     );
   }
