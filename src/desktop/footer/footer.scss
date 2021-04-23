@@ -21,12 +21,31 @@
     align-items: center;
 
     a {
-      height: auto;
-      width: auto;
-      margin: 0 4%;
+      width: 30px;
+      margin: 0 3%;
       display: block;
 
       font-size: 29px;
+      &.fb-logo {
+        height: 30px;
+        background-image: url('../../../dist/assets/FacebookLogoWhite.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &.ig-logo {
+        height: 30px;
+        background-image: url('../../../dist/assets/IG_Icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &.tw-logo {
+        height: 26px;
+        background-image: url('../../../dist/assets/2021\ Twitter\ logo\ -\ white.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
     }
   }
 }

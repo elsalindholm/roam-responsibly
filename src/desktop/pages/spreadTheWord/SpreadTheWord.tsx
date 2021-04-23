@@ -10,7 +10,11 @@ export class SpreadWord extends React.PureComponent {
           <h2>Help us spread the word</h2>
           <p>
             Follow us on Instagram{' '}
-            <a href={'https://www.instagram.com/roamresponsibly/?hl=en'} target={'_blank'}>
+            <a
+              className={'link-underlined'}
+              href={'https://www.instagram.com/roamresponsibly/?hl=en'}
+              target={'_blank'}
+            >
               @RoamResponsibly
             </a>{' '}
             and tag your photos and stories of the Scottish Outdoors with{' '}
@@ -21,6 +25,7 @@ export class SpreadWord extends React.PureComponent {
             Access Code and preserve Scotland as beautiful as it is.
           </p>
         </section>
+        <img src={'https://www.instagram.com/p/CN8CAMQj939/'}></img>
       </main>
     );
   }

@@ -72,7 +72,10 @@ a {
   text-decoration: none;
   color: $links;
 
-  &:hover {
-    border-bottom: 3px solid $links;
+  &.link-underlined {
+    &:hover {
+      border-bottom: 3px solid $links;
+      cursor: pointer;
+    }
   }
 }

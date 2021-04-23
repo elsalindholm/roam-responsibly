@@ -6,8 +6,10 @@
   padding: 2% 0;
 
   section {
-    margin: 0 0 7% 0;
-
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
   }
 }

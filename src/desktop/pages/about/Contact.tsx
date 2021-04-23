@@ -24,7 +24,11 @@ export class Contact extends React.PureComponent {
           <strong>Campaign Manager</strong>
         </p>
         <p>
-          <a href={'https://www.instagram.com/elsaannukka/?hl=en'} target={'_blank'}>
+          <a
+            href={'https://www.instagram.com/elsaannukka/?hl=en'}
+            target={'_blank'}
+            className={'link-underlined'}
+          >
             @elsaannukka
           </a>
         </p>

@@ -44,6 +44,7 @@
       color: $links;
 
       &:hover {
+        cursor: pointer;
         &::after {
           transform: scaleX(1);
         }

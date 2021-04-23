@@ -16,17 +16,24 @@ export class Soac extends React.PureComponent {
           </h3>
           <p>
             In Scotland, people have access to most of the Scottish outdoors, which is set in{' '}
-            <a target={'_blank'}>The Land Reform (Scotland) Act 2003</a>.
+            <a target={'_blank'} className={'link-underlined'}>
+              The Land Reform (Scotland) Act 2003
+            </a>
+            .
           </p>
           <p>
-            <a target={'_blank'}>The Scottish Outdoor Access Code</a> is a guide for the
-            responsibilities that people have, which are to respect landowners' and other people's
-            privacy and livelyhood, respect and protect the Scottish wildlife and nature and to take
-            responsibility of your own actions when you are out and about.
+            <a target={'_blank'} className={'link-underlined'}>
+              The Scottish Outdoor Access Code
+            </a>{' '}
+            is a guide for the responsibilities that people have, which are to respect landowners'
+            and other people's privacy and livelyhood, respect and protect the Scottish wildlife and
+            nature and to take responsibility of your own actions when you are out and about.
           </p>
-          <a className={'soac-link'} target={'_blank'}>
-            Read more about the Scottish Outdoor Access Code here
-          </a>
+          <p>
+            <a className={'soac-link, link-underlined'} target={'_blank'}>
+              Read more about the Scottish Outdoor Access Code here
+            </a>
+          </p>
         </section>
       </main>
     );
