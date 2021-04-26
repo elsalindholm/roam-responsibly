@@ -1,16 +1,16 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import { BlogPostInfo } from './BlogPostInfo';
+import { BlogPostInfo } from '../BlogPostInfo';
 
 import './blog-post-comp.scss';
 
-interface BlogPostCompProps {
+interface SurfAndTurfProps {
   blogPostInfo: BlogPostInfo;
 }
 
 @observer
-export class BlogPostComp extends React.PureComponent<BlogPostCompProps> {
+export class SurfAndTurf extends React.PureComponent<SurfAndTurfProps> {
   render() {
     const { blogPostInfo } = this.props;
 
@@ -18,7 +18,10 @@ export class BlogPostComp extends React.PureComponent<BlogPostCompProps> {
       <div className={'blog-post-container'}>
         <div className={'blog-content'}>
           <button>Return to Blog Posts</button>
-          <section></section>
+          <section>
+            <p>Published: {blogPostInfo.date}</p>
+            <p>Author: {blogPostInfo.author}</p>
+          </section>
         </div>
       </div>
     );

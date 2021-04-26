@@ -16,9 +16,20 @@ export enum AboutPage {
   CONTACT = 'contact',
 }
 
+export enum BlogPost {
+  SURFANDTURF = 'surf-and-turf',
+  HIDDENSCOTLAND = 'hidden-scotland',
+  MSC = 'msc',
+  COLL = 'coll',
+  JMT = 'jmt',
+  CALMAC = 'calmac',
+  BLOGLIST = 'blog-list',
+}
+
 export class AppState {
   @observable public curPage: Page = Page.BLOG;
   @observable public curAboutPage: AboutPage = AboutPage.CAMPAIGN;
+  @observable public curBlogPost: BlogPost = BlogPost.BLOGLIST;
 
   @action public setCurrentPage(page: Page) {
     this.curPage = page;
@@ -26,5 +37,9 @@ export class AppState {
 
   @action public setCurrentAboutPage(aboutPage: AboutPage) {
     this.curAboutPage = aboutPage;
+  }
+
+  @action public setCurrentBlogPost(blogPost: BlogPost) {
+    this.curBlogPost = blogPost;
   }
 }
