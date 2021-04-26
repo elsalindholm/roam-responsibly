@@ -41,6 +41,7 @@ export class About extends React.PureComponent<AboutPageProps> {
         <nav className={'about-page-nav'}>
           <p className={'about-nav-title'}>ABOUT</p>
           <button onClick={() => appState.setCurrentAboutPage(AboutPage.CAMPAIGN)}>CAMPAIGN</button>
+
           <button onClick={() => appState.setCurrentAboutPage(AboutPage.INSTAGRAMMERS)}>
             INSTAGRAMMERS
           </button>

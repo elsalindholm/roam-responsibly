@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import { AppState, Page } from '../../AppState';
+import { AboutPage, AppState, Page } from '../../AppState';
 
 import './header.scss';
 
@@ -15,7 +15,7 @@ export class Header extends React.PureComponent<HeaderProps> {
     const { appState } = this.props;
 
     return (
-      <header className={'header-container'}>
+      <header className={'header-container ' + this.renderBannerImage()}>
         <div className={'header-filter'}></div>
         <div className={'navbar-container'}>
           <div className={'navbar-logo'}></div>
@@ -41,21 +41,41 @@ export class Header extends React.PureComponent<HeaderProps> {
     let smallBannerHeading: string = '';
     let largeBannerHeading: string = '';
 
-    switch (this.props.appState.curPage) {
+    const { appState } = this.props;
+
+    if (appState.curPage === Page.ABOUT) {
+      switch (appState.curAboutPage) {
+        case AboutPage.CAMPAIGN:
+          smallBannerHeading = 'Campaign to';
+          largeBannerHeading = '#ROAMRESPONSIBLY';
+          break;
+        case AboutPage.INSTAGRAMMERS:
+          smallBannerHeading = '';
+          largeBannerHeading = 'INSTAGRAMMERS';
+          break;
+        case AboutPage.PARTNERS:
+          smallBannerHeading = '';
+          largeBannerHeading = 'PARTNERS';
+          break;
+        case AboutPage.CONTACT:
+          smallBannerHeading = '';
+          largeBannerHeading = 'CONTACT';
+          break;
+      }
+    }
+
+    switch (appState.curPage) {
       case Page.HOME:
         smallBannerHeading = "Scotland's Instagrammers' Campaign to";
         largeBannerHeading = '#ROAMRESPONSIBLY';
         break;
-      case Page.ABOUT:
-        smallBannerHeading = 'Campaign to';
-        largeBannerHeading = '#ROAMRESPONSIBLY';
-        break;
+
       case Page.CHARTER:
         smallBannerHeading = '#RoamResponsibly';
         largeBannerHeading = 'CHARTER';
         break;
       case Page.SOAC:
-        smallBannerHeading = 'RoamResponsibly with';
+        smallBannerHeading = '#RoamResponsibly with';
         largeBannerHeading = 'SCOTTISH OUTDOOR ACCESS CODE';
         break;
       case Page.BLOG:
@@ -74,5 +94,31 @@ export class Header extends React.PureComponent<HeaderProps> {
         <div className={'large-banner-heading'}>{largeBannerHeading}</div>
       </div>
     );
+  }
+
+  private renderBannerImage() {
+    let bannerImage: string = '';
+
+    switch (this.props.appState.curPage) {
+      case Page.HOME:
+        bannerImage = 'banner-home';
+        break;
+      case Page.ABOUT:
+        bannerImage = 'banner-about';
+        break;
+      case Page.CHARTER:
+        bannerImage = 'banner-charter';
+        break;
+      case Page.SOAC:
+        bannerImage = 'banner-soac';
+        break;
+      case Page.BLOG:
+        bannerImage = 'banner-blog';
+        break;
+      case Page.SPREADWORD:
+        bannerImage = 'banner-spreadword';
+        break;
+    }
+    return bannerImage;
   }
 }
