@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import { AboutPage, AppState, Page } from '../../AppState';
+import { AboutPage, AppState, BlogPage, Page } from '../../AppState';
 
 import './header.scss';
 
@@ -38,10 +38,10 @@ export class Header extends React.PureComponent<HeaderProps> {
   }
 
   private renderHeaderBanner() {
+    const { appState } = this.props;
+
     let smallBannerHeading: string = '';
     let largeBannerHeading: string = '';
-
-    const { appState } = this.props;
 
     if (appState.curPage === Page.ABOUT) {
       switch (appState.curAboutPage) {
@@ -64,6 +64,19 @@ export class Header extends React.PureComponent<HeaderProps> {
       }
     }
 
+    if (appState.curPage === Page.BLOG) {
+      switch (appState.curBlogPage) {
+        case BlogPage.BLOGLIST:
+          smallBannerHeading = '';
+          largeBannerHeading = 'BLOG';
+          break;
+        default:
+          smallBannerHeading = '';
+          largeBannerHeading = '';
+          break;
+      }
+    }
+
     switch (appState.curPage) {
       case Page.HOME:
         smallBannerHeading = "Scotland's Instagrammers' Campaign to";
@@ -77,10 +90,6 @@ export class Header extends React.PureComponent<HeaderProps> {
       case Page.SOAC:
         smallBannerHeading = '#RoamResponsibly with';
         largeBannerHeading = 'SCOTTISH OUTDOOR ACCESS CODE';
-        break;
-      case Page.BLOG:
-        smallBannerHeading = '';
-        largeBannerHeading = 'BLOG';
         break;
       case Page.SPREADWORD:
         smallBannerHeading = '';
@@ -97,7 +106,22 @@ export class Header extends React.PureComponent<HeaderProps> {
   }
 
   private renderBannerImage() {
+    const { appState } = this.props;
     let bannerImage: string = '';
+
+    if (appState.curPage === Page.BLOG) {
+      switch (appState.curBlogPage) {
+        case BlogPage.BLOGLIST:
+          bannerImage = 'banner-blog';
+          break;
+        case BlogPage.SURFANDTURF:
+          bannerImage = 'banner-surf-and-turf';
+          break;
+        case BlogPage.HIDDENSCOTLAND:
+          bannerImage = 'banner-hidden-scotland';
+          break;
+      }
+    }
 
     switch (this.props.appState.curPage) {
       case Page.HOME:
@@ -112,9 +136,7 @@ export class Header extends React.PureComponent<HeaderProps> {
       case Page.SOAC:
         bannerImage = 'banner-soac';
         break;
-      case Page.BLOG:
-        bannerImage = 'banner-blog';
-        break;
+
       case Page.SPREADWORD:
         bannerImage = 'banner-spreadword';
         break;

@@ -12,6 +12,8 @@ import { About } from './pages/about/About';
 import { Footer } from './footer/Footer';
 
 import './desktop-app.scss';
+import { johnMuirTrust, surfAndTurf } from './pages/blog/BlogPostInfo';
+import { jmTrust } from './pages/about/CampaignPartners';
 
 export interface DesktopAppProps {
   appState: AppState;
@@ -37,7 +39,7 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
         page = <Soac />;
         break;
       case Page.BLOG:
-        page = <Blog />;
+        page = <Blog appState={appState} />;
         break;
       case Page.SPREADWORD:
         page = <SpreadWord />;

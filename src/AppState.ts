@@ -16,7 +16,7 @@ export enum AboutPage {
   CONTACT = 'contact',
 }
 
-export enum BlogPost {
+export enum BlogPage {
   SURFANDTURF = 'surf-and-turf',
   HIDDENSCOTLAND = 'hidden-scotland',
   MSC = 'msc',
@@ -29,9 +29,14 @@ export enum BlogPost {
 export class AppState {
   @observable public curPage: Page = Page.BLOG;
   @observable public curAboutPage: AboutPage = AboutPage.CAMPAIGN;
-  @observable public curBlogPost: BlogPost = BlogPost.BLOGLIST;
+  @observable public curBlogPage: BlogPage = BlogPage.HIDDENSCOTLAND;
 
   @action public setCurrentPage(page: Page) {
+    var myDiv = document.getElementById('app-root');
+    myDiv.scrollTop = 0;
+
+    this.curAboutPage = AboutPage.CAMPAIGN;
+    this.curBlogPage = BlogPage.BLOGLIST;
     this.curPage = page;
   }
 
@@ -39,7 +44,9 @@ export class AppState {
     this.curAboutPage = aboutPage;
   }
 
-  @action public setCurrentBlogPost(blogPost: BlogPost) {
-    this.curBlogPost = blogPost;
+  @action public setCurrentBlogPage(blogPage: BlogPage) {
+    var myDiv = document.getElementById('app-root');
+    myDiv.scrollTop = 0;
+    this.curBlogPage = blogPage;
   }
 }

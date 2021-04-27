@@ -23,7 +23,7 @@
       background-position: center;
     }
     &.hidden-scotland-blog {
-      background-image: url('../../../../dist/assets/blogPosts/hiddenScotland/Trotternish.jpg');
+      background-image: url('../../../../dist/assets/blogPosts/hiddenScotland/storrHiddenScotland.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top;
@@ -86,11 +86,11 @@
 
   .blog-post-comp-btn {
     margin: 2%;
-    padding: 2%;
+    padding: 2% 4%;
     outline: none;
     background-color: transparent;
     border: 2px solid $links;
-    border-radius: 15px;
+    border-radius: 15vw;
     color: $links;
 
     font-family: $navbar;

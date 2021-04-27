@@ -6,12 +6,13 @@ import './blog-summary-comp.scss';
 
 interface BlogSummaryCompProps {
   blogPostInfo: BlogPostInfo;
+  onClick: () => void;
 }
 
 @observer
 export class BlogSummaryComp extends React.PureComponent<BlogSummaryCompProps> {
   render() {
-    const { blogPostInfo } = this.props;
+    const { blogPostInfo, onClick } = this.props;
     return (
       <div className={'blog-post-comp'}>
         <div className={'blog-post-comp-img ' + blogPostInfo.image}></div>
@@ -19,7 +20,9 @@ export class BlogSummaryComp extends React.PureComponent<BlogSummaryCompProps> {
         <div className={'blog-post-comp-title'}>{blogPostInfo.title}</div>
         <div className={'blog-post-comp-subtitle'}>{blogPostInfo.subtitle}</div>
         <div className={'blog-post-comp-blurb'}>{blogPostInfo.blurb}</div>
-        <button className={'blog-post-comp-btn'}>READ MORE...</button>
+        <button className={'blog-post-comp-btn'} onClick={() => onClick()}>
+          READ MORE...
+        </button>
       </div>
     );
   }

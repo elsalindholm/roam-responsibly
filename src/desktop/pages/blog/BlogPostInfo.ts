@@ -9,7 +9,7 @@ export interface BlogPostInfo {
 
 export const surfAndTurf: BlogPostInfo = {
   date: 'November 18, 2018',
-  author: "Stephanie Cope. Tiree's Community Ranger",
+  author: "Stephanie Cope, Tiree's Community Ranger",
   title: 'SURF AND TURF: ROAMING RESPONSIBLY ON THE ISLE OF TIREE',
   subtitle: 'GUEST BLOG BY STEPHANIE COPE, TIREE’S COMMUNITY RANGER.',
   blurb:
