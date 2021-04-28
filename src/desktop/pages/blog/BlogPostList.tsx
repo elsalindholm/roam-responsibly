@@ -34,7 +34,7 @@ export class BlogPostList extends React.PureComponent<BlogPostListProps> {
           />
           <BlogSummaryComp
             blogPostInfo={marineConSoc}
-            onClick={() => appState.setCurrentBlogPage(BlogPage.SURFANDTURF)}
+            onClick={() => appState.setCurrentBlogPage(BlogPage.MCS)}
           />
           <BlogSummaryComp
             blogPostInfo={collBeachClean}

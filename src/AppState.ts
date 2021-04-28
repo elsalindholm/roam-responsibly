@@ -19,7 +19,7 @@ export enum AboutPage {
 export enum BlogPage {
   SURFANDTURF = 'surf-and-turf',
   HIDDENSCOTLAND = 'hidden-scotland',
-  MSC = 'msc',
+  MCS = 'mcs',
   COLL = 'coll',
   JMT = 'jmt',
   CALMAC = 'calmac',
@@ -29,7 +29,7 @@ export enum BlogPage {
 export class AppState {
   @observable public curPage: Page = Page.BLOG;
   @observable public curAboutPage: AboutPage = AboutPage.CAMPAIGN;
-  @observable public curBlogPage: BlogPage = BlogPage.HIDDENSCOTLAND;
+  @observable public curBlogPage: BlogPage = BlogPage.MCS;
 
   @action public setCurrentPage(page: Page) {
     var myDiv = document.getElementById('app-root');

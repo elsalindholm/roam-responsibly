@@ -1,113 +1,5 @@
 @import '../../../../../app-styles.scss';
 
-.blog-post-container {
-  height: auto;
-  width: 100%;
-
-  //border: 1px solid red;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-
-  .blog-content {
-    height: auto;
-    width: 100%;
-
-    //border: 1px solid green;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: baseline;
-
-    .blog-button-container {
-      height: auto;
-      width: 100%;
-
-      button {
-        padding: 1%;
-        font-family: $navbar;
-        font-size: 1vw;
-        font-weight: 700;
-        letter-spacing: 0.1vw;
-        background-color: transparent;
-        color: $links;
-        border: none;
-        outline: none;
-
-        &:hover {
-          border: 0px solid $links;
-          background-color: $links;
-          color: $light-text;
-          border-radius: 15vw;
-          cursor: pointer;
-        }
-      }
-    }
-
-    .blog-post-title-container {
-      width: 80%;
-
-      text-align: center;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-
-      .blog-post-title {
-        padding: 0 10%;
-        margin: 3%;
-
-        font-family: $lato;
-        font-size: 2vw;
-        font-weight: 600;
-
-        color: $dark-text;
-      }
-
-      .blog-post-date {
-        font-family: $navbar;
-        font-style: italic;
-        color: $img-caption;
-      }
-
-      .blog-post-author {
-        font-family: $lato;
-        font-size: 1.3vw;
-        font-weight: 600;
-
-        color: $dark-text;
-      }
-    }
-
-    p {
-      margin: 2%;
-      width: 80%;
-      font-family: $navbar;
-      line-height: 2vw;
-
-      &.blog-img-caption {
-        margin: 0 0 1% 0;
-        font-size: 1vw;
-        color: $img-caption;
-      }
-    }
-
-    a {
-      font-family: $navbar;
-      color: $links;
-      font-style: normal;
-
-      &:hover {
-        border-bottom: 3px solid $links;
-      }
-    }
-  }
-}
-
 .hs-text-with-img {
   height: auto;
   width: 80%;
@@ -133,45 +25,39 @@
   }
 }
 
-.blog-img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid red;
-
-  &.hs-storr {
-    background-image: url('/dist/assets/blogPosts/hiddenScotland/storrHiddenScotland.jpg');
-    margin: 2% 0;
-    height: 45vw;
-    width: 80%;
-  }
-  &.hs-tours {
-    background-image: url('/dist/assets/blogPosts/hiddenScotland/hiddenScotlandTours.jpg');
-    margin: 2% 0;
-    height: 18vw;
-    width: 18vw;
-  }
-  &.hs-neist-point {
-    background-image: url('/dist/assets/blogPosts/hiddenScotland/neistPointHiddenScotland.jpg');
-    margin: 2% 0;
-    height: 70vw;
-    width: 80%;
-  }
-  &.hs-trotternish {
-    background-image: url('/dist/assets/blogPosts/hiddenScotland/trotternishHiddenScotland.jpg');
-    margin: 2% 0;
-    height: 70vw;
-    width: 80%;
-  }
-  &.hs-roam-responsibly {
-    background-image: url('/dist/assets/blogPosts/hiddenScotland/weRoamResponsibly.png');
-    margin: 2% 0;
-    height: 25vw;
-    width: 25vw;
-  }
-  &.hs-wigwam {
-    background-image: url('/dist/assets/blogPosts/hiddenScotland/wigwamHiddenScotland.jpg');
-    margin: 2% 0;
-    height: 70vw;
-    width: 80%;
-  }
+.hs-storr {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/storrHiddenScotland.jpg');
+  margin: 2% 0;
+  height: 45vw;
+  width: 80%;
+}
+.hs-tours {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/hiddenScotlandTours.jpg');
+  margin: 2% 0;
+  height: 18vw;
+  width: 18vw;
+}
+.hs-neist-point {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/neistPointHiddenScotland.jpg');
+  margin: 2% 0;
+  height: 70vw;
+  width: 80%;
+}
+.hs-trotternish {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/trotternishHiddenScotland.jpg');
+  margin: 2% 0;
+  height: 70vw;
+  width: 80%;
+}
+.hs-roam-responsibly {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/weRoamResponsibly.png');
+  margin: 2% 0;
+  height: 25vw;
+  width: 25vw;
+}
+.hs-wigwam {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/wigwamHiddenScotland.jpg');
+  margin: 2% 0;
+  height: 70vw;
+  width: 80%;
 }

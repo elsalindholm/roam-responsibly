@@ -1,0 +1,27 @@
+@import '../../../../../app-styles.scss';
+
+.mcs-text-with-img {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  p {
+    padding: 0 2% 0 0;
+  }
+}
+
+.mcs-logo {
+  background-image: url('../../../../../../dist/assets/blogPosts/mcs/mcsLogo.png');
+  margin: 2% 0 0 0;
+  height: 15vw;
+  width: 25vw;
+}
+
+.mcs-instameet {
+  background-image: url('../../../../../../dist/assets/blogPosts/mcs/ShoreYouCare_SusanneArbuckle.jpeg');
+  height: 42vw;
+  width: 80%;
+}

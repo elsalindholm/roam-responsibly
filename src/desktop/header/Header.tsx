@@ -120,6 +120,9 @@ export class Header extends React.PureComponent<HeaderProps> {
         case BlogPage.HIDDENSCOTLAND:
           bannerImage = 'banner-hidden-scotland';
           break;
+        case BlogPage.MCS:
+          bannerImage = 'banner-mcs';
+          break;
       }
     }
 

@@ -20,7 +20,10 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
       <div className={'blog-post-container'}>
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
-            <button onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}>
+            <button
+              className={'blog-button'}
+              onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
+            >
               {'<'} RETURN TO BLOG POSTS
             </button>
           </div>
@@ -49,14 +52,26 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             Tiree Ranger Service is supported by: Scottish Natural Heritage; Tiree Community
             Development Trust; Discover Tiree and our own fundraising activities. As ranger, I serve
             community members and island guests. This includes access management, the provision of
-            heritage leaflets, <a href={'http://www.isleoftiree.com/tiree-books/'}>printed books</a>
+            heritage leaflets,{' '}
+            <a className={'blog-link'} href={'http://www.isleoftiree.com/tiree-books/'}>
+              printed books
+            </a>
             , evening talks, daytime events,{' '}
-            <a href={'http://www.isleoftiree.com/out-about/walks/<'}>guided walks</a>,{' '}
-            <a href={'http://www.isleoftiree.com/out-about/ranger-service-1/'}>
+            <a className={'blog-link'} href={'http://www.isleoftiree.com/out-about/walks/<'}>
+              guided walks
+            </a>
+            ,{' '}
+            <a
+              className={'blog-link'}
+              href={'http://www.isleoftiree.com/out-about/ranger-service-1/'}
+            >
               the use of off-road wheelchairs
             </a>{' '}
             and{' '}
-            <a href={'http://www.isleoftiree.com/out-about/camping-and-campervans/'}>
+            <a
+              className={'blog-link'}
+              href={'http://www.isleoftiree.com/out-about/camping-and-campervans/'}
+            >
               the option to camp on traditional island crofts
             </a>
             . It’s a busy job.{' '}
@@ -83,9 +98,11 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             a thickening of the horizon. Tiree is the most low-lying of the two; barely peeking out
             above our legendary Hebridean waves. If you haven’t yet experienced the
             adrenaline-fueled insanity of{' '}
-            <a href={'http://tireewaveclassic.co.uk/'}>Tiree Wave Classic</a> (our very own
-            windsurfing competition, which is the longest running professional windsurfing event in
-            the world) then trust me, you need to.
+            <a className={'blog-link'} href={'http://tireewaveclassic.co.uk/'}>
+              Tiree Wave Classic
+            </a>{' '}
+            (our very own windsurfing competition, which is the longest running professional
+            windsurfing event in the world) then trust me, you need to.
           </p>
 
           <div className={'blog-img , saf-finn-mellon'}></div>
@@ -139,7 +156,12 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             On Tiree, we ask our guests to use marked parking areas to access beaches; rather than
             driving freely over unfenced land. We also ask that our guests use approved overnight
             camping pitches instead of camping informally from their vehicles (see more{' '}
-            <a href={'http://www.isleoftiree.com/out-about/camping-and-campervans/'}>here</a>
+            <a
+              className={'blog-link'}
+              href={'http://www.isleoftiree.com/out-about/camping-and-campervans/'}
+            >
+              here
+            </a>
             ). Both actions have mitigated damage and improved outcomes for crofting and
             conservation. Historically, this management of vehicle access proved controversial -
             though a good level of understanding and acceptance has now taken root, thanks to
@@ -197,10 +219,12 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             sense of remoteness and escape; sublime wildlife; quality family time on the beach;
             activities such as SUP, surfing, windsurfing and kitesurfing; plus, the chance to
             explore Scottish ancestry and archaeology. Contemporary events like{' '}
-            <a href={'https://tireemusicfestival.co.uk/'}>Tiree Music Festival</a> have opened up
-            our island and our culture to new audiences - representing a fabulous opportunity to
-            engage young people with all that the Hebridean environment and way of life has to
-            offer. It’s what we’re all about. It’s what I’m all about.
+            <a className={'blog-link'} href={'https://tireemusicfestival.co.uk/'}>
+              Tiree Music Festival
+            </a>{' '}
+            have opened up our island and our culture to new audiences - representing a fabulous
+            opportunity to engage young people with all that the Hebridean environment and way of
+            life has to offer. It’s what we’re all about. It’s what I’m all about.
           </p>
 
           <p>
@@ -213,11 +237,19 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           </p>
           <p>
             Follow us on Twitter{' '}
-            <a href={'https://twitter.com/Nadair_Thiriodh'}>@Nadair_Thiriodh</a>
+            <a className={'blog-link'} href={'https://twitter.com/Nadair_Thiriodh'}>
+              @Nadair_Thiriodh
+            </a>
             <br></br>
-            Find us on <a href={'https://www.facebook.com/TireeRangerService/'}>Facebook</a>
+            Find us on{' '}
+            <a className={'blog-link'} href={'https://www.facebook.com/TireeRangerService/'}>
+              Facebook
+            </a>
             <br></br>
-            Visit our <a href={'https://friendsoftiree.org.uk/blog/'}>Blog</a>
+            Visit our{' '}
+            <a className={'blog-link'} href={'https://friendsoftiree.org.uk/blog/'}>
+              Blog
+            </a>
           </p>
 
           <div className={'blog-img , saf-wildflowers'}></div>
@@ -228,7 +260,10 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           </p>
 
           <div className={'blog-button-container'}>
-            <button onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}>
+            <button
+              className={'blog-button'}
+              onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
+            >
               {'<'} RETURN TO BLOG POSTS
             </button>
           </div>

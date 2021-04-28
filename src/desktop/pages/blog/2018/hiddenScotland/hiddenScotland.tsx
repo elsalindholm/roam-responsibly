@@ -20,7 +20,10 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
       <div className={'blog-post-container'}>
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
-            <button onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}>
+            <button
+              className={'blog-button'}
+              onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
+            >
               {'<'} RETURN TO BLOG POSTS
             </button>
           </div>
@@ -34,10 +37,15 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
           <p>
             This week we welcome Hidden Scotland as our newest parter. Like me, many of you might
             have come across the beautiful{' '}
-            <a href={'https://www.instagram.com/hiddenscotland/'}>@hiddenscotland</a> Instagram
-            feed, which fully embraces the moody beauty of Scotland. But there is more to it. Jack
-            Cairney (<a href={'https://www.instagram.com/jackcairney/'}>@jackcairney</a>), the
-            founder of Hidden Scotland, describes the idea behind his venture:{' '}
+            <a className={'blog-link'} href={'https://www.instagram.com/hiddenscotland/'}>
+              @hiddenscotland
+            </a>{' '}
+            Instagram feed, which fully embraces the moody beauty of Scotland. But there is more to
+            it. Jack Cairney (
+            <a className={'blog-link'} href={'https://www.instagram.com/jackcairney/'}>
+              @jackcairney
+            </a>
+            ), the founder of Hidden Scotland, describes the idea behind his venture:{' '}
             <i>
               "Since launching in 2016, Hidden Scotland started out by inspiring the inner adventure
               seeker in all of us through exquisite imagery from some of Scotland’s finest
@@ -47,14 +55,21 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
 
           <div className={'blog-img , hs-storr'}></div>
           <p className={'blog-img-caption'}>
-            Photo by <a href={'https://hiddenscotland.co/'}>Hidden Scotland</a>.
+            Photo by{' '}
+            <a className={'blog-link'} href={'https://hiddenscotland.co/'}>
+              Hidden Scotland
+            </a>
+            .
           </p>
 
           <div className={'hs-text-with-img'}>
             <div className={'hs-text'}>
               <p>
                 Hidden Scotland has since also set up a beautiful website{' '}
-                <a href={'https://www.instagram.com/jackcairney/'}>@jackcairney</a>:{' '}
+                <a className={'blog-link'} href={'https://www.instagram.com/jackcairney/'}>
+                  @jackcairney
+                </a>
+                :{' '}
                 <i>
                   "Our aim is to show the visitors to Scotland and people living in Scotland the
                   best places to eat, sleep and visit. We have built an Itinerary Generator and Day
@@ -65,7 +80,11 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
             <div className={'hs-img'}>
               <div className={'blog-img , hs-tours'}></div>
               <p className={'blog-img-caption'}>
-                Photo by <a href={'https://hiddenscotland.co/'}>Hidden Scotland</a>.
+                Photo by{' '}
+                <a className={'blog-link'} href={'https://hiddenscotland.co/'}>
+                  Hidden Scotland
+                </a>
+                .
               </p>
             </div>
           </div>
@@ -84,7 +103,11 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
 
           <div className={'blog-img , hs-neist-point'}></div>
           <p className={'blog-img-caption'}>
-            Photo by <a href={'https://hiddenscotland.co/'}>Hidden Scotland</a>.
+            Photo by{' '}
+            <a className={'blog-link'} href={'https://hiddenscotland.co/'}>
+              Hidden Scotland
+            </a>
+            .
           </p>
 
           <p>
@@ -94,7 +117,10 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
           </p>
 
           <p>
-            <a href={'https://www.instagram.com/jackcairney/'}>@jackcairney</a>:{' '}
+            <a className={'blog-link'} href={'https://www.instagram.com/jackcairney/'}>
+              @jackcairney
+            </a>
+            :{' '}
             <i>
               "I discovered the #RoamResonsibly campaign on instagram and after reading over their
               website and charter I instantly wanted to get involved. I think it's important to
@@ -118,7 +144,11 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
 
           <div className={'blog-img , hs-trotternish'}></div>
           <p className={'blog-img-caption'}>
-            Photo by <a href={'https://hiddenscotland.co/'}>Hidden Scotland</a>.
+            Photo by{' '}
+            <a className={'blog-link'} href={'https://hiddenscotland.co/'}>
+              Hidden Scotland
+            </a>
+            .
           </p>
 
           <div className={'hs-text-with-img'}>
@@ -131,7 +161,10 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
                 Scotland Tour.
               </p>
               <p>
-                <a href={'https://www.instagram.com/jackcairney/'}>@jackcairney</a>:{' '}
+                <a className={'blog-link'} href={'https://www.instagram.com/jackcairney/'}>
+                  @jackcairney
+                </a>
+                :{' '}
                 <i>
                   "We are delighted to partner with the #roamresponibly campaign and very proud to
                   be an advocate."
@@ -141,24 +174,39 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
             <div className={'hs-img'}>
               <div className={'blog-img , hs-roam-responsibly'}></div>
               <p className={'blog-img-caption'}>
-                An excerpt from <a href={'https://hiddenscotland.co/'}>the Hidden Scotland Tour</a>.
+                An excerpt from{' '}
+                <a className={'blog-link'} href={'https://hiddenscotland.co/'}>
+                  the Hidden Scotland Tour
+                </a>
+                .
               </p>
             </div>
           </div>
 
           <div className={'blog-img , hs-wigwam'}></div>
           <p className={'blog-img-caption'}>
-            Photo by <a href={'https://hiddenscotland.co/'}>Hidden Scotland</a>.
+            Photo by{' '}
+            <a className={'blog-link'} href={'https://hiddenscotland.co/'}>
+              Hidden Scotland
+            </a>
+            .
           </p>
 
           <p>
-            <a href={'https://hiddenscotland.co/'}>Hidden Scotland Website</a>
+            <a className={'blog-link'} href={'https://hiddenscotland.co/'}>
+              Hidden Scotland Website
+            </a>
             <br></br>
-            <a href={'https://www.instagram.com/hiddenscotland/'}>Hidden Scotland on Instagram</a>
+            <a className={'blog-link'} href={'https://www.instagram.com/hiddenscotland/'}>
+              Hidden Scotland on Instagram
+            </a>
           </p>
 
           <div className={'blog-button-container'}>
-            <button onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}>
+            <button
+              className={'blog-button'}
+              onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
+            >
               {'<'} RETURN TO BLOG POSTS
             </button>
           </div>

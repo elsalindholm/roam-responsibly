@@ -32,7 +32,7 @@ export const marineConSoc: BlogPostInfo = {
   title: 'MARINE CONSERVATION SOCIETY',
   blurb:
     'Read about Marine Conservation Society, Susanne Arbuckle’s #ShoreYouCare event and how to sign up to the Plastic Challenge in July to #GoPlasticFree.',
-  image: 'msc-blog',
+  image: 'mcs-blog',
 };
 
 export const collBeachClean: BlogPostInfo = {
