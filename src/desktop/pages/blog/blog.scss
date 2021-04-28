@@ -83,7 +83,7 @@
       }
 
       .blog-post-date {
-        font-family: $navbar;
+        font-family: $lora;
         font-style: italic;
         color: $img-caption;
       }
@@ -116,6 +116,8 @@
     }
 
     ul {
+      margin: 0 0 2% 0;
+      width: 70%;
       font-family: $navbar;
       line-height: 2vw;
     }
