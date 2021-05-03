@@ -38,14 +38,22 @@ export class McsBlog extends React.PureComponent<McsProps> {
             Oceans cover roughly about 70% of the Earth's surface and provide a habitat for many
             types of marine wildlife: in the UK alone there are over 15,000 different marine species
             (
-            <a className={'blog-link'} href={'https://www.mcsuk.org/who-we-are/our-vision'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.mcsuk.org/who-we-are/our-vision'}
+              target={'_blank'}
+            >
               1
             </a>
             ). The health of the oceans is crucial to our well-being and livelihoods. However,
             pollution and plastic waste are increasingly causing problems for marine wildlife. Of
             the UK's sea and coastline, 60% is found in Scotland and therefore it is not a surprise
             that we can witness the sad consequences of these problems on our shores (
-            <a className={'blog-link'} href={'https://www.mcsuk.org/who-we-are/our-successes'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.mcsuk.org/who-we-are/our-successes'}
+              target={'_blank'}
+            >
               2
             </a>
             ).
@@ -53,7 +61,7 @@ export class McsBlog extends React.PureComponent<McsProps> {
 
           <div className={'mcs-text-with-img'}>
             <p>
-              <a className={'blog-link'} href={'https://www.mcsuk.org/'}>
+              <a className={'blog-link'} href={'https://www.mcsuk.org/'} target={'_blank'}>
                 Marine Conservation Society
               </a>
               , our newest partnering organisation, was founded in 1983 to protect seas, shores and
@@ -68,29 +76,45 @@ export class McsBlog extends React.PureComponent<McsProps> {
 
           <h3>
             #SHOREYOUCARE EVENT ORGANISED BY SUSANNE ARBUCKLE{' '}
-            <a className={'blog-link'} href={'https://www.instagram.com/adventuresaroundscotland/'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.instagram.com/adventuresaroundscotland/'}
+              target={'_blank'}
+            >
               @ADVENTURESAROUNDSCOTLAND
             </a>
           </h3>
 
           <p>
             Susanne Arbuckle, a Scottish travel blogger and writer{' '}
-            <a className={'blog-link'} href={'https://www.adventuresaroundscotland.com/'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.adventuresaroundscotland.com/'}
+              target={'_blank'}
+            >
               Adventures Around Scotland
             </a>{' '}
             (or{' '}
-            <a className={'blog-link'} href={'https://www.instagram.com/adventuresaroundscotland/'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.instagram.com/adventuresaroundscotland/'}
+              target={'_blank'}
+            >
               @adventuresaroundscotland
             </a>{' '}
             on Instagram), organised #ShoreYouCare event for content creators to learn more about
             and to get involved in marine conservation. The event, organised in partnership with the
             MCS in North Queensferry on the 1st June, involved a beach clean as well as great talks
             from MCS, marine conservation charity{' '}
-            <a className={'blog-link'} href={'https://www.fidra.org.uk/'}>
+            <a className={'blog-link'} href={'https://www.fidra.org.uk/'} target={'_blank'}>
               Fidra
             </a>{' '}
             and{' '}
-            <a className={'blog-link'} href={'https://fifecoastandcountrysidetrust.co.uk/'}>
+            <a
+              className={'blog-link'}
+              href={'https://fifecoastandcountrysidetrust.co.uk/'}
+              target={'_blank'}
+            >
               Fife Coast {'&'} Countryside Trust
             </a>
             . This event is a great example not only of the kind of positive and inspiring action
@@ -116,10 +140,11 @@ export class McsBlog extends React.PureComponent<McsProps> {
 
           <div className={'blog-img , mcs-instameet'}></div>
           <p className={'blog-img-caption'}>
-            #ShoreYouCare event in North Queensferry on 1st June 2018. Photo by
-            <a className={'blog-link'} href={'https://www.instagram.com/adventuresaroundscotland/'}>
+            #ShoreYouCare event in North Queensferry on 1st June 2018. Photo by{' '}
+            <a href={'https://www.instagram.com/adventuresaroundscotland/'} target={'_blank'}>
               @adventuresaroundscotland
             </a>
+            .
           </p>
 
           <h3>PLASTIC CHALLENGE - #GOPLASTICFREE</h3>
@@ -154,6 +179,7 @@ export class McsBlog extends React.PureComponent<McsProps> {
             <a
               className={'blog-link'}
               href={'https://www.mcsuk.org/campaigns/plastic-challenge-home#wrapper'}
+              target={'_blank'}
             >
               HERE
             </a>{' '}
@@ -169,25 +195,37 @@ export class McsBlog extends React.PureComponent<McsProps> {
               <strong>#RoamResponsibly</strong>
             </li>
             <li>
-              <a className={'blog-link'} href={'https://www.instagram.com/mcs_uk/'}>
+              <a
+                className={'blog-link'}
+                href={'https://www.instagram.com/mcs_uk/'}
+                target={'_blank'}
+              >
                 @mcs_uk
               </a>{' '}
               (Instagram),{' '}
-              <a className={'blog-link'} href={'https://twitter.com/mcsuk'}>
+              <a className={'blog-link'} href={'https://twitter.com/mcsuk'} target={'_blank'}>
                 @mcsuk
               </a>{' '}
               (Twitter) and{' '}
-              <a className={'blog-link'} href={'https://www.facebook.com/mcsuk/'}>
+              <a className={'blog-link'} href={'https://www.facebook.com/mcsuk/'} target={'_blank'}>
                 Marine Conservation Society
               </a>{' '}
               (Facebook)
             </li>
             <li>
-              <a className={'blog-link'} href={'https://www.instagram.com/roamresponsibly/'}>
+              <a
+                className={'blog-link'}
+                href={'https://www.instagram.com/roamresponsibly/'}
+                target={'_blank'}
+              >
                 @roamresponsibly
               </a>{' '}
               (Instagram),{' '}
-              <a className={'blog-link'} href={'https://twitter.com/RResponsiblySct'}>
+              <a
+                className={'blog-link'}
+                href={'https://twitter.com/RResponsiblySct'}
+                target={'_blank'}
+              >
                 @RResponsiblySct
               </a>{' '}
               (Twitter) and{' '}
@@ -200,13 +238,21 @@ export class McsBlog extends React.PureComponent<McsProps> {
 
           <p>
             You can also donate to help MCS's{' '}
-            <a className={'blog-link'} href={'https://www.mcsuk.org/appeal/stop-the-plastic-tide'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.mcsuk.org/appeal/stop-the-plastic-tide'}
+              target={'_blank'}
+            >
               Stop The Plastic Tide
             </a>{' '}
             campaign.
             <br></br>
             Find out more about how you can help conserve our seas, shores and wildlife with MCS
-            <a className={'blog-link'} href={'https://www.mcsuk.org/how-you-can-help/'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.mcsuk.org/how-you-can-help/'}
+              target={'_blank'}
+            >
               {' '}
               here.
             </a>

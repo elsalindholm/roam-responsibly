@@ -36,11 +36,19 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
 
           <p>
             Both{' '}
-            <a href={'https://www.instagram.com/berriestagram/'} target={'_blank'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.instagram.com/berriestagram/'}
+              target={'_blank'}
+            >
               @berriestagram
             </a>{' '}
             and I (
-            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.instagram.com/elsaannukka/'}
+              target={'_blank'}
+            >
               @elsaannukka
             </a>
             ) love the Scottish Islands - we have been on many island trips. Last summer we went to
@@ -48,15 +56,16 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
             the first time. The plan was to explore the island and take part in the Isle of Coll
             Bird Festival, which is a one-weekend event in May (this year 18th - 20th May) organised
             by{' '}
-            <a href={'https://ancridhe.com/'} target={'_blank'}>
+            <a className={'blog-link'} href={'https://ancridhe.com/'} target={'_blank'}>
               An Cridhe
             </a>{' '}
             and{' '}
-            <a href={'https://collbunkhouse.com/'} target={'_blank'}>
+            <a className={'blog-link'} href={'https://collbunkhouse.com/'} target={'_blank'}>
               Coll Bunkhouse
             </a>{' '}
             management team with considerable input and support from{' '}
             <a
+              className={'blog-link'}
               href={'https://www.rspb.org.uk/reserves-and-events/reserves-a-z/coll/'}
               target={'_blank'}
             >
@@ -76,7 +85,7 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
           <p>
             We ended up arriving to the island on Saturday evening. Despite the amber weather
             warning earlier in the day, our sailing with{' '}
-            <a href={'https://www.calmac.co.uk/'} target={'_blank'}>
+            <a className={'blog-link'} href={'https://www.calmac.co.uk/'} target={'_blank'}>
               CalMac Ferries
             </a>{' '}
             was actually very comfortable and smooth. However, the weather forecast did not look
@@ -107,11 +116,11 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
           <div className={'coll-two-columns'}>
             <p>
               With this blog post, I am pleased to introduce you to our newest partners:{' '}
-              <a href={'https://ancridhe.com/'} target={'_blank'}>
+              <a className={'blog-link'} href={'https://ancridhe.com/'} target={'_blank'}>
                 An Cridhe
-              </a>
+              </a>{' '}
               and{' '}
-              <a href={'https://collbunkhouse.com/'} target={'_blank'}>
+              <a className={'blog-link'} href={'https://collbunkhouse.com/'} target={'_blank'}>
                 Coll Bunkhouse
               </a>
               . Together, we had very inspiring conservations about sustainable travel and the
@@ -123,7 +132,7 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
               provide income, facilities and fun activities for the local community and visitors.
               Both An Cridhe and Coll Bunkhouse are owned and operated by the Coll community through
               their development trust and charity{' '}
-              <a href={'https://developmentcoll.org.uk/'} target={'_blank'}>
+              <a className={'blog-link'} href={'https://developmentcoll.org.uk/'} target={'_blank'}>
                 Development Coll Limited
               </a>
               .
@@ -136,7 +145,7 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
 
           <div className={'blog-img , coll-seals'}></div>
           <p className={'blog-img-caption'}>
-            A large group of seals (maybe around 20) were following us along the beach. Photo by
+            A large group of seals (maybe around 20) were following us along the beach. Photo by{' '}
             <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
               @elsaannukka
             </a>
@@ -231,27 +240,28 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
           <h3>BELOW ARE SOME USEFUL LINKS:</h3>
           <ul>
             <li>
-              <a href={'https://ancridhe.com/'} target={'_blank'}>
+              <a className={'blog-link'} href={'https://ancridhe.com/'} target={'_blank'}>
                 An Cridhe
               </a>
             </li>
             <li>
-              <a href={'https://collbunkhouse.com/'} target={'_blank'}>
+              <a className={'blog-link'} href={'https://collbunkhouse.com/'} target={'_blank'}>
                 Coll Bunkhouse
               </a>
             </li>
             <li>
-              <a href={'http://visitcoll.co.uk/'} target={'_blank'}>
+              <a className={'blog-link'} href={'http://visitcoll.co.uk/'} target={'_blank'}>
                 VisitColl
               </a>
             </li>
             <li>
-              <a href={'https://www.calmac.co.uk/'} target={'_blank'}>
+              <a className={'blog-link'} href={'https://www.calmac.co.uk/'} target={'_blank'}>
                 CalMac Ferries
               </a>
             </li>
             <li>
               <a
+                className={'blog-link'}
                 href={'https://www.rspb.org.uk/reserves-and-events/reserves-a-z/coll/'}
                 target={'_blank'}
               >

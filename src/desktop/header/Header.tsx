@@ -129,6 +129,9 @@ export class Header extends React.PureComponent<HeaderProps> {
         case BlogPage.JMT:
           bannerImage = 'banner-jmt';
           break;
+        case BlogPage.CALMAC:
+          bannerImage = 'banner-calmac';
+          break;
       }
     }
 

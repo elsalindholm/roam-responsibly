@@ -53,17 +53,26 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             Development Trust; Discover Tiree and our own fundraising activities. As ranger, I serve
             community members and island guests. This includes access management, the provision of
             heritage leaflets,{' '}
-            <a className={'blog-link'} href={'http://www.isleoftiree.com/tiree-books/'}>
+            <a
+              className={'blog-link'}
+              href={'http://www.isleoftiree.com/tiree-books/'}
+              target={'_blank'}
+            >
               printed books
             </a>
             , evening talks, daytime events,{' '}
-            <a className={'blog-link'} href={'http://www.isleoftiree.com/out-about/walks/<'}>
+            <a
+              className={'blog-link'}
+              href={'http://www.isleoftiree.com/out-about/walks/<'}
+              target={'_blank'}
+            >
               guided walks
             </a>
             ,{' '}
             <a
               className={'blog-link'}
               href={'http://www.isleoftiree.com/out-about/ranger-service-1/'}
+              target={'_blank'}
             >
               the use of off-road wheelchairs
             </a>{' '}
@@ -71,6 +80,7 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             <a
               className={'blog-link'}
               href={'http://www.isleoftiree.com/out-about/camping-and-campervans/'}
+              target={'_blank'}
             >
               the option to camp on traditional island crofts
             </a>
@@ -98,7 +108,7 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             a thickening of the horizon. Tiree is the most low-lying of the two; barely peeking out
             above our legendary Hebridean waves. If you haven’t yet experienced the
             adrenaline-fueled insanity of{' '}
-            <a className={'blog-link'} href={'http://tireewaveclassic.co.uk/'}>
+            <a className={'blog-link'} href={'http://tireewaveclassic.co.uk/'} target={'_blank'}>
               Tiree Wave Classic
             </a>{' '}
             (our very own windsurfing competition, which is the longest running professional
@@ -108,7 +118,7 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           <div className={'blog-img , saf-finn-mellon'}></div>
           <p className={'blog-img-caption'}>Finn Mellon, competing at Tiree Wave Classic 2017.</p>
           <div className={'blog-img , saf-traigh-thodhrasdail'}></div>
-          <p className={'blog-img-caption'}>Gearing up for a full day on Traigh Thodhrasdail!</p>
+          <p className={'blog-img-caption'}>Gearing up for a full day on Traigh Thodhrasdail.</p>
 
           <p>
             The island’s slim profile creates its most precious and spectacular habitat: machair.
@@ -159,6 +169,7 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             <a
               className={'blog-link'}
               href={'http://www.isleoftiree.com/out-about/camping-and-campervans/'}
+              target={'_blank'}
             >
               here
             </a>
@@ -219,7 +230,7 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             sense of remoteness and escape; sublime wildlife; quality family time on the beach;
             activities such as SUP, surfing, windsurfing and kitesurfing; plus, the chance to
             explore Scottish ancestry and archaeology. Contemporary events like{' '}
-            <a className={'blog-link'} href={'https://tireemusicfestival.co.uk/'}>
+            <a className={'blog-link'} href={'https://tireemusicfestival.co.uk/'} target={'_blank'}>
               Tiree Music Festival
             </a>{' '}
             have opened up our island and our culture to new audiences - representing a fabulous
@@ -237,17 +248,29 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           </p>
           <p>
             Follow us on Twitter{' '}
-            <a className={'blog-link'} href={'https://twitter.com/Nadair_Thiriodh'}>
+            <a
+              className={'blog-link'}
+              href={'https://twitter.com/Nadair_Thiriodh'}
+              target={'_blank'}
+            >
               @Nadair_Thiriodh
             </a>
             <br></br>
             Find us on{' '}
-            <a className={'blog-link'} href={'https://www.facebook.com/TireeRangerService/'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.facebook.com/TireeRangerService/'}
+              target={'_blank'}
+            >
               Facebook
             </a>
             <br></br>
             Visit our{' '}
-            <a className={'blog-link'} href={'https://friendsoftiree.org.uk/blog/'}>
+            <a
+              className={'blog-link'}
+              href={'https://friendsoftiree.org.uk/blog/'}
+              target={'_blank'}
+            >
               Blog
             </a>
           </p>

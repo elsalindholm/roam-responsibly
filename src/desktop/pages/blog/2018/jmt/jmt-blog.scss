@@ -2,6 +2,7 @@
 
 .jmt-intro {
   width: 80%;
+  margin: 2% 0;
 
   display: flex;
   flex-direction: row;
@@ -16,7 +17,7 @@
     align-items: center;
     .jmt-blog-quote-text {
       margin-bottom: 2%;
-
+      font-style: italic;
       text-align: center;
       font-family: $lora;
       font-weight: 400;

@@ -48,12 +48,16 @@
   }
 
   &.banner-coll {
-    background-image: url('../../../dist/assets/blogPosts/coll/collBeach1.jpg');
+    background-image: url('../../../dist/assets/blogPosts/coll/beachClean1.jpg');
     background-position: center;
   }
   &.banner-jmt {
     background-image: url('../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet1.jpg');
     background-position: top;
+  }
+  &.banner-calmac {
+    background-image: url('../../../dist/assets/blogPosts/calMac/Harris_KatrinaStewart.jpg');
+    background-position: center;
   }
 
   .header-filter {

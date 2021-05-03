@@ -47,12 +47,15 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
           <p>
             At the outset of the #RoamResponsibly movement, we contacted a number of organisations
             with a view to collaborating to promote environmental conservation and inspire others to
-            take action to preserve Scotland's beauty. John Muir Trust (JMT), a prominent
-            conservation organisation in Scotland, were one of the first to reply and we were
-            pleased to be invited along to their Schiehallion estate in July 2017 to hear more about
-            the organisation and its ethos. The ‘walk and talk’ format gave us an opportunity to
-            have a frank discussion on some of the key issues facing Scotland's wild places and the
-            work that the organisation is doing to protect and manage these places.
+            take action to preserve Scotland's beauty.{' '}
+            <a className={'blog-link'} href={'https://www.johnmuirtrust.org/'} target={'_blank'}>
+              John Muir Trust (JMT)
+            </a>
+            , a prominent conservation organisation in Scotland, were one of the first to reply and
+            we were pleased to be invited along to their Schiehallion estate in July 2017 to hear
+            more about the organisation and its ethos. The ‘walk and talk’ format gave us an
+            opportunity to have a frank discussion on some of the key issues facing Scotland's wild
+            places and the work that the organisation is doing to protect and manage these places.
           </p>
           <div className={'blog-img , jmt-img-one'}></div>
           <p className={'blog-img-caption'}>
@@ -60,6 +63,7 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
             <a href={'https://www.instagram.com/katstewart01/'} target={'_blank'}>
               @katstewart01
             </a>
+            .
           </p>
 
           <div className={'blog-img , jmt-img-two'}></div>
@@ -68,13 +72,28 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
             <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
               @ruanaich
             </a>
+            .
           </p>
           <p>
             John Muir Trust is a charity founded in 1983 and named after John Muir, a Scot who is
-            most well-known for founding the modern conservation movement (read more about JMT).
-            JMT's mission is to protect and conserve Scotland's wild places and manage those by
-            rewilding habitats, managing deer and monitoring biodiversity (read more about JMT's
-            work).
+            most well-known for founding the modern conservation movement (
+            <a
+              className={'blog-link'}
+              href={'https://www.johnmuirtrust.org/about-us'}
+              target={'_blank'}
+            >
+              read more about JMT
+            </a>
+            ). JMT's mission is to protect and conserve Scotland's wild places and manage those by
+            rewilding habitats, managing deer and monitoring biodiversity (
+            <a
+              className={'blog-link'}
+              href={'https://www.johnmuirtrust.org/our-work'}
+              target={'_blank'}
+            >
+              read more about JMT's work
+            </a>
+            ).
           </p>
           <div className={'blog-img , jmt-img-three'}></div>
           <p className={'blog-img-caption'}>
@@ -82,6 +101,7 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
             <a href={'https://www.instagram.com/katstewart01/'} target={'_blank'}>
               @katstewart01
             </a>
+            .
           </p>
 
           <div className={'blog-img , jmt-img-four'}></div>
@@ -90,6 +110,7 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
             <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
               @ruanaich
             </a>
+            .
           </p>
           <p>
             We are in the unique position of being able to use our collective social media voice to
@@ -107,23 +128,38 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
             <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
               @ruanaich
             </a>
+            .
           </p>
 
           <p>
             One of our active campaigners Michael MacDonald (
-            <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
+            <a
+              className={'blog-link'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
               @ruanaich
             </a>
             ), who came along to the Schiehallion instameet with John Muir Trust wrote a brilliant
-            blog post 'Does social media impact on our environment? Do we have a responsibility?'
+            blog post{' '}
+            <a
+              className={'blog-link'}
+              href={'http://ruanaich.com/social-media-impact-environment-responsibility/'}
+              target={'blank'}
+            >
+              'Does social media impact on our environment? Do we have a responsibility?'
+            </a>{' '}
             discussing the impact of social media on nature and landscapes, which is something that
-            the #RoamResponsibly campaign aims to tackle. In his blog post Michael MacDonald writes:
-            'I did listen to a BBC Radio Scotland episode a while ago, where they discussed the use
-            of social media by the US National Parks to ‘forecast’ if you like, potential hot-spots
-            and manage the levels of visitors. While I hope we never get to that level of management
-            here in Scotland it does show that, as well as being a factor in the popularity of
-            certain locations, social media may potentially be used to manage and reduce harm caused
-            by an upturn in popularity.' Read the blog post here.
+            the #RoamResponsibly campaign aims to tackle. In his blog post Michael MacDonald writes:{' '}
+            <i>
+              'I did listen to a BBC Radio Scotland episode a while ago, where they discussed the
+              use of social media by the US National Parks to ‘forecast’ if you like, potential
+              hot-spots and manage the levels of visitors. While I hope we never get to that level
+              of management here in Scotland it does show that, as well as being a factor in the
+              popularity of certain locations, social media may potentially be used to manage and
+              reduce harm caused by an upturn in popularity.'
+            </i>{' '}
+            Read the blog post here.
           </p>
 
           <div className={'blog-img , jmt-img-six'}></div>
@@ -132,13 +168,34 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
             <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
               @ruanaich
             </a>
+            .
           </p>
 
           <h3>YOU CAN FIND OUT MORE ABOUT JOHN MUIR TRUST HERE:</h3>
           <ul>
-            <li>John Muir Trust</li>
-            <li>John Muir Trust on Instagram</li>
-            <li>John Muir Trust on Twitter</li>
+            <li>
+              <a className={'blog-link'} href={'https://www.johnmuirtrust.org/'} target={'_blank'}>
+                John Muir Trust
+              </a>
+            </li>
+            <li>
+              <a
+                className={'blog-link'}
+                href={'https://www.instagram.com/johnmuirtrust/'}
+                target={'_blank'}
+              >
+                John Muir Trust on Instagram
+              </a>
+            </li>
+            <li>
+              <a
+                className={'blog-link'}
+                href={'https://twitter.com/johnmuirtrust'}
+                target={'_blank'}
+              >
+                John Muir Trust on Twitter
+              </a>
+            </li>
           </ul>
 
           <div className={'blog-img , jmt-img-seven'}></div>
@@ -147,6 +204,7 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
             <a href={'https://www.instagram.com/katstewart01/'} target={'_blank'}>
               @katstewart01
             </a>
+            .
           </p>
 
           <div className={'blog-button-container'}>

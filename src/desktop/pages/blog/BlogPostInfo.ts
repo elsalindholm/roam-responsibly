@@ -56,7 +56,7 @@ export const johnMuirTrust: BlogPostInfo = {
 export const calMac: BlogPostInfo = {
   date: 'May 17, 2018',
   author: 'Elsa Lindholm',
-  title: 'INTRODUCING OUR FIRST PARTNER - CALMAC FERRIES',
+  title: 'INTRODUCING OUR FIRST PARTNER: CALMAC FERRIES',
   blurb:
     'As you know, our campaign to #RoamResponsibly has kicked off and we are very excited to introduce our first partnering organisation: CalMac Ferries, who are joining us in a mission to promote responsible outdoor access in Scotland.  ',
   image: 'calmac-blog',
