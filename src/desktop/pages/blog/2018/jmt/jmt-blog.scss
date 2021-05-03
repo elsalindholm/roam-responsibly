@@ -1,0 +1,81 @@
+@import '../../../../../app-styles.scss';
+
+.jmt-intro {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  .jmt-blog-quote {
+    width: 60%;
+    margin: 3% 3% 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .jmt-blog-quote-text {
+      margin-bottom: 2%;
+
+      text-align: center;
+      font-family: $lora;
+      font-weight: 400;
+      font-size: 1.5vw;
+    }
+
+    .jmt-blog-quote-author {
+      font-family: $lora;
+      font-style: italic;
+      font-size: 1.5vw;
+      color: $links;
+    }
+  }
+}
+
+.jmt-img-logo {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/Logo.jpg');
+  height: 12vw;
+  width: 18vw;
+}
+
+.jmt-img-one {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet1.jpg');
+  height: 38vw;
+  width: 80%;
+}
+
+.jmt-img-two {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet2.jpg');
+  height: 38vw;
+  width: 80%;
+}
+
+.jmt-img-three {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet3.jpg');
+  height: 38vw;
+  width: 80%;
+}
+
+.jmt-img-four {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet4.jpg');
+  height: 41vw;
+  width: 80%;
+}
+
+.jmt-img-five {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet5.jpg');
+  height: 38vw;
+  width: 80%;
+}
+
+.jmt-img-six {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet6.jpg');
+  height: 38vw;
+  width: 80%;
+}
+
+.jmt-img-seven {
+  background-image: url('../../../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet7.jpg');
+  height: 38vw;
+  width: 80%;
+}

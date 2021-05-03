@@ -47,6 +47,15 @@
     background-position: center;
   }
 
+  &.banner-coll {
+    background-image: url('../../../dist/assets/blogPosts/coll/collBeach1.jpg');
+    background-position: center;
+  }
+  &.banner-jmt {
+    background-image: url('../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet1.jpg');
+    background-position: top;
+  }
+
   .header-filter {
     height: 100%;
     width: 100%;

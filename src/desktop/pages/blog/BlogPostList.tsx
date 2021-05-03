@@ -42,7 +42,7 @@ export class BlogPostList extends React.PureComponent<BlogPostListProps> {
           />
           <BlogSummaryComp
             blogPostInfo={johnMuirTrust}
-            onClick={() => appState.setCurrentBlogPage(BlogPage.SURFANDTURF)}
+            onClick={() => appState.setCurrentBlogPage(BlogPage.JMT)}
           />
           <BlogSummaryComp
             blogPostInfo={calMac}

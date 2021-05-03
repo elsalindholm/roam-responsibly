@@ -4,11 +4,18 @@ import React from 'react';
 import './blog.scss';
 import { SurfAndTurfBlog } from './2018/surfAndTurf/SurfAndTurf';
 import { BlogPostList } from './BlogPostList';
-import { collBeachClean, hiddenScotland, marineConSoc, surfAndTurf } from './BlogPostInfo';
+import {
+  collBeachClean,
+  hiddenScotland,
+  johnMuirTrust,
+  marineConSoc,
+  surfAndTurf,
+} from './BlogPostInfo';
 import { AppState, BlogPage } from '../../../AppState';
 import { HiddenScotlandBlog } from './2018/hiddenScotland/hiddenScotland';
 import { McsBlog } from './2018/mcs/mcs';
 import { CollBeachCleanBlog } from './2018/coll/collBeachClean';
+import { JMTInstameetBlog } from './2018/jmt/JmtBlog';
 
 export interface BlogProps {
   appState: AppState;
@@ -35,6 +42,9 @@ export class Blog extends React.PureComponent<BlogProps> {
         break;
       case BlogPage.COLL:
         blogPage = <CollBeachCleanBlog blogPostInfo={collBeachClean} appState={appState} />;
+        break;
+      case BlogPage.JMT:
+        blogPage = <JMTInstameetBlog blogPostInfo={johnMuirTrust} appState={appState} />;
         break;
     }
 

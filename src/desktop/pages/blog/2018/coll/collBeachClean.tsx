@@ -35,28 +35,63 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
           </div>
 
           <p>
-            Both @berriestagram and I (@elsaannukka)love the Scottish Islands - we have been on many
-            island trips. Last summer we went to visit Isle of Eigg together and just a couple of
-            weeks ago we visited Isle of Coll for the first time. The plan was to explore the island
-            and take part in the Isle of Coll Bird Festival, which is a one-weekend event in May
-            (this year 18th - 20th May) organised by An Cridhe and Coll Bunkhouse management team
-            with considerable input and support from RSPB team.
+            Both{' '}
+            <a href={'https://www.instagram.com/berriestagram/'} target={'_blank'}>
+              @berriestagram
+            </a>{' '}
+            and I (
+            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+              @elsaannukka
+            </a>
+            ) love the Scottish Islands - we have been on many island trips. Last summer we went to
+            visit Isle of Eigg together and just a couple of weeks ago we visited Isle of Coll for
+            the first time. The plan was to explore the island and take part in the Isle of Coll
+            Bird Festival, which is a one-weekend event in May (this year 18th - 20th May) organised
+            by{' '}
+            <a href={'https://ancridhe.com/'} target={'_blank'}>
+              An Cridhe
+            </a>{' '}
+            and{' '}
+            <a href={'https://collbunkhouse.com/'} target={'_blank'}>
+              Coll Bunkhouse
+            </a>{' '}
+            management team with considerable input and support from{' '}
+            <a
+              href={'https://www.rspb.org.uk/reserves-and-events/reserves-a-z/coll/'}
+              target={'_blank'}
+            >
+              RSPB team
+            </a>
+            .
           </p>
           <div className={'blog-img , coll-clansman'}></div>
           <p className={'blog-img-caption'}>
-            The Clansman approaching Coll. Photo by @elsaannukka.
+            The Clansman approaching Coll. Photo by{' '}
+            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+              @elsaannukka
+            </a>
+            .
           </p>
 
           <p>
             We ended up arriving to the island on Saturday evening. Despite the amber weather
-            warning earlier in the day, our sailing with CalMac Ferries was actually very
-            comfortable and smooth. However, the weather forecast did not look promising for the
-            rest of the weekend. We were shattered from our long travel to Coll and so glad to check
-            in to our holiday apartment.
+            warning earlier in the day, our sailing with{' '}
+            <a href={'https://www.calmac.co.uk/'} target={'_blank'}>
+              CalMac Ferries
+            </a>{' '}
+            was actually very comfortable and smooth. However, the weather forecast did not look
+            promising for the rest of the weekend. We were shattered from our long travel to Coll
+            and so glad to check in to our holiday apartment.
           </p>
 
           <div className={'blog-img , coll-beach'}></div>
-          <p className={'blog-img-caption'}>Photo by @elsaannukka.</p>
+          <p className={'blog-img-caption'}>
+            Photo by{' '}
+            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+              @elsaannukka
+            </a>
+            .
+          </p>
 
           <p>
             The next morning, we got up and ready for a stroll around the island. Our destination
@@ -71,16 +106,27 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
 
           <div className={'coll-two-columns'}>
             <p>
-              With this blog post, I am pleased to introduce you to our newest partners: An Cridhe
-              and Coll Bunkhouse. Together, we had very inspiring conservations about sustainable
-              travel and the #RoamResponsibly campaign and both organisations were thrilled to get
-              involved. An Cridhe is Coll's recently built community centre and Coll Bunkhouse is a
-              very affordably-priced 5-star hostel right next to it in the centre of Coll's main
-              village Arinagour. Both are managed by lovely and hospitable staff and housed in
-              beautiful new buildings, which have been built to a high environmentally friendly
-              standard. They provide income, facilities and fun activities for the local community
-              and visitors. Both An Cridhe and Coll Bunkhouse are owned and operated by the Coll
-              community through their development trust and charity Development Coll Limited.
+              With this blog post, I am pleased to introduce you to our newest partners:{' '}
+              <a href={'https://ancridhe.com/'} target={'_blank'}>
+                An Cridhe
+              </a>
+              and{' '}
+              <a href={'https://collbunkhouse.com/'} target={'_blank'}>
+                Coll Bunkhouse
+              </a>
+              . Together, we had very inspiring conservations about sustainable travel and the
+              #RoamResponsibly campaign and both organisations were thrilled to get involved. An
+              Cridhe is Coll's recently built community centre and Coll Bunkhouse is a very
+              affordably-priced 5-star hostel right next to it in the centre of Coll's main village
+              Arinagour. Both are managed by lovely and hospitable staff and housed in beautiful new
+              buildings, which have been built to a high environmentally friendly standard. They
+              provide income, facilities and fun activities for the local community and visitors.
+              Both An Cridhe and Coll Bunkhouse are owned and operated by the Coll community through
+              their development trust and charity{' '}
+              <a href={'https://developmentcoll.org.uk/'} target={'_blank'}>
+                Development Coll Limited
+              </a>
+              .
             </p>
             <div className={'coll-img-column'}>
               <div className={'blog-img , coll-an-cridhe-logo'}></div>
@@ -91,11 +137,20 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
           <div className={'blog-img , coll-seals'}></div>
           <p className={'blog-img-caption'}>
             A large group of seals (maybe around 20) were following us along the beach. Photo by
-            @elsaannukka.
+            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+              @elsaannukka
+            </a>
+            .
           </p>
 
           <div className={'blog-img , coll-rocky-beach'}></div>
-          <p className={'blog-img-caption'}>Photo by @elsaannukka.</p>
+          <p className={'blog-img-caption'}>
+            Photo by{' '}
+            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+              @elsaannukka
+            </a>
+            .
+          </p>
 
           <p>
             Coll has numerous beautiful beaches with tall sand dunes and majesic rocky edges.
@@ -110,7 +165,13 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
           </p>
 
           <div className={'blog-img , coll-beach-clean-one'}></div>
-          <p className={'blog-img-caption'}>Crossapol beach clean. Photo by @elsaannukka.</p>
+          <p className={'blog-img-caption'}>
+            Crossapol beach clean. Photo by{' '}
+            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+              @elsaannukka
+            </a>
+            .
+          </p>
 
           <p>
             During the beach clean, we had fantastic conversations with Jane about waste problems on
@@ -143,7 +204,13 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
           </p>
 
           <div className={'blog-img , coll-sunset'}></div>
-          <p className={'blog-img-caption'}>Sunset in Arinagour. Photo by @elsaannukka.</p>
+          <p className={'blog-img-caption'}>
+            Sunset in Arinagour. Photo by{' '}
+            <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
+              @elsaannukka
+            </a>
+            .
+          </p>
 
           <p>
             The weather was not on our side and we had to spend most of Monday indoors. When the sky
@@ -163,11 +230,34 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
 
           <h3>BELOW ARE SOME USEFUL LINKS:</h3>
           <ul>
-            <li>An Cridhe</li>
-            <li>Coll Bunkhouse</li>
-            <li>VisitColl</li>
-            <li>CalMac Ferries</li>
-            <li>RSPB Coll</li>
+            <li>
+              <a href={'https://ancridhe.com/'} target={'_blank'}>
+                An Cridhe
+              </a>
+            </li>
+            <li>
+              <a href={'https://collbunkhouse.com/'} target={'_blank'}>
+                Coll Bunkhouse
+              </a>
+            </li>
+            <li>
+              <a href={'http://visitcoll.co.uk/'} target={'_blank'}>
+                VisitColl
+              </a>
+            </li>
+            <li>
+              <a href={'https://www.calmac.co.uk/'} target={'_blank'}>
+                CalMac Ferries
+              </a>
+            </li>
+            <li>
+              <a
+                href={'https://www.rspb.org.uk/reserves-and-events/reserves-a-z/coll/'}
+                target={'_blank'}
+              >
+                RSPB Coll
+              </a>
+            </li>
           </ul>
 
           <div className={'blog-button-container'}>
