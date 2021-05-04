@@ -27,9 +27,9 @@ export enum BlogPage {
 }
 
 export class AppState {
-  @observable public curPage: Page = Page.BLOG;
-  @observable public curAboutPage: AboutPage = AboutPage.CAMPAIGN;
-  @observable public curBlogPage: BlogPage = BlogPage.HIDDENSCOTLAND;
+  @observable public curPage: Page = Page.ABOUT;
+  @observable public curAboutPage: AboutPage = AboutPage.INSTAGRAMMERS;
+  @observable public curBlogPage: BlogPage = BlogPage.BLOGLIST;
 
   @action public setCurrentPage(page: Page) {
     var myDiv = document.getElementById('app-root');

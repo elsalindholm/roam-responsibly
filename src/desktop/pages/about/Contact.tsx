@@ -18,28 +18,39 @@ export class Contact extends React.PureComponent {
         <h2>EMAIL</h2>
         <p>
           <strong>General Enquiries:</strong>
+          <br></br>
+          contactroamresponsibly@gmail.com
         </p>
-        <p>contactroamresponsibly@gmail.com</p>
         <p>
           <strong>Campaign Manager</strong>
-        </p>
-        <p>
+          <br></br>
           <a
-            href={'https://www.instagram.com/elsaannukka/?hl=en'}
+            href={'https://www.instagram.com/elsaannukka/'}
             target={'_blank'}
             className={'link-underlined'}
           >
             @elsaannukka
           </a>
+          <br></br>
+          elsaannukka@gmail.com
         </p>
-        <p>elsaannukka@gmail.com</p>
         <section>
           <h2>LOGO</h2>
           <div></div>
           <p>
             Our brilliant logo is the work of Michael MacDonald.
-            <br></br>@ruanaich
-            <br></br>Link to website
+            <br></br>
+            <a
+              className={'link-underlined'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
+              @ruanaich
+            </a>
+            <br></br>
+            <a className={'link-underlined'} href={'http://ruanaich.com/'} target={'_blank'}>
+              www.ruanaich.com
+            </a>
           </p>
         </section>
         <section>
@@ -47,7 +58,14 @@ export class Contact extends React.PureComponent {
           <p>
             Website and images used on this website (unless otherwise stated) are the work of Elsa
             Lindholm.
-            <br></br>@elsaannukka
+            <br></br>
+            <a
+              className={'link-underlined'}
+              href={'https://www.instagram.com/elsaannukka/'}
+              target={'_blank'}
+            >
+              @elsaannukka
+            </a>
             <br></br>Link to website
           </p>
         </section>

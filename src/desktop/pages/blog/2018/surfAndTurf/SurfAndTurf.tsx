@@ -100,7 +100,7 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
 
           <div className={'blog-img , saf-view-of-tiree'}></div>
           <p className={'blog-img-caption'}>
-            Looking out towards Coll and Tiree from north-west Mull.
+            Looking out towards Coll and Tiree from north-west Mull. Photo by Stephanie Cope.
           </p>
 
           <p>
@@ -116,9 +116,13 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           </p>
 
           <div className={'blog-img , saf-finn-mellon'}></div>
-          <p className={'blog-img-caption'}>Finn Mellon, competing at Tiree Wave Classic 2017.</p>
+          <p className={'blog-img-caption'}>
+            Finn Mellon, competing at Tiree Wave Classic 2017. Photo by Stephanie Cope.
+          </p>
           <div className={'blog-img , saf-traigh-thodhrasdail'}></div>
-          <p className={'blog-img-caption'}>Gearing up for a full day on Traigh Thodhrasdail.</p>
+          <p className={'blog-img-caption'}>
+            Gearing up for a full day on Traigh Thodhrasdail. Photo by Stephanie Cope.
+          </p>
 
           <p>
             The island’s slim profile creates its most precious and spectacular habitat: machair.
@@ -130,9 +134,13 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           </p>
 
           <div className={'blog-img , saf-first-machair'}></div>
-          <p className={'blog-img-caption'}>The first machair flowers in April.</p>
+          <p className={'blog-img-caption'}>
+            The first machair flowers in April. Photo by Stephanie Cope.
+          </p>
           <div className={'blog-img , saf-machair-evening'}></div>
-          <p className={'blog-img-caption'}>Tiree machair on a late summer evening.</p>
+          <p className={'blog-img-caption'}>
+            Tiree machair on a late summer evening. Photo by Stephanie Cope.
+          </p>
 
           <p>
             As the days lengthen purple orchids, perfumed clover and bright trefoil create a
@@ -144,11 +152,12 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
 
           <div className={'blog-img , saf-corncrake'}></div>
           <p className={'blog-img-caption'}>
-            Crofting on Tiree supports a third of our UK Corncrake population.
+            Crofting on Tiree supports a third of our UK Corncrake population. Photo by Stephanie
+            Cope.
           </p>
           <div className={'blog-img , saf-brown-hare'}></div>
           <p className={'blog-img-caption'}>
-            Tiree is famous for its population of introduced Brown Hares.
+            Tiree is famous for its population of introduced Brown Hares. Photo by Stephanie Cope.
           </p>
 
           <p>
@@ -211,10 +220,12 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           <div className={'blog-img , saf-redshank'}></div>
           <p className={'blog-img-caption'}>
             This Redshank chick is just one of the many groundnesting birds that breed on Tiree.
+            Photo by Stephanie Cope.
           </p>
           <div className={'blog-img , saf-highland-cow'}></div>
           <p className={'blog-img-caption'}>
-            Small-scale, traditional crofting underpins Tiree's incredible biodiversity.
+            Small-scale, traditional crofting underpins Tiree's incredible biodiversity. Photo by
+            Stephanie Cope.
           </p>
 
           <p>
@@ -276,10 +287,12 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
           </p>
 
           <div className={'blog-img , saf-wildflowers'}></div>
-          <p className={'blog-img-caption'}>Wildflower vereges along Traigh Sorobidh.</p>
+          <p className={'blog-img-caption'}>
+            Wildflower vereges along Traigh Sorobidh. Photo by Stephanie Cope.
+          </p>
           <div className={'blog-img , saf-traigh-caolas'}></div>
           <p className={'blog-img-caption'}>
-            Traigh Caolas, with Ben More of Mull in the distance.
+            Traigh Caolas, with Ben More of Mull in the distance. Photo by Stephanie Cope.
           </p>
 
           <div className={'blog-button-container'}>

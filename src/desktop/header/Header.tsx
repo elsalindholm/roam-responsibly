@@ -20,14 +20,40 @@ export class Header extends React.PureComponent<HeaderProps> {
         <div className={'navbar-container'}>
           <div className={'navbar-logo'}></div>
           <nav className={'navbar-button-container'}>
-            <button onClick={() => appState.setCurrentPage(Page.HOME)}>HOME</button>
-            <button onClick={() => appState.setCurrentPage(Page.ABOUT)}>ABOUT</button>
-            <button onClick={() => appState.setCurrentPage(Page.CHARTER)}>CHARTER</button>
-            <button onClick={() => appState.setCurrentPage(Page.SOAC)}>
+            <button
+              className={this.getClassName(Page.HOME)}
+              onClick={() => appState.setCurrentPage(Page.HOME)}
+            >
+              HOME
+            </button>
+            <button
+              className={this.getClassName(Page.ABOUT)}
+              onClick={() => appState.setCurrentPage(Page.ABOUT)}
+            >
+              ABOUT
+            </button>
+            <button
+              className={this.getClassName(Page.CHARTER)}
+              onClick={() => appState.setCurrentPage(Page.CHARTER)}
+            >
+              CHARTER
+            </button>
+            <button
+              className={this.getClassName(Page.SOAC)}
+              onClick={() => appState.setCurrentPage(Page.SOAC)}
+            >
               SCOTTISH OUTDOOR ACCESS CODE
             </button>
-            <button onClick={() => appState.setCurrentPage(Page.BLOG)}>BLOG</button>
-            <button onClick={() => appState.setCurrentPage(Page.SPREADWORD)}>
+            <button
+              className={this.getClassName(Page.BLOG)}
+              onClick={() => appState.setCurrentPage(Page.BLOG)}
+            >
+              BLOG
+            </button>
+            <button
+              className={this.getClassName(Page.SPREADWORD)}
+              onClick={() => appState.setCurrentPage(Page.SPREADWORD)}
+            >
               SPREAD THE WORD
             </button>
           </nav>
@@ -154,5 +180,15 @@ export class Header extends React.PureComponent<HeaderProps> {
         break;
     }
     return bannerImage;
+  }
+
+  private getClassName(heading: Page) {
+    let headerClass = 'header-button';
+
+    const current = this.props.appState.curPage;
+    if (heading === current) {
+      headerClass += ' selected';
+    }
+    return headerClass;
   }
 }

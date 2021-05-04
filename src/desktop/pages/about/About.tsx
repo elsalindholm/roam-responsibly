@@ -40,16 +40,43 @@ export class About extends React.PureComponent<AboutPageProps> {
       <div className={'about-page'}>
         <nav className={'about-page-nav'}>
           <p className={'about-nav-title'}>ABOUT</p>
-          <button onClick={() => appState.setCurrentAboutPage(AboutPage.CAMPAIGN)}>CAMPAIGN</button>
+          <button
+            className={this.getClassName(AboutPage.CAMPAIGN)}
+            onClick={() => appState.setCurrentAboutPage(AboutPage.CAMPAIGN)}
+          >
+            CAMPAIGN
+          </button>
 
-          <button onClick={() => appState.setCurrentAboutPage(AboutPage.INSTAGRAMMERS)}>
+          <button
+            className={this.getClassName(AboutPage.INSTAGRAMMERS)}
+            onClick={() => appState.setCurrentAboutPage(AboutPage.INSTAGRAMMERS)}
+          >
             INSTAGRAMMERS
           </button>
-          <button onClick={() => appState.setCurrentAboutPage(AboutPage.PARTNERS)}>PARTNERS</button>
-          <button onClick={() => appState.setCurrentAboutPage(AboutPage.CONTACT)}>CONTACT</button>
+          <button
+            className={this.getClassName(AboutPage.PARTNERS)}
+            onClick={() => appState.setCurrentAboutPage(AboutPage.PARTNERS)}
+          >
+            PARTNERS
+          </button>
+          <button
+            className={this.getClassName(AboutPage.CONTACT)}
+            onClick={() => appState.setCurrentAboutPage(AboutPage.CONTACT)}
+          >
+            CONTACT
+          </button>
         </nav>
         <div className={'about-page-cont'}>{aboutPage}</div>
       </div>
     );
+  }
+  private getClassName(heading: AboutPage) {
+    let aboutHeaderClass = 'about-header-button';
+    const current = this.props.appState.curAboutPage;
+
+    if (heading === current) {
+      aboutHeaderClass += ' selected';
+    }
+    return aboutHeaderClass;
   }
 }

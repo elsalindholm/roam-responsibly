@@ -7,14 +7,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
-
-  //border: 1px solid orange;
+  align-items: flex-start;
 
   .about-page-nav {
     height: auto;
     width: 20%;
-    padding: 2% 0;
+    padding: 3% 0;
 
     display: flex;
     flex-direction: column;
@@ -30,18 +28,26 @@
       color: $dark-text;
     }
 
-    button {
+    .about-header-button {
       outline: none;
       background: none;
       border: none;
 
-      margin: 5% 0 5% 0;
+      margin: 5% 0;
 
       font-family: $navbar;
       font-weight: 500;
       font-size: 1vw;
       letter-spacing: 0.1vw;
       color: $links;
+      opacity: 0.6;
+
+      &.selected {
+        opacity: 1;
+
+        //padding-left: 5%;
+        //border-left: 3px solid $links;
+      }
 
       &:hover {
         cursor: pointer;
@@ -63,7 +69,6 @@
   .about-page-cont {
     height: auto;
     width: 80%;
-
-    //border: 1px solid pink;
+    padding: 2% 0;
   }
 }
