@@ -51,5 +51,5 @@ export const msc: CampaignPartner = {
   name: 'Marine Conservation Society',
   styleClass: 'msc',
   image: '../../../dist/assets/MSCLogo.png',
-  link: 'https://www.mcsuk.org/scotland/scotland',
+  link: 'https://www.mcsuk.org/',
 };

@@ -11,15 +11,15 @@ export class Soac extends React.PureComponent {
         <section>
           <h3>
             Scotland is one of a handful of countries with very good Access Rights for the general
-            public. However, with this privilege also comes responsibility to look after and not
-            exploit the Scottish landscape.
+            public. However, with this privilege comes responsibility to look after and not exploit
+            the Scottish landscape.
           </h3>
           <p>
-            In Scotland, people have access to most of the Scottish outdoors, which is set in{' '}
+            In Scotland, people can access to most of the Scottish outdoors (set out in{' '}
             <a target={'_blank'} className={'link-underlined'}>
               The Land Reform (Scotland) Act 2003
             </a>
-            .
+            ).
           </p>
           <p>
             <a target={'_blank'} className={'link-underlined'}>

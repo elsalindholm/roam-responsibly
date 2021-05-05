@@ -66,7 +66,6 @@ export class Contact extends React.PureComponent {
             >
               @elsaannukka
             </a>
-            <br></br>Link to website
           </p>
         </section>
       </main>
