@@ -3,6 +3,7 @@ import React from 'react';
 import { AppState } from './AppState';
 
 import { DesktopApp } from './desktop/DesktopApp';
+import { MobileApp } from './mobile/MobileApp';
 
 @observer
 export class App extends React.PureComponent {
@@ -11,7 +12,7 @@ export class App extends React.PureComponent {
   public render() {
     return (
       <div>
-        <DesktopApp appState={this.appState} />
+        <MobileApp appState={this.appState} />
       </div>
     );
   }

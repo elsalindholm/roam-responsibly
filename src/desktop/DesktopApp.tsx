@@ -12,8 +12,6 @@ import { About } from './pages/about/About';
 import { Footer } from './footer/Footer';
 
 import './desktop-app.scss';
-import { johnMuirTrust, surfAndTurf } from './pages/blog/BlogPostInfo';
-import { jmTrust } from './pages/about/CampaignPartners';
 
 export interface DesktopAppProps {
   appState: AppState;
