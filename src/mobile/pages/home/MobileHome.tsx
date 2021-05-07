@@ -1,5 +1,8 @@
 import React from 'react';
 
+import './mobile-home.scss';
+import '../../../appStyles/mobile-app-styles.scss';
+
 export class MobileHome extends React.PureComponent {
   render() {
     return (
@@ -16,11 +19,11 @@ export class MobileHome extends React.PureComponent {
         <div className={'home-page-links'}>
           <section>
             <h2>What is the Scottish Outdoor Access Code?</h2>
-            <a className={'link-underlined'}>Read more here</a>
+            <a>Read more here</a>
           </section>
           <section>
             <h2>Want to know more about our social media campaign?</h2>
-            <a className={'link-underlined'}>Read more here</a>
+            <a>Read more here</a>
           </section>
         </div>
       </main>

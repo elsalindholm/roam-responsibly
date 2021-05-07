@@ -1,0 +1,52 @@
+@import '../../appStyles/app-styles.scss';
+
+.mfooter {
+  height: 10vh;
+  width: 100%;
+
+  background-color: $banner-filter;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .msome-link-container {
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      width: 30px;
+      margin: 0 5%;
+      display: block;
+      border: none;
+
+      font-size: 29px;
+      &.fb-logo {
+        height: 30px;
+        background-image: url('../../../dist/assets/FacebookLogoWhite.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &.ig-logo {
+        height: 30px;
+        background-image: url('../../../dist/assets/IG_Icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &.tw-logo {
+        height: 26px;
+        background-image: url('../../../dist/assets/2021\ Twitter\ logo\ -\ white.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

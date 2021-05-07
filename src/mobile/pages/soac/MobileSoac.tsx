@@ -1,25 +1,25 @@
-import { observer } from 'mobx-react';
 import React from 'react';
 
-import './soac.scss';
-import '../../../appStyles/desktop-app.scss';
+import './mobile-soac.scss';
+import '../../../appStyles/mobile-app-styles.scss';
 
-@observer
-export class Soac extends React.PureComponent {
+export class MobileSoac extends React.PureComponent {
   render() {
     return (
       <main className={'soac-page'}>
         <section>
-          <h3>
+          <p>
             Scotland is one of a handful of countries with very good Access Rights for the general
-            public. However, with this privilege comes responsibility to look after and not exploit
-            the Scottish landscape.
-          </h3>
+            public.
+          </p>
+          <p>
+            However, with this privilege comes responsibility to look after and not exploit the
+            Scottish landscape.
+          </p>
           <p>
             In Scotland, people can access to most of the Scottish outdoors (set out in{' '}
             <a
               target={'_blank'}
-              className={'link-underlined'}
               href={
                 'https://www.outdooraccess-scotland.scot/act-and-access-code/land-reform-act/land-reform-act-legal'
               }
@@ -31,7 +31,6 @@ export class Soac extends React.PureComponent {
           <p>
             <a
               target={'_blank'}
-              className={'link-underlined'}
               href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
             >
               The Scottish Outdoor Access Code
@@ -42,7 +41,6 @@ export class Soac extends React.PureComponent {
           </p>
           <p>
             <a
-              className={'soac-link, link-underlined'}
               target={'_blank'}
               href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
             >

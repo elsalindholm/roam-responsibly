@@ -175,7 +175,6 @@ export class Header extends React.PureComponent<HeaderProps> {
       case Page.SOAC:
         bannerImage = 'banner-soac';
         break;
-
       case Page.SPREADWORD:
         bannerImage = 'banner-spreadword';
         break;
