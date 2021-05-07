@@ -1,10 +1,11 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { AppState, BlogPage } from '../../../../../AppState';
 
+import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../BlogPostInfo';
 
 import './calmac-blog.scss';
+import '../../../../../appStyles/desktop-app.scss';
 
 interface CalMacProps {
   blogPostInfo: BlogPostInfo;

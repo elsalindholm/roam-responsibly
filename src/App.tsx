@@ -12,7 +12,7 @@ export class App extends React.PureComponent {
   public render() {
     return (
       <div>
-        <MobileApp appState={this.appState} />
+        <DesktopApp appState={this.appState} />
       </div>
     );
   }

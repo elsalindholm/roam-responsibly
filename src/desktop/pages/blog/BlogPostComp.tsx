@@ -4,6 +4,7 @@ import React from 'react';
 import { BlogPostInfo } from './BlogPostInfo';
 
 import './blog-post-comp.scss';
+import '../../../appStyles/desktop-app.scss';
 
 interface BlogPostCompProps {
   blogPostInfo: BlogPostInfo;

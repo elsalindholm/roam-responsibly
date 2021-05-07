@@ -1,13 +1,14 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { AboutPage, AppState } from '../../../AppState';
 
+import { AboutPage, AppState } from '../../../AppState';
 import { Campaign } from './Campaign';
 import { Instagrammers } from './Instagrammers';
 import { Partners } from './Partners';
+import { Contact } from './Contact';
 
 import './about.scss';
-import { Contact } from './Contact';
+import '../../../appStyles/desktop-app.scss';
 
 export interface AboutPageProps {
   appState: AppState;

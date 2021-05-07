@@ -4,6 +4,7 @@ import React from 'react';
 import { AboutPage, AppState, BlogPage, Page } from '../../AppState';
 
 import './header.scss';
+import '../../appStyles/header-banner-images.scss';
 
 interface HeaderProps {
   appState: AppState;

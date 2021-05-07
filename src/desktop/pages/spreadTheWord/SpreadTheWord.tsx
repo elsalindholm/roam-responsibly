@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './spread-the-word.scss';
+import '../../../appStyles/desktop-app.scss';
 
 export class SpreadWord extends React.PureComponent {
   render() {

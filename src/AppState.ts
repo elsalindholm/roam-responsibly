@@ -27,7 +27,7 @@ export enum BlogPage {
 }
 
 export class AppState {
-  @observable public curPage: Page = Page.ABOUT;
+  @observable public curPage: Page = Page.HOME;
   @observable public curAboutPage: AboutPage = AboutPage.INSTAGRAMMERS;
   @observable public curBlogPage: BlogPage = BlogPage.BLOGLIST;
 

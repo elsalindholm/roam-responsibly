@@ -1,0 +1,56 @@
+@import '../appStyles/app-styles.scss';
+
+/////////Main Pages
+
+.banner-home {
+  background-image: url('../../dist/assets/bannerImages/home.JPG');
+  background-position: center;
+}
+.banner-about {
+  background-image: url('../../dist/assets/bannerImages/about.jpg');
+  background-position: center;
+}
+.banner-charter {
+  background-image: url('../../dist/assets/bannerImages/charter.jpg');
+  background-position: center;
+}
+.banner-soac {
+  background-image: url('../../dist/assets/bannerImages/soac.JPG');
+  background-position: center;
+}
+.banner-blog {
+  background-image: url('../../dist/assets/bannerImages/blog.JPG');
+  background-position: center;
+}
+.banner-spreadword {
+  background-image: url('../../dist/assets/bannerImages/spreadword.jpg');
+  background-position: center;
+}
+
+///////Blog Posts
+
+.banner-surf-and-turf {
+  background-image: url('../../dist/assets/bannerImages/RedshankChick.JPG');
+  background-position: center;
+}
+.banner-hidden-scotland {
+  background-image: url('../../dist/assets/bannerImages/storrHiddenScotland.jpg');
+  background-position: top;
+}
+.banner-mcs {
+  background-image: url('../../dist/assets/bannerImages/ShoreYouCare_SusanneArbuckle.jpeg');
+  background-position: center;
+}
+
+.banner-coll {
+  background-image: url('../../dist/assets/blogPosts/coll/beachClean1.jpg');
+  background-position: center;
+}
+.banner-jmt {
+  background-image: url('../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet1.jpg');
+  background-position: top;
+}
+.banner-calmac {
+  background-image: url('../../dist/assets/blogPosts/calMac/Harris_KatrinaStewart.jpg');
+  background-position: center;
+}

@@ -1,8 +1,10 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+
 import { BlogPostInfo } from './BlogPostInfo';
 
 import './blog-summary-comp.scss';
+import '../../../appStyles/desktop-app.scss';
 
 interface BlogSummaryCompProps {
   blogPostInfo: BlogPostInfo;

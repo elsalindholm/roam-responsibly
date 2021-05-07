@@ -1,9 +1,10 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import './partner-comp.scss';
-
 import { CampaignPartner } from './CampaignPartners';
+
+import './partner-comp.scss';
+import '../../../appStyles/desktop-app.scss';
 
 interface PartnerCompProps {
   campaignPartner: CampaignPartner;

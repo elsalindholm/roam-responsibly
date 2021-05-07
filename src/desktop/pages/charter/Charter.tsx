@@ -2,6 +2,7 @@ import { observer } from 'mobx-react';
 import React from 'react';
 
 import './charter.scss';
+import '../../../appStyles/desktop-app.scss';
 
 @observer
 export class Charter extends React.PureComponent {

@@ -1,9 +1,6 @@
 import React from 'react';
 
-import './home.scss';
-import '../../../appStyles/desktop-app.scss';
-
-export class Home extends React.PureComponent {
+export class MobileHome extends React.PureComponent {
   render() {
     return (
       <main className={'home-page'}>

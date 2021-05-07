@@ -4,6 +4,7 @@ import { AppState } from '../AppState';
 import { MobileHeader } from './header/MobileHeader';
 
 import './mobile-app.scss';
+import { MobileHome } from './pages/home/MobileHome';
 
 interface MobileAppProps {
   appState: AppState;
@@ -15,6 +16,11 @@ export class MobileApp extends React.PureComponent<MobileAppProps> {
     return (
       <div className={'app-container'}>
         <MobileHeader appState={this.props.appState} />
+        <div className={'mbody'}>
+          <div className={'mmain-page-container'}>
+            <MobileHome />
+          </div>
+        </div>
       </div>
     );
   }

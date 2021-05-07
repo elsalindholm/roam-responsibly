@@ -1,8 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import './partners.scss';
-
 import {
   anCridhe,
   calMac,
@@ -13,6 +11,9 @@ import {
   visitArran,
 } from './CampaignPartners';
 import { PartnerComp } from './PartnerComp';
+
+import './partners.scss';
+import '../../../appStyles/desktop-app.scss';
 
 @observer
 export class Partners extends React.PureComponent {

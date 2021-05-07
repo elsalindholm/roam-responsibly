@@ -1,7 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import './blog.scss';
 import { SurfAndTurfBlog } from './2018/surfAndTurf/SurfAndTurf';
 import { BlogPostList } from './BlogPostList';
 import {
@@ -18,6 +17,9 @@ import { McsBlog } from './2018/mcs/mcs';
 import { CollBeachCleanBlog } from './2018/coll/collBeachClean';
 import { JMTInstameetBlog } from './2018/jmt/JmtBlog';
 import { CalMacBlog } from './2018/calmac/CalMacBlog';
+
+import './blog.scss';
+import '../../../appStyles/desktop-app.scss';
 
 export interface BlogProps {
   appState: AppState;

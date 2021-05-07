@@ -2,6 +2,7 @@ import { observer } from 'mobx-react';
 import React from 'react';
 
 import './instagrammers.scss';
+import '../../../appStyles/desktop-app.scss';
 
 @observer
 export class Instagrammers extends React.PureComponent {
