@@ -1,0 +1,15 @@
+@import '../../../../appStyles/app-styles.scss';
+
+.mig-page {
+  height: auto;
+  width: 100%;
+
+  .mig-list {
+    padding: 0 0 0 0;
+    text-align: center;
+    li {
+      margin: 10% 0;
+      list-style-type: none;
+    }
+  }
+}

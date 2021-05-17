@@ -9,7 +9,7 @@ import {
   jmTrust,
   msc,
   visitArran,
-} from './CampaignPartners';
+} from '../../../appData/CampaignPartners';
 import { PartnerComp } from './PartnerComp';
 
 import './partners.scss';

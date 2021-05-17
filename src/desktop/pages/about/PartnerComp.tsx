@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import { CampaignPartner } from './CampaignPartners';
+import { CampaignPartner } from '../../../appData/CampaignPartners';
 
 import './partner-comp.scss';
 import '../../../appStyles/desktop-app.scss';

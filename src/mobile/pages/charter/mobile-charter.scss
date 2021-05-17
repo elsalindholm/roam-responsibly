@@ -1,0 +1,15 @@
+@import '../../../appStyles/app-styles.scss';
+
+.mmain-charter-list {
+  height: auto;
+  width: 100%;
+  padding: 0 0 0 8%;
+
+  font-family: $lora;
+
+  .mnested-charter-list {
+    height: auto;
+    width: 100%;
+    padding: 0 0 0 10%;
+  }
+}
