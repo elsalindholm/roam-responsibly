@@ -1,0 +1,16 @@
+@import '../../.././../appStyles/app-styles.scss';
+
+.mcontact-page {
+  height: auto;
+  width: 100%;
+
+  section {
+    margin: 0 0 7% 0;
+    text-align: left;
+  }
+
+  &h2 {
+    margin: 0;
+    padding: 0;
+  }
+}

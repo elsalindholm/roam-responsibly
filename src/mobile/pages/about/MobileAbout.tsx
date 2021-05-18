@@ -3,6 +3,7 @@ import React from 'react';
 
 import { AboutPage, AppState } from '../../../AppState';
 import { MobileCampaign } from './campaign/MobileCampaign';
+import { MobileContact } from './contact/MobileContact';
 import { MobileInstagrammers } from './instagrammers/MobileInstagrammers';
 import { MobilePartners } from './partners/MobilePartners';
 
@@ -25,6 +26,10 @@ export class MobileAbout extends React.PureComponent<MobileAboutPageProps> {
         break;
       case AboutPage.PARTNERS:
         aboutPage = <MobilePartners />;
+        break;
+      case AboutPage.CONTACT:
+        aboutPage = <MobileContact />;
+        break;
     }
 
     return <div className={'mabout-page'}>{aboutPage}</div>;
