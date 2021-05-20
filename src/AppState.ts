@@ -27,8 +27,8 @@ export enum BlogPage {
 }
 
 export class AppState {
-  @observable public curPage: Page = Page.BLOG;
-  @observable public curAboutPage: AboutPage = AboutPage.PARTNERS;
+  @observable public curPage: Page = Page.SPREADWORD;
+  @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
   @observable public curBlogPage: BlogPage = BlogPage.BLOGLIST;
 
   @action public setCurrentPage(page: Page) {

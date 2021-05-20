@@ -5,6 +5,8 @@ import { AppState, BlogPage } from '../../../AppState';
 import { MobileBlogList } from './MobileBlogList';
 
 import './mobile-blog.scss';
+import { MobileSurfAndTurfBlog } from './2018/surfAndTurf/MobileSurfAndTurfBlog';
+import { surfAndTurf } from '../../../appData/BlogPostInfo';
 
 interface MobileBlogProps {
   appState: AppState;
@@ -19,6 +21,9 @@ export class MobileBlog extends React.PureComponent<MobileBlogProps> {
     switch (appState.curBlogPage) {
       case BlogPage.BLOGLIST:
         blogPage = <MobileBlogList appState={appState} />;
+        break;
+      case BlogPage.SURFANDTURF:
+        blogPage = <MobileSurfAndTurfBlog blogPostInfo={surfAndTurf} appState={appState} />;
         break;
     }
 

@@ -13,18 +13,18 @@
   }
 }
 
-.blog-post-container {
+.mblog-post-container {
   height: auto;
   width: 100%;
 
   //border: 1px solid red;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: baseline;
 
-  .blog-content {
+  .mblog-content {
     height: auto;
     width: 100%;
 
@@ -35,19 +35,21 @@
     align-items: center;
     justify-content: baseline;
 
-    .blog-button-container {
+    .mblog-button-container {
       height: auto;
       width: 100%;
 
-      .blog-button {
-        padding: 1%;
+      .mblog-button {
+        padding: 3%;
         font-family: $navbar;
-        font-size: 1vw;
+        font-size: 3vw;
+        margin: 0 0 5% 0;
         font-weight: 700;
         letter-spacing: 0.1vw;
-        background-color: transparent;
-        color: $links;
-        border: none;
+        background-color: $links;
+        color: $light-text;
+        border: 0px solid $links;
+        border-radius: 15vw;
         outline: none;
 
         &:hover {
@@ -60,8 +62,8 @@
       }
     }
 
-    .blog-post-title-container {
-      width: 80%;
+    .mblog-post-title-container {
+      width: 100%;
 
       text-align: center;
 
@@ -70,41 +72,47 @@
       justify-content: space-evenly;
       align-items: center;
 
-      .blog-post-title {
-        padding: 0 10%;
+      .mblog-post-title {
         margin: 3%;
 
         font-family: $lato;
-        font-size: 2vw;
+        font-size: 6vw;
         font-weight: 600;
 
         color: $dark-text;
       }
 
-      .blog-post-date {
+      .mblog-post-date {
+        margin: 3% 0;
+        font-size: 4.5vw;
         font-family: $lora;
         font-style: italic;
         color: $img-caption;
+        text-align: center;
       }
 
-      .blog-post-author {
+      .mblog-post-author {
+        margin: 3% 0 7% 0;
         font-family: $lato;
-        font-size: 1.3vw;
+        font-size: 4vw;
         font-weight: 600;
+        text-align: center;
 
         color: $dark-text;
       }
     }
 
     p {
-      margin: 2% 0;
-      width: 80%;
+      margin: 5% 0;
+      width: 100%;
+      font-size: 4vw;
       font-family: $navbar;
-      line-height: 2vw;
+      line-height: 5vw;
+      text-align: left;
 
-      &.blog-img-caption {
-        margin: 0 0 1% 0;
-        font-size: 1vw;
+      &.mblog-img-caption {
+        margin: 0 0 5% 0;
+        font-size: 3.5vw;
         color: $img-caption;
       }
     }
@@ -121,7 +129,7 @@
       line-height: 2vw;
     }
 
-    .blog-link {
+    .mblog-link {
       font-family: $navbar;
       color: $links;
       font-style: normal;
@@ -133,7 +141,8 @@
   }
 }
 
-.blog-img {
+.mblog-img {
   background-size: contain;
   background-repeat: no-repeat;
+  border: 1px solid red;
 }
