@@ -98,15 +98,49 @@ export class MobileHeader extends React.PureComponent<MHeaderProps> {
 
   private renderBannerImage() {
     const { appState } = this.props;
-
     let bannerImage: string = '';
 
-    switch (appState.curPage) {
+    if (appState.curPage === Page.BLOG) {
+      switch (appState.curBlogPage) {
+        case BlogPage.BLOGLIST:
+          bannerImage = 'banner-blog';
+          break;
+        case BlogPage.SURFANDTURF:
+          bannerImage = 'banner-surf-and-turf';
+          break;
+        case BlogPage.HIDDENSCOTLAND:
+          bannerImage = 'banner-hidden-scotland';
+          break;
+        case BlogPage.MCS:
+          bannerImage = 'banner-mcs';
+          break;
+        case BlogPage.COLL:
+          bannerImage = 'banner-coll';
+          break;
+        case BlogPage.JMT:
+          bannerImage = 'banner-jmt';
+          break;
+        case BlogPage.CALMAC:
+          bannerImage = 'banner-calmac';
+          break;
+      }
+    }
+
+    switch (this.props.appState.curPage) {
       case Page.HOME:
         bannerImage = 'banner-home';
         break;
+      case Page.ABOUT:
+        bannerImage = 'banner-about';
+        break;
+      case Page.CHARTER:
+        bannerImage = 'banner-charter';
+        break;
       case Page.SOAC:
         bannerImage = 'banner-soac';
+        break;
+      case Page.SPREADWORD:
+        bannerImage = 'banner-spreadword';
         break;
     }
     return bannerImage;

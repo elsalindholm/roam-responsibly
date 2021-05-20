@@ -25,7 +25,7 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
 
@@ -302,7 +302,7 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
         </article>
