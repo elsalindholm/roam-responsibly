@@ -1,7 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import { BlogSummaryComp } from './BlogPostSummaryComp';
 import {
   calMac,
   collBeachClean,
@@ -11,40 +10,41 @@ import {
   surfAndTurf,
 } from '../../../appData/BlogPostInfo';
 import { AppState, BlogPage } from '../../../AppState';
+import { MobileBlogSummaryComp } from './MobileBlogSummaryComp';
 
-interface BlogPostListProps {
+interface MobileBlogPostListProps {
   appState: AppState;
 }
 
 @observer
-export class BlogPostList extends React.PureComponent<BlogPostListProps> {
+export class MobileBlogList extends React.PureComponent<MobileBlogPostListProps> {
   render() {
     const { appState } = this.props;
 
     return (
-      <main className={'blog-list'}>
+      <main>
         <section>
-          <BlogSummaryComp
+          <MobileBlogSummaryComp
             blogPostInfo={surfAndTurf}
             onClick={() => appState.setCurrentBlogPage(BlogPage.SURFANDTURF)}
           />
-          <BlogSummaryComp
+          <MobileBlogSummaryComp
             blogPostInfo={hiddenScotland}
             onClick={() => appState.setCurrentBlogPage(BlogPage.HIDDENSCOTLAND)}
           />
-          <BlogSummaryComp
+          <MobileBlogSummaryComp
             blogPostInfo={marineConSoc}
             onClick={() => appState.setCurrentBlogPage(BlogPage.MCS)}
           />
-          <BlogSummaryComp
+          <MobileBlogSummaryComp
             blogPostInfo={collBeachClean}
             onClick={() => appState.setCurrentBlogPage(BlogPage.COLL)}
           />
-          <BlogSummaryComp
+          <MobileBlogSummaryComp
             blogPostInfo={johnMuirTrust}
             onClick={() => appState.setCurrentBlogPage(BlogPage.JMT)}
           />
-          <BlogSummaryComp
+          <MobileBlogSummaryComp
             blogPostInfo={calMac}
             onClick={() => appState.setCurrentBlogPage(BlogPage.CALMAC)}
           />

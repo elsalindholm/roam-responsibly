@@ -2,7 +2,7 @@ import { observer } from 'mobx-react';
 import React from 'react';
 
 import { AppState, BlogPage } from '../../../../../AppState';
-import { BlogPostInfo } from '../../BlogPostInfo';
+import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
 
 import './surf-and-turf-blog.scss';
 import '../../../../../appStyles/desktop-app.scss';

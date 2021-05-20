@@ -1,0 +1,106 @@
+@import '../../../appStyles/app-styles.scss';
+
+.mblog-post-comp {
+  height: auto;
+  width: 100%;
+  margin: 5% 0 8% 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  .mblog-post-comp-img {
+    height: 40vw;
+    width: 100%;
+    margin-bottom: 2%;
+
+    &.surf-and-turf-blog {
+      background-image: url('../../../../dist/assets/blogPosts/surfAndTurf/RedshankChick.JPG');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &.hidden-scotland-blog {
+      background-image: url('../../../../dist/assets/blogPosts/hiddenScotland/storrHiddenScotland.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+    }
+    &.mcs-blog {
+      background-image: url('../../../../dist/assets/blogPosts/mcs/ShoreYouCare_SusanneArbuckle.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &.coll-blog {
+      background-image: url('../../../../dist/assets/blogPosts/coll/beachClean1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &.jmt-blog {
+      background-image: url('../../../../dist/assets/blogPosts/johnMuirTrust/JMTInstameet1.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    &.calmac-blog {
+      background-image: url('../../../../dist/assets/blogPosts/calMac/Harris_KatrinaStewart.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .mblog-post-comp-date {
+    margin: 2%;
+    font-family: $lora;
+    font-size: 3vw;
+    font-style: italic;
+  }
+
+  .mblog-post-comp-title {
+    margin: 2%;
+
+    font-family: $lato;
+    font-size: 4vw;
+    font-weight: 500;
+  }
+
+  .mblog-post-comp-subtitle {
+    margin: 2%;
+    font-family: $lato;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+
+  .mblog-post-comp-blurb {
+    margin: 3%;
+
+    font-family: $montserrat;
+    font-size: 3vw;
+    text-align: center;
+    line-height: 4.5vw;
+  }
+
+  .mblog-post-comp-btn {
+    margin: 2%;
+    padding: 2% 4%;
+    outline: none;
+    background-color: $links;
+    border: 2px solid $links;
+    border-radius: 15vw;
+    color: $light-text;
+
+    font-family: $navbar;
+    font-size: 2.5vw;
+
+    &:active {
+      background-color: transparent;
+      color: $links;
+      cursor: pointer;
+    }
+  }
+}

@@ -10,7 +10,7 @@ import {
   johnMuirTrust,
   marineConSoc,
   surfAndTurf,
-} from './BlogPostInfo';
+} from '../../../appData/BlogPostInfo';
 import { AppState, BlogPage } from '../../../AppState';
 import { HiddenScotlandBlog } from './2018/hiddenScotland/hiddenScotland';
 import { McsBlog } from './2018/mcs/mcs';
