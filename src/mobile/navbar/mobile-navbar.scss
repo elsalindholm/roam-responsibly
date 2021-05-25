@@ -1,0 +1,37 @@
+@import '../../appStyles/app-styles.scss';
+
+.mnavbar {
+  height: 100vh;
+  width: 60vw;
+  z-index: 100;
+
+  border: 1px solid yellow;
+  background-color: $mobile-navbar;
+  font-family: $navbar;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  .mnavbar-close-button {
+    width: 100%;
+    height: 7%;
+    margin-bottom: 3%;
+
+    border: 1px solid pink;
+  }
+
+  .mnav-button {
+    background-color: $mobile-navbar;
+    outline: none;
+    //border: 1px solid white;
+    border: none;
+    color: $light-text;
+
+    font-size: 4vw;
+    letter-spacing: 0.1vw;
+    text-align: left;
+
+    margin: 3% 5%;
+  }
+}

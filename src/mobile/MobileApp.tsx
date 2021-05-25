@@ -13,6 +13,7 @@ import { MobileCharter } from './pages/charter/MobileCharter';
 import { MobileSpreadWord } from './pages/spreadTheWord/MobileSpreadTheWord';
 import { MobileAbout } from './pages/about/MobileAbout';
 import { MobileBlog } from './pages/blog/MobileBlog';
+import { MobileNavbar } from './navbar/MobileNavbar';
 
 interface MobileAppProps {
   appState: AppState;
@@ -47,7 +48,9 @@ export class MobileApp extends React.PureComponent<MobileAppProps> {
 
     return (
       <div className={'app-container'}>
+        <MobileNavbar appState={this.props.appState} />
         <MobileHeader appState={this.props.appState} />
+
         <div className={'mbody'}>
           <div className={'mmain-page-container'}>{page}</div>
           <MobileFooter />
