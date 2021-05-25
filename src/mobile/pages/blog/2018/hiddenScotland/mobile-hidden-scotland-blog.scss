@@ -1,0 +1,57 @@
+@import '../../../../../appStyles/app-styles.scss';
+
+.hs-text-with-img {
+  height: auto;
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .hs-text {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .hs-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+.hs-storr {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/storrHiddenScotland.jpg');
+  height: 65vw;
+  width: 100%;
+}
+.hs-tours {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/hiddenScotlandTours.jpg');
+  height: 80vw;
+  width: 100%;
+}
+.hs-neist-point {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/neistPointHiddenScotland.jpg');
+  height: 100vw;
+  width: 100%;
+}
+.hs-trotternish {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/trotternishHiddenScotland.jpg');
+  height: 100vw;
+  width: 100%;
+}
+.hs-roam-responsibly {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/weRoamResponsibly.png');
+  height: 75vw;
+  width: 100%;
+}
+.hs-wigwam {
+  background-image: url('/dist/assets/blogPosts/hiddenScotland/wigwamHiddenScotland.jpg');
+  height: 100vw;
+  width: 100%;
+}

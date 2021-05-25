@@ -29,7 +29,7 @@ export enum BlogPage {
 export class AppState {
   @observable public curPage: Page = Page.BLOG;
   @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
-  @observable public curBlogPage: BlogPage = BlogPage.SURFANDTURF;
+  @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
 
   @action public setCurrentPage(page: Page) {
     var myDiv = document.getElementById('app-root');

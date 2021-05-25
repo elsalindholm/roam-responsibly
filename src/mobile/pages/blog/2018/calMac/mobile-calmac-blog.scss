@@ -1,0 +1,55 @@
+@import '../../../../../appStyles/app-styles.scss';
+
+.calmac-blog-intro {
+  width: 80%;
+  margin: 3% 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.calmac-blog-logo {
+  background-image: url('../../../../../../dist/assets/CaledonianMacBrayneLogo.jpg');
+  height: 35vw;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.calmac-blog-harris {
+  background-image: url('../../../../../../dist/assets/blogPosts/calMac/Harris_KatrinaStewart.jpg');
+  height: 55vw;
+  width: 100%;
+}
+
+.calmac-blog-eigg-one {
+  background-image: url('../../../../../../dist/assets/blogPosts/calMac/Eigg1_ElsaLindholm.jpg');
+  height: 55vw;
+  width: 100%;
+}
+
+.calmac-blog-lewis {
+  background-image: url('../../../../../../dist/assets/blogPosts/calMac/Blackhouse_WillMackenzie.jpg');
+  height: 61vw;
+  width: 100%;
+}
+
+.calmac-blog-uist {
+  background-image: url('../../../../../../dist/assets/blogPosts/calMac/Pony_JenniferFollis.jpg');
+  height: 61vw;
+  width: 100%;
+}
+
+.calmac-blog-eigg-two {
+  background-image: url('../../../../../../dist/assets/blogPosts/calMac/Eigg2_ElsaLindholm.jpg');
+  height: 55vw;
+  width: 100%;
+}
+
+.calmac-blog-bernera {
+  background-image: url('../../../../../../dist/assets/blogPosts/calMac/GreatBernera_KatrinaStewart.jpg');
+  height: 55vw;
+  width: 100%;
+  margin-top: 10%;
+}
