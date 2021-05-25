@@ -25,7 +25,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
 
@@ -78,7 +78,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
           <p className={'mblog-img-caption'}>
             The Clansman approaching Coll. Photo by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -102,7 +102,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -153,7 +153,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
           <p className={'mblog-img-caption'}>
             A large group of seals (maybe around 20) were following us along the beach. Photo by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -166,7 +166,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -191,7 +191,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
           <p className={'mblog-img-caption'}>
             Crossapol beach clean. Photo by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -232,7 +232,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
           <p className={'mblog-img-caption'}>
             Sunset in Arinagour. Photo by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -295,7 +295,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
         </article>

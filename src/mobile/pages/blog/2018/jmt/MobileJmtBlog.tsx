@@ -25,7 +25,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
           <div className={'mblog-post-title-container'}>
@@ -59,7 +59,11 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
           <div className={'mblog-img , jmt-img-one'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
-            <a href={'https://www.instagram.com/katstewart01/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://www.instagram.com/katstewart01/'}
+              target={'_blank'}
+            >
               @katstewart01
             </a>
             .
@@ -68,7 +72,11 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
           <div className={'mblog-img , jmt-img-two'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
-            <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
               @ruanaich
             </a>
             .
@@ -97,7 +105,11 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
           <div className={'mblog-img , jmt-img-three'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
-            <a href={'https://www.instagram.com/katstewart01/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://www.instagram.com/katstewart01/'}
+              target={'_blank'}
+            >
               @katstewart01
             </a>
             .
@@ -106,7 +118,11 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
           <div className={'mblog-img , jmt-img-four'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
-            <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
               @ruanaich
             </a>
             .
@@ -124,7 +140,11 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
           <div className={'mblog-img , jmt-img-five'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
-            <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
               @ruanaich
             </a>
             .
@@ -164,7 +184,11 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
           <div className={'mblog-img , jmt-img-six'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
-            <a href={'https://www.instagram.com/ruanaich/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
               @ruanaich
             </a>
             .
@@ -200,7 +224,11 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
           <div className={'mblog-img , jmt-img-seven'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
-            <a href={'https://www.instagram.com/katstewart01/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://www.instagram.com/katstewart01/'}
+              target={'_blank'}
+            >
               @katstewart01
             </a>
             .
@@ -211,7 +239,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
         </article>

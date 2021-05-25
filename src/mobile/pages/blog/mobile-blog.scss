@@ -111,7 +111,7 @@
       text-align: left;
 
       &.mblog-img-caption {
-        margin: 0 0 5% 0;
+        margin: 2% 0;
         font-size: 3.5vw;
         color: $img-caption;
       }
@@ -139,11 +139,18 @@
         border-bottom: 3px solid $links;
       }
     }
+
+    .mblog-link-img-caption {
+      font-size: 3.5vw;
+      font-family: $navbar;
+      color: $links;
+      font-style: normal;
+    }
   }
 }
 
 .mblog-img {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid red;
+  //border: 1px solid red;
 }

@@ -76,14 +76,7 @@ export class McsBlog extends React.PureComponent<McsProps> {
           </div>
 
           <h3>
-            #SHOREYOUCARE EVENT ORGANISED BY SUSANNE ARBUCKLE{' '}
-            <a
-              className={'blog-link'}
-              href={'https://www.instagram.com/adventuresaroundscotland/'}
-              target={'_blank'}
-            >
-              @ADVENTURESAROUNDSCOTLAND
-            </a>
+            <strong>#SHOREYOUCARE</strong> EVENT BY SUSANNE ARBUCKLE{' '}
           </h3>
 
           <p>

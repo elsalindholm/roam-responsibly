@@ -25,7 +25,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
 
@@ -65,7 +65,11 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
           <div className={'mblog-img , hs-storr'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
-            <a href={'https://hiddenscotland.co/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://hiddenscotland.co/'}
+              target={'_blank'}
+            >
               Hidden Scotland
             </a>
             .
@@ -91,7 +95,11 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
           <div className={'mblog-img , hs-tours'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
-            <a href={'https://hiddenscotland.co/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://hiddenscotland.co/'}
+              target={'_blank'}
+            >
               Hidden Scotland
             </a>
             .
@@ -112,7 +120,11 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
           <div className={'mblog-img , hs-neist-point'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
-            <a href={'https://hiddenscotland.co/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://hiddenscotland.co/'}
+              target={'_blank'}
+            >
               Hidden Scotland
             </a>
             .
@@ -157,7 +169,11 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
           <div className={'mblog-img , hs-trotternish'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
-            <a href={'https://hiddenscotland.co/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://hiddenscotland.co/'}
+              target={'_blank'}
+            >
               Hidden Scotland
             </a>
             .
@@ -187,7 +203,11 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
           <div className={'mblog-img , hs-roam-responsibly'}></div>
           <p className={'mblog-img-caption'}>
             An excerpt from{' '}
-            <a href={'https://hiddenscotland.co/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://hiddenscotland.co/'}
+              target={'_blank'}
+            >
               the Hidden Scotland Tour
             </a>
             .
@@ -196,7 +216,11 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
           <div className={'mblog-img , hs-wigwam'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
-            <a href={'https://hiddenscotland.co/'} target={'_blank'}>
+            <a
+              className={'mblog-link-img-caption'}
+              href={'https://hiddenscotland.co/'}
+              target={'_blank'}
+            >
               Hidden Scotland
             </a>
             .
@@ -221,7 +245,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
         </article>

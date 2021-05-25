@@ -25,7 +25,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
           <div className={'mblog-post-title-container'}>
@@ -49,7 +49,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
           <p className={'mblog-img-caption'}>
             Isle of Harris by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/katstewart01/'}
               target={'_blank'}
             >
@@ -71,7 +71,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
           <p className={'mblog-img-caption'}>
             Isle of Eigg by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -95,7 +95,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
           <p className={'mblog-img-caption'}>
             Isle of Lewis by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/willmackenzie/'}
               target={'_blank'}
             >
@@ -139,7 +139,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
           <p className={'mblog-img-caption'}>
             South Uist by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/jenniferfollis/'}
               target={'_blank'}
             >
@@ -188,7 +188,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
           <p className={'mblog-img-caption'}>
             Isle of Eigg by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/elsaannukka/'}
               target={'_blank'}
             >
@@ -231,7 +231,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
           <p className={'mblog-img-caption'}>
             Great Bernera by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/katstewart01/'}
               target={'_blank'}
             >
@@ -245,7 +245,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
         </article>

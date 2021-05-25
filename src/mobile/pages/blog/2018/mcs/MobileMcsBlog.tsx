@@ -25,7 +25,7 @@ export class MobileMcsBlog extends React.PureComponent<MobileMcsProps> {
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
 
@@ -74,14 +74,7 @@ export class MobileMcsBlog extends React.PureComponent<MobileMcsProps> {
           <div className={'mblog-img , mcs-logo'}></div>
 
           <h3>
-            #SHOREYOUCARE EVENT ORGANISED BY SUSANNE ARBUCKLE{' '}
-            <a
-              className={'mblog-link'}
-              href={'https://www.instagram.com/adventuresaroundscotland/'}
-              target={'_blank'}
-            >
-              @ADVENTURESAROUNDSCOTLAND
-            </a>
+            <strong>#SHOREYOUCARE</strong> EVENT BY SUSANNE ARBUCKLE{' '}
           </h3>
 
           <p>
@@ -141,7 +134,7 @@ export class MobileMcsBlog extends React.PureComponent<MobileMcsProps> {
           <p className={'mblog-img-caption'}>
             #ShoreYouCare event in North Queensferry on 1st June 2018. Photo by{' '}
             <a
-              className={'mblog-link'}
+              className={'mblog-link-img-caption'}
               href={'https://www.instagram.com/adventuresaroundscotland/'}
               target={'_blank'}
             >
@@ -270,7 +263,7 @@ export class MobileMcsBlog extends React.PureComponent<MobileMcsProps> {
               className={'mblog-button'}
               onClick={() => appState.setCurrentBlogPage(BlogPage.BLOGLIST)}
             >
-              {'<'} RETURN TO BLOG POSTS
+              {'<'} BLOG POSTS
             </button>
           </div>
         </article>
