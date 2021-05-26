@@ -31,7 +31,7 @@ export class AppState {
   @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
   @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
   @observable public mobileMenuOpen: boolean = true;
-  @observable public aboutMenuOpen: boolean = true;
+  @observable public aboutMenuOpen: boolean = false;
 
   @action public setCurrentPage(page: Page) {
     var myDiv = document.getElementById('app-root');

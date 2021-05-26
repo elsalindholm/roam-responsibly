@@ -2,6 +2,7 @@ import { observer } from 'mobx-react';
 import React from 'react';
 
 import { AboutPage, AppState, Page } from '../../AppState';
+import { MobileMenuCloseButton } from './MenuCloseButton';
 
 import './mobile-navbar.scss';
 
@@ -16,7 +17,11 @@ export class MobileNavbar extends React.PureComponent<MobileNavbarProps> {
 
     return (
       <div className={'mnavbar'}>
-        <div className={'mnavbar-close-button'}></div>
+        <div className={'mnavbar-close-button-container'}>
+          <button className={'mnavbar-close-button'}>
+            <MobileMenuCloseButton />
+          </button>
+        </div>
         <div className={'mnav'}>
           <button className={'mnav-button'} onClick={() => this.selectPage(Page.HOME)}>
             HOME
@@ -38,7 +43,7 @@ export class MobileNavbar extends React.PureComponent<MobileNavbarProps> {
         </div>
         <div className={'mnav'}>
           <button className={'mnav-button'} onClick={() => this.selectPage(Page.SOAC)}>
-            OUTDOOR ACCESS CODE
+            SCOTTISH OUTDOOR ACCESS CODE
           </button>
         </div>
         <div className={'mnav'}>
