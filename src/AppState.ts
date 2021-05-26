@@ -30,6 +30,8 @@ export class AppState {
   @observable public curPage: Page = Page.BLOG;
   @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
   @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
+  @observable public mobileMenuOpen: boolean = true;
+  @observable public aboutMenuOpen: boolean = true;
 
   @action public setCurrentPage(page: Page) {
     var myDiv = document.getElementById('app-root');
@@ -48,5 +50,22 @@ export class AppState {
     var myDiv = document.getElementById('app-root');
     myDiv.scrollTop = 0;
     this.curBlogPage = blogPage;
+  }
+
+  @action public openMobileMenu() {
+    this.mobileMenuOpen = true;
+  }
+
+  @action public closeMobileMenu() {
+    this.mobileMenuOpen = false;
+    this.aboutMenuOpen = false;
+  }
+
+  @action public toggleAboutMenu() {
+    if (this.aboutMenuOpen === true) {
+      this.aboutMenuOpen = false;
+    } else {
+      this.aboutMenuOpen = true;
+    }
   }
 }
