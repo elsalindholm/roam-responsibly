@@ -48,8 +48,8 @@ export class MobileApp extends React.PureComponent<MobileAppProps> {
 
     return (
       <div className={'app-container'}>
-        <MobileNavbar appState={this.props.appState} />
-        <MobileHeader appState={this.props.appState} />
+        <MobileNavbar appState={appState} stage={appState.mobileMenuState} />
+        <MobileHeader appState={appState} />
 
         <div className={'mbody'}>
           <div className={'mmain-page-container'}>{page}</div>

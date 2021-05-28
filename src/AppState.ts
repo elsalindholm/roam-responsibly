@@ -26,11 +26,16 @@ export enum BlogPage {
   BLOGLIST = 'blog-list',
 }
 
+export enum MobileMenuStage {
+  OPEN = 'open',
+  CLOSED = 'closed',
+}
+
 export class AppState {
   @observable public curPage: Page = Page.BLOG;
   @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
   @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
-  @observable public mobileMenuOpen: boolean = true;
+  @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.OPEN;
   @observable public aboutMenuOpen: boolean = false;
 
   @action public setCurrentPage(page: Page) {
@@ -52,20 +57,17 @@ export class AppState {
     this.curBlogPage = blogPage;
   }
 
-  @action public openMobileMenu() {
-    this.mobileMenuOpen = true;
+  @action public setMobileMenuOpen() {
+    this.mobileMenuState = MobileMenuStage.OPEN;
   }
 
-  @action public closeMobileMenu() {
-    this.mobileMenuOpen = false;
-    this.aboutMenuOpen = false;
+  @action public setMobileMenuClosed() {
+    this.mobileMenuState = MobileMenuStage.CLOSED;
+
+    setTimeout(() => (this.aboutMenuOpen = false), 500);
   }
 
   @action public toggleAboutMenu() {
-    if (this.aboutMenuOpen === true) {
-      this.aboutMenuOpen = false;
-    } else {
-      this.aboutMenuOpen = true;
-    }
+    this.aboutMenuOpen = !this.aboutMenuOpen;
   }
 }

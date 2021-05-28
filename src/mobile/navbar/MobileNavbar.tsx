@@ -1,60 +1,63 @@
 import { observer } from 'mobx-react';
 import React from 'react';
 
-import { AboutPage, AppState, Page } from '../../AppState';
+import { AboutPage, AppState, MobileMenuStage, Page } from '../../AppState';
 import { MobileMenuCloseButton } from './MenuCloseButton';
 
 import './mobile-navbar.scss';
 
 interface MobileNavbarProps {
   appState: AppState;
+  stage: MobileMenuStage;
 }
 
 @observer
 export class MobileNavbar extends React.PureComponent<MobileNavbarProps> {
   render() {
-    const { appState } = this.props;
+    const { appState, stage } = this.props;
 
     return (
-      <div className={'mnavbar'}>
-        <div className={'mnavbar-close-button-container'}>
-          <button className={'mnavbar-close-button'}>
-            <MobileMenuCloseButton />
-          </button>
-        </div>
-        <div className={'mnav'}>
-          <button className={'mnav-button'} onClick={() => this.selectPage(Page.HOME)}>
-            HOME
-          </button>
-        </div>
-        <div className={'mnav'}>
-          <button className={'mnav-button'} onClick={() => appState.toggleAboutMenu()}>
-            ABOUT
-          </button>
-          <div className={'mnav-about-collapse'} onClick={() => appState.toggleAboutMenu()}>
-            {appState.aboutMenuOpen ? '-' : '+'}
+      <div className={'mnavbar ' + stage} onClick={() => appState.setMobileMenuClosed()}>
+        <div className={'mnavbar-drawer '}>
+          <div className={'mnavbar-close-button-container'}>
+            <div className={'mnavbar-close-button'} onClick={() => appState.setMobileMenuClosed()}>
+              <MobileMenuCloseButton />
+            </div>
           </div>
-        </div>
-        {this.renderAboutMenu()}
-        <div className={'mnav'}>
-          <button className={'mnav-button'} onClick={() => this.selectPage(Page.CHARTER)}>
-            CHARTER
-          </button>
-        </div>
-        <div className={'mnav'}>
-          <button className={'mnav-button'} onClick={() => this.selectPage(Page.SOAC)}>
-            SCOTTISH OUTDOOR ACCESS CODE
-          </button>
-        </div>
-        <div className={'mnav'}>
-          <button className={'mnav-button'} onClick={() => this.selectPage(Page.BLOG)}>
-            BLOG
-          </button>
-        </div>
-        <div className={'mnav'}>
-          <button className={'mnav-button'} onClick={() => this.selectPage(Page.SPREADWORD)}>
-            SPREAD THE WORD
-          </button>
+          <div className={'mnav'}>
+            <button className={'mnav-button'} onClick={() => this.selectPage(Page.HOME)}>
+              HOME
+            </button>
+          </div>
+          <div className={'mnav'}>
+            <button className={'mnav-button'} onClick={() => appState.toggleAboutMenu()}>
+              ABOUT
+            </button>
+            <div className={'mnav-about-collapse'} onClick={() => appState.toggleAboutMenu()}>
+              {appState.aboutMenuOpen ? '-' : '+'}
+            </div>
+          </div>
+          {this.renderAboutMenu()}
+          <div className={'mnav'}>
+            <button className={'mnav-button'} onClick={() => this.selectPage(Page.CHARTER)}>
+              CHARTER
+            </button>
+          </div>
+          <div className={'mnav'}>
+            <button className={'mnav-button'} onClick={() => this.selectPage(Page.SOAC)}>
+              SCOTTISH OUTDOOR ACCESS CODE
+            </button>
+          </div>
+          <div className={'mnav'}>
+            <button className={'mnav-button'} onClick={() => this.selectPage(Page.BLOG)}>
+              BLOG
+            </button>
+          </div>
+          <div className={'mnav'}>
+            <button className={'mnav-button'} onClick={() => this.selectPage(Page.SPREADWORD)}>
+              SPREAD THE WORD
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -109,7 +112,7 @@ export class MobileNavbar extends React.PureComponent<MobileNavbarProps> {
     const { appState } = this.props;
 
     appState.setCurrentPage(page);
-    appState.closeMobileMenu();
+    appState.setMobileMenuClosed();
   }
 
   private selectAboutPage(aboutPage: AboutPage) {
@@ -117,6 +120,6 @@ export class MobileNavbar extends React.PureComponent<MobileNavbarProps> {
 
     appState.setCurrentPage(Page.ABOUT);
     appState.setCurrentAboutPage(aboutPage);
-    appState.closeMobileMenu();
+    appState.setMobileMenuClosed();
   }
 }

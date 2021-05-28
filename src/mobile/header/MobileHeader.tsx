@@ -4,6 +4,7 @@ import { AboutPage, AppState, BlogPage, Page } from '../../AppState';
 
 import './mobile-header.scss';
 import '../../appStyles/header-banner-images.scss';
+import { BurgerMenuButton } from './BurgerMenu';
 
 interface MHeaderProps {
   appState: AppState;
@@ -12,15 +13,15 @@ interface MHeaderProps {
 @observer
 export class MobileHeader extends React.PureComponent<MHeaderProps> {
   render() {
+    const { appState } = this.props;
+
     return (
       <header className={'mheader-container ' + this.renderBannerImage()}>
         <div className={'mheader-filter'}></div>
         <div className={'mnavbar-container'}>
           <div className={'mnavbar-logo'}></div>
-          <div className={'mburger-menu-container'}>
-            <div className={'mburger-menu-line'}></div>
-            <div className={'mburger-menu-line'}></div>
-            <div className={'mburger-menu-line'}></div>
+          <div className={'mburger-menu-container'} onClick={() => appState.setMobileMenuOpen()}>
+            <BurgerMenuButton />
           </div>
         </div>
         {this.renderHeaderBanner()}
