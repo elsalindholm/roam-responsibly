@@ -17,7 +17,8 @@ export class MobileNavbar extends React.PureComponent<MobileNavbarProps> {
     const { appState, stage } = this.props;
 
     return (
-      <div className={'mnavbar ' + stage} onClick={() => appState.setMobileMenuClosed()}>
+      <div className={'mnavbar ' + stage}>
+        <div className={'mnavbar-background '} onClick={() => appState.setMobileMenuClosed()}></div>
         <div className={'mnavbar-drawer '}>
           <div className={'mnavbar-close-button-container'}>
             <div className={'mnavbar-close-button'} onClick={() => appState.setMobileMenuClosed()}>
