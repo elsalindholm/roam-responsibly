@@ -4,7 +4,6 @@ import React from 'react';
 import { AppState, BlogPage } from '../../../AppState';
 import { MobileBlogList } from './MobileBlogList';
 
-import './mobile-blog.scss';
 import { MobileSurfAndTurfBlog } from './2018/surfAndTurf/MobileSurfAndTurfBlog';
 import {
   calMac,
@@ -19,6 +18,9 @@ import { MobileMcsBlog } from './2018/mcs/MobileMcsBlog';
 import { MobileJMTInstameetBlog } from './2018/jmt/MobileJmtBlog';
 import { MobileCollBlog } from './2018/coll/MobileCollBlog';
 import { MobileCalMacBlog } from './2018/calMac/MobileCalmacBlog';
+
+import './mobile-blog.scss';
+import '../../../appStyles/mobile-app-styles.scss';
 
 interface MobileBlogProps {
   appState: AppState;

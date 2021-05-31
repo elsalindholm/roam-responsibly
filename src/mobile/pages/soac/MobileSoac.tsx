@@ -17,7 +17,7 @@ export class MobileSoac extends React.PureComponent {
             Scottish landscape.
           </p>
           <p>
-            In Scotland, people can access to most of the Scottish outdoors (set out in{' '}
+            In Scotland, people can access most of the Scottish outdoors (set out in{' '}
             <a
               target={'_blank'}
               href={

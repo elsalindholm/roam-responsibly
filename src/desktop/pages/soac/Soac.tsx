@@ -16,7 +16,7 @@ export class Soac extends React.PureComponent {
             the Scottish landscape.
           </h3>
           <p>
-            In Scotland, people can access to most of the Scottish outdoors (set out in{' '}
+            In Scotland, people can access most of the Scottish outdoors (set out in{' '}
             <a
               target={'_blank'}
               className={'link-underlined'}

@@ -61,10 +61,10 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
           <p>
             If you have ever been to the west coast of Scotland, especially to the Scottish islands,
             you are probably well-aware of CalMac Ferries, who have been operating ferry connections
-            to the Hebridean and Clyde islands for over 160 years. CalMac Ferries sails 475 times
-            per day during summer and 350 per day in winter, transporting 4.9 million passengers per
-            year to the lovely Scottish islands and back. The network stretches from Arran in the
-            South to Lewis in north, spanning 28 destinations in total.
+            to the Hebridean and Clyde islands for over 160 years. CalMac Ferries sail 475 times per
+            day during summer and 350 per day in winter, transporting 4.9 million passengers per
+            year to the lovely Scottish islands. The network stretches from Arran in the south to
+            Lewis in the north, spanning 28 destinations in total.
           </p>
 
           <div className={'mblog-img , calmac-blog-eigg-one'}></div>

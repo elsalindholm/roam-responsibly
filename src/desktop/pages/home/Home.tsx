@@ -9,7 +9,7 @@ export class Home extends React.PureComponent {
       <main className={'home-page'}>
         <section>
           <h2>WE WANT TO HELP CONSERVE SCOTTISH NATURE AND LANDSCAPES</h2>
-          <p>Scotland is the country of beautiful forests, lochs, munros, isles and beaches.</p>
+          <p>Scotland is a country of beautiful forests, lochs, munros, isles and beaches.</p>
           <p>
             With our social media campaign #RoamResponsibly we aim to raise awareness of the
             Scottish Outdoor Access Code and preserve these stunning and unique landscapes as

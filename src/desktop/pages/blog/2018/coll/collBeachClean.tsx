@@ -108,10 +108,9 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
             for the afternoon was a beach clean event organised by An Cridhe and Coll Bunkhouse
             management team with considerable input and support from RSPB team, which was going to
             take place in the vast Crossapol beach in the south west tip of Coll. We were probably a
-            bit less than an hour's walk from the beach when a car stops behind us and the two
-            ladies within offer us a lift to the event. This is when we met Jane, one of the
-            organisers of the event and one of the lovely people who run An Cridhe and Coll
-            Bunkhouse.
+            bit less than an hour's walk from the beach when a car stopped behind us and two ladies
+            offered us a lift to the event. This is when we met Jane, one of the organisers of the
+            event and one of the lovely people who run An Cridhe and Coll Bunkhouse.
           </p>
 
           <div className={'coll-two-columns'}>
@@ -146,7 +145,7 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
 
           <div className={'blog-img , coll-seals'}></div>
           <p className={'blog-img-caption'}>
-            A large group of seals (maybe around 20) were following us along the beach. Photo by{' '}
+            A group of seals were following us along the beach. Photo by{' '}
             <a href={'https://www.instagram.com/elsaannukka/'} target={'_blank'}>
               @elsaannukka
             </a>

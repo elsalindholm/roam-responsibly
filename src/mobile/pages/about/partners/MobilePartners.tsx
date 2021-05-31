@@ -38,6 +38,28 @@ export class MobilePartners extends React.PureComponent {
             <MobilePartnerComp campaignPartner={visitArran} />
           </div>
         </section>
+        <section>
+          <h2>MENTIONS</h2>
+
+          <p>
+            #RoamResponsibly campaign mentioned in <strong>CalMac's</strong> blog:
+          </p>
+          <p>
+            <a href={'https://www.calmac.co.uk/calmac.co.uk/blogs/roam-responsibly'}>
+              #RoamResponsibly with CalMac Ferries
+            </a>
+          </p>
+          <br></br>
+          <p>
+            #RoamResponsibly campaign included in <strong>Trespass'</strong> Corporate
+            Responsibility page:
+          </p>
+          <p>
+            <a href={'https://www.trespass.com/corporate-responsibility'}>
+              Trespass Corporate Responsibility
+            </a>
+          </p>
+        </section>
       </main>
     );
   }

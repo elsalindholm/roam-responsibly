@@ -32,10 +32,10 @@ export enum MobileMenuStage {
 }
 
 export class AppState {
-  @observable public curPage: Page = Page.BLOG;
-  @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
+  @observable public curPage: Page = Page.ABOUT;
+  @observable public curAboutPage: AboutPage = AboutPage.PARTNERS;
   @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
-  @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.OPEN;
+  @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.CLOSED;
   @observable public aboutMenuOpen: boolean = false;
 
   @action public setCurrentPage(page: Page) {

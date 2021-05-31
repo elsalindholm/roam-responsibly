@@ -45,8 +45,8 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
             >
               @hiddenscotland
             </a>{' '}
-            Instagram feed, which fully embraces the moody beauty of Scotland. But there is more to
-            it. Jack Cairney (
+            Instagram feed, which fully embraces the dramatic beauty of Scotland. But there is more
+            to it. Jack Cairney (
             <a
               className={'blog-link'}
               href={'https://www.instagram.com/jackcairney/'}

@@ -107,6 +107,14 @@
         margin: 0 0 1% 0;
         font-size: 1vw;
         color: $img-caption;
+        a {
+          font-family: $navbar;
+          font-style: normal;
+
+          &:hover {
+            border-bottom: 2px solid $img-caption;
+          }
+        }
       }
     }
 

@@ -33,8 +33,15 @@ export class MobileCharter extends React.PureComponent {
               <li>NOT camping in the same spot for more than 3 days</li>
             </ol>
             <li>
-              We commit to understanding the freedoms and restrictions laid out in the Scottish
-              Outdoor Access Code 2015.
+              We commit to understanding the freedoms and restrictions laid out in{' '}
+              <a
+                className={'charter-link'}
+                href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
+                target={'_blank'}
+              >
+                the Scottish Outdoor Access Code 2015
+              </a>
+              .
             </li>
             <li>We commit to not camp near</li>
             <ol className={'mnested-charter-list'}>
@@ -61,7 +68,15 @@ export class MobileCharter extends React.PureComponent {
               <li>
                 areas where local authorities formally exempt land from access rights for short
                 periods or have introduced byelaws. We commit to following these restrictions
-                accordingly. (Sections 5. {'&'} 6., Scottish Outdoor Access Code, 2015).
+                accordingly. (Sections 5. {'&'} 6.,{' '}
+                <a
+                  className={'charter-link'}
+                  href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
+                  target={'_blank'}
+                >
+                  Scottish Outdoor Access Code, 2015
+                </a>
+                ).
               </li>
             </ol>
             <li>We understand that access rights do not extend to:</li>
@@ -79,8 +94,15 @@ export class MobileCharter extends React.PureComponent {
               </li>
               <li>anyone responsible for a dog which is not under proper control; or to</li>
               <li>
-                anyone taking away anything from the land for a commercial purpose. (Section 7.,
-                Scottish Outdoor Access Code, 2015).
+                anyone taking away anything from the land for a commercial purpose. (Section 7.,{' '}
+                <a
+                  className={'charter-link'}
+                  href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
+                  target={'_blank'}
+                >
+                  Scottish Outdoor Access Code, 2015
+                </a>
+                ).
               </li>
             </ol>
             <li>

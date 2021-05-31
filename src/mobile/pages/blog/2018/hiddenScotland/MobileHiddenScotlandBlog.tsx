@@ -45,8 +45,8 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
             >
               @hiddenscotland
             </a>{' '}
-            Instagram feed, which fully embraces the moody beauty of Scotland. But there is more to
-            it. Jack Cairney (
+            Instagram feed, which fully embraces the dramatic beauty of Scotland. But there is more
+            to it. Jack Cairney (
             <a
               className={'mblog-link'}
               href={'https://www.instagram.com/jackcairney/'}

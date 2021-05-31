@@ -13,7 +13,7 @@ export const surfAndTurf: BlogPostInfo = {
   title: 'SURF AND TURF: ROAMING RESPONSIBLY ON THE ISLE OF TIREE',
   subtitle: 'GUEST BLOG BY STEPHANIE COPE, TIREE’S COMMUNITY RANGER.',
   blurb:
-    'For the Isle of Tiree, roaming responsibly is kind of a big deal. On a blustery January morning in 2017, I rolled off MV Clansman to become the island’s new community ranger (to those of you who only visit during the summer jollies - yes, those waxed paper bags are there with good reason). It is a post that I occupy alone; supported by my colleagues at Tiree Community Development Trust. ',
+    '"For the Isle of Tiree, roaming responsibly is kind of a big deal. On a blustery January morning in 2017, I rolled off MV Clansman to become the island’s new community ranger (to those of you who only visit during the summer jollies - yes, those waxed paper bags are there with good reason). It is a post that I occupy alone; supported by my colleagues at Tiree Community Development Trust." ',
   image: 'surf-and-turf-blog',
 };
 
@@ -22,7 +22,7 @@ export const hiddenScotland: BlogPostInfo = {
   author: 'Jack Cairney and Elsa Lindholm',
   title: 'AN INTERVIEW WITH HIDDEN SCOTLAND',
   blurb:
-    'This week we welcome Hidden Scotland as our newest parter. Like me, many of you might have come across the beautiful @hiddenscotland Instagram, which features beautiful photographs of Scotland with the hashtag #hiddenscotland. But there is more to it. ',
+    'This week we welcome Hidden Scotland as our newest parter. No doubt many of you might have come across @hiddenscotland Instagram, which features beautiful and dramatic photographs of Scotland. But there is more to it. ',
   image: 'hidden-scotland-blog',
 };
 
@@ -49,7 +49,8 @@ export const johnMuirTrust: BlogPostInfo = {
   date: 'May 25, 2018',
   author: 'Katrina Stewart and Elsa Lindholm',
   title: 'PARTNERING UP WITH JOHN MUIR TRUST',
-  blurb: 'We welcome our second partnering organisation: John Muir Trust.',
+  blurb:
+    'We welcome our second partnering organisation, John Muir Trust, and join them for a walk up Schiehallion.',
   image: 'jmt-blog',
 };
 
@@ -58,6 +59,6 @@ export const calMac: BlogPostInfo = {
   author: 'Elsa Lindholm',
   title: 'INTRODUCING OUR FIRST PARTNER: CALMAC FERRIES',
   blurb:
-    'As you know, our campaign to #RoamResponsibly has kicked off and we are very excited to introduce our first partnering organisation: CalMac Ferries, who are joining us in a mission to promote responsible outdoor access in Scotland.  ',
+    'Our campaign to #RoamResponsibly has kicked off and we are very excited to introduce our first partnering organisation: CalMac Ferries, who are joining us in a mission to promote responsible outdoor access in Scotland.  ',
   image: 'calmac-blog',
 };

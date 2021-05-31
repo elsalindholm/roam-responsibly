@@ -1,10 +1,11 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+
 import { AboutPage, AppState, BlogPage, Page } from '../../AppState';
+import { BurgerMenuButton } from './BurgerMenu';
 
 import './mobile-header.scss';
 import '../../appStyles/header-banner-images.scss';
-import { BurgerMenuButton } from './BurgerMenu';
 
 interface MHeaderProps {
   appState: AppState;

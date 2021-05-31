@@ -4,12 +4,19 @@
   height: auto;
   width: 100%;
   padding: 0 0 0 8%;
+  line-height: 6vw;
 
-  font-family: $lora;
+  font-family: $navbar;
 
   .mnested-charter-list {
     height: auto;
     width: 100%;
     padding: 0 0 0 10%;
   }
+}
+
+.charter-link {
+  font-family: $navbar;
+  font-style: normal;
+  font-weight: normal;
 }
