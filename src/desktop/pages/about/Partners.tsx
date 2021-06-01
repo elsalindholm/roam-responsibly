@@ -13,7 +13,8 @@ import {
 import { PartnerComp } from './PartnerComp';
 
 import './partners.scss';
-import '../../../appStyles/desktop-app.scss';
+import '../../desktop-app.scss';
+import '../../../appStyles/desktop-app-styles.scss';
 
 @observer
 export class Partners extends React.PureComponent {

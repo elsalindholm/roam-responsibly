@@ -1,6 +1,7 @@
 .app-container {
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 
   .mbody {
     height: auto;
@@ -15,8 +16,6 @@
       height: auto;
       width: 80%;
       margin: 0 0 10% 0;
-
-      //border: 1px solid red;
     }
   }
 }

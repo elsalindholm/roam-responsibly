@@ -2,7 +2,7 @@ import { observer } from 'mobx-react';
 import React from 'react';
 
 import './campaign.scss';
-import '../../../appStyles/desktop-app.scss';
+import '../../../appStyles/desktop-app-styles.scss';
 
 @observer
 export class Campaign extends React.PureComponent {

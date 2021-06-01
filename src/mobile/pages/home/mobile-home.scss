@@ -1,15 +1,16 @@
 @import '../../../appStyles/app-styles.scss';
 
-.home-page {
+.mhome-page {
   height: auto;
   width: 100%;
+  margin: 0 0 5% 0;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  .home-page-links {
+  .mhome-page-links {
     height: auto;
     width: 100%;
 
@@ -20,4 +21,9 @@
 
     text-align: center;
   }
+}
+
+.mobile-home-a {
+  font-size: 5vw;
+  border-bottom: 2px solid $links;
 }

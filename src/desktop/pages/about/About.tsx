@@ -8,7 +8,7 @@ import { Partners } from './Partners';
 import { Contact } from './Contact';
 
 import './about.scss';
-import '../../../appStyles/desktop-app.scss';
+import '../../../appStyles/desktop-app-styles.scss';
 
 export interface AboutPageProps {
   appState: AppState;

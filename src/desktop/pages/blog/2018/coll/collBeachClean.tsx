@@ -5,7 +5,7 @@ import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
 
 import './coll-beach-clean.scss';
-import '../../../../../appStyles/desktop-app.scss';
+import '../../../../../appStyles/desktop-app-styles.scss';
 
 interface CBCProps {
   blogPostInfo: BlogPostInfo;

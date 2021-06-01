@@ -31,12 +31,26 @@ export enum MobileMenuStage {
   CLOSED = 'closed',
 }
 
+export enum ViewMode {
+  DESKTOP = 'desktop',
+  MOBILE = 'mobile',
+}
+
 export class AppState {
   @observable public curPage: Page = Page.ABOUT;
   @observable public curAboutPage: AboutPage = AboutPage.PARTNERS;
   @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
   @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.CLOSED;
   @observable public aboutMenuOpen: boolean = false;
+  @observable public viewMode: ViewMode = ViewMode.DESKTOP;
+
+  @action public checkViewMode(w: number) {
+    if (w < 760) {
+      this.viewMode = ViewMode.MOBILE;
+    } else {
+      this.viewMode = ViewMode.DESKTOP;
+    }
+  }
 
   @action public setCurrentPage(page: Page) {
     var myDiv = document.getElementById('app-root');

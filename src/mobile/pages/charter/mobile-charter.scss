@@ -7,6 +7,7 @@
   line-height: 6vw;
 
   font-family: $navbar;
+  font-size: 4vw;
 
   .mnested-charter-list {
     height: auto;
@@ -15,8 +16,9 @@
   }
 }
 
-.charter-link {
+.mcharter-link {
   font-family: $navbar;
   font-style: normal;
   font-weight: normal;
+  border-bottom: 2px solid $links;
 }

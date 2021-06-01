@@ -1,6 +1,6 @@
 @import './app-styles.scss';
 
-h2 {
+.mobile-h2 {
   margin: 10% 0;
 
   font-family: $montserrat;
@@ -11,7 +11,7 @@ h2 {
   color: $dark-text;
 }
 
-h3 {
+.mobile-h3 {
   margin: 10% 0;
 
   font-family: $lato;
@@ -22,7 +22,7 @@ h3 {
   color: $dark-text;
 }
 
-p {
+.mobile-p {
   margin: 10% 0;
 
   font-family: $navbar;
@@ -33,7 +33,7 @@ p {
   word-spacing: 0.8vw;
 }
 
-a {
+.mobile-a {
   font-family: $lora;
   font-size: 4vw;
   font-style: italic;

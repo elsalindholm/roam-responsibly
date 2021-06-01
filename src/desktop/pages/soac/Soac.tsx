@@ -2,7 +2,7 @@ import { observer } from 'mobx-react';
 import React from 'react';
 
 import './soac.scss';
-import '../../../appStyles/desktop-app.scss';
+import '../../../appStyles/desktop-app-styles.scss';
 
 @observer
 export class Soac extends React.PureComponent {

@@ -11,6 +11,7 @@ import { Charter } from './pages/charter/Charter';
 import { About } from './pages/about/About';
 import { Footer } from './footer/Footer';
 
+import '../appStyles/desktop-app-styles.scss';
 import './desktop-app.scss';
 
 export interface DesktopAppProps {

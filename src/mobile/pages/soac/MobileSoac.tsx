@@ -6,19 +6,20 @@ import '../../../appStyles/mobile-app-styles.scss';
 export class MobileSoac extends React.PureComponent {
   render() {
     return (
-      <main className={'soac-page'}>
+      <main className={'msoac-page'}>
         <section>
-          <p>
+          <p className={'mobile-p'}>
             Scotland is one of a handful of countries with very good Access Rights for the general
             public.
           </p>
-          <p>
+          <p className={'mobile-p'}>
             However, with this privilege comes responsibility to look after and not exploit the
             Scottish landscape.
           </p>
-          <p>
+          <p className={'mobile-p'}>
             In Scotland, people can access most of the Scottish outdoors (set out in{' '}
             <a
+              className={'mobile-a'}
               target={'_blank'}
               href={
                 'https://www.outdooraccess-scotland.scot/act-and-access-code/land-reform-act/land-reform-act-legal'
@@ -28,8 +29,9 @@ export class MobileSoac extends React.PureComponent {
             </a>
             ).
           </p>
-          <p>
+          <p className={'mobile-p'}>
             <a
+              className={'mobile-a'}
               target={'_blank'}
               href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
             >
@@ -39,8 +41,9 @@ export class MobileSoac extends React.PureComponent {
             and other people's privacy and livelyhood, respect and protect the Scottish wildlife and
             nature and to take responsibility of your own actions when you are out and about.
           </p>
-          <p>
+          <p className={'mobile-p'}>
             <a
+              className={'mobile-a'}
               target={'_blank'}
               href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
             >

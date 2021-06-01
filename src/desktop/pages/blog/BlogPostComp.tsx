@@ -4,7 +4,7 @@ import React from 'react';
 import { BlogPostInfo } from '../../../appData/BlogPostInfo';
 
 import './blog-post-comp.scss';
-import '../../../appStyles/desktop-app.scss';
+import '../../../appStyles/desktop-app-styles.scss';
 
 interface BlogPostCompProps {
   blogPostInfo: BlogPostInfo;

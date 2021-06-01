@@ -10,13 +10,12 @@ export class MobileCharter extends React.PureComponent {
     return (
       <main className={'mcharter-page'}>
         <section>
-          <h2>#RoamResponsibly Charter</h2>
-          <p>
+          <p className={'mobile-p'}>
             We, Scotland's Instagrammers, love our beautiful country. However, we are concerned
             about the natural environment and want to ensure that it is conserved in as beautiful a
             condition for future generations to enjoy.
           </p>
-          <p>
+          <p className={'mobile-p'}>
             We recognise the rare privilege of statutory access rights to most of the Scottish
             outdoors, and wish to guarantee that such a privilege is not being wrongfully exploited.
             We acknowledge that we can only hold access rights if we exercise them responsibly
@@ -35,7 +34,7 @@ export class MobileCharter extends React.PureComponent {
             <li>
               We commit to understanding the freedoms and restrictions laid out in{' '}
               <a
-                className={'charter-link'}
+                className={'mcharter-link'}
                 href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
                 target={'_blank'}
               >
@@ -70,7 +69,7 @@ export class MobileCharter extends React.PureComponent {
                 periods or have introduced byelaws. We commit to following these restrictions
                 accordingly. (Sections 5. {'&'} 6.,{' '}
                 <a
-                  className={'charter-link'}
+                  className={'mcharter-link'}
                   href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
                   target={'_blank'}
                 >
@@ -96,7 +95,7 @@ export class MobileCharter extends React.PureComponent {
               <li>
                 anyone taking away anything from the land for a commercial purpose. (Section 7.,{' '}
                 <a
-                  className={'charter-link'}
+                  className={'mcharter-link'}
                   href={'https://www.outdooraccess-scotland.scot/scottish-outdoor-access-code'}
                   target={'_blank'}
                 >

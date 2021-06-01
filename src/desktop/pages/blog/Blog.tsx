@@ -19,7 +19,7 @@ import { JMTInstameetBlog } from './2018/jmt/JmtBlog';
 import { CalMacBlog } from './2018/calmac/CalMacBlog';
 
 import './blog.scss';
-import '../../../appStyles/desktop-app.scss';
+import '../../../appStyles/desktop-app-styles.scss';
 
 export interface BlogProps {
   appState: AppState;

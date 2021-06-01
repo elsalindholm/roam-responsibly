@@ -5,7 +5,7 @@ import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
 
 import './surf-and-turf-blog.scss';
-import '../../../../../appStyles/desktop-app.scss';
+import '../../../../../appStyles/desktop-app-styles.scss';
 
 interface SurfAndTurfProps {
   blogPostInfo: BlogPostInfo;

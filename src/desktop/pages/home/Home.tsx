@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './home.scss';
-import '../../../appStyles/desktop-app.scss';
+import '../../../appStyles/desktop-app-styles.scss';
 
 export class Home extends React.PureComponent {
   render() {
