@@ -21,13 +21,13 @@ export class MobilePartners extends React.PureComponent {
     return (
       <main className={'mpartners-page'}>
         <section>
-          <p>
+          <p className={'mobile-p'}>
             With the #RoamResponsibly campaign we aim to emphasize the importance of preserving the
             environment and to support our partner organisations in their missions to do so.
           </p>
         </section>
         <section>
-          <h2>PARTNERS</h2>
+          <h2 className={'mobile-h2'}>PARTNERS</h2>
           <div className={'mpartner-logos'}>
             <MobilePartnerComp campaignPartner={anCridhe} />
             <MobilePartnerComp campaignPartner={calMac} />
@@ -39,23 +39,26 @@ export class MobilePartners extends React.PureComponent {
           </div>
         </section>
         <section>
-          <h2>MENTIONS</h2>
+          <h2 className={'mobile-h2'}>MENTIONS</h2>
 
-          <p>
+          <p className={'mobile-p'}>
             #RoamResponsibly campaign mentioned in <strong>CalMac's</strong> blog:
           </p>
-          <p>
-            <a href={'https://www.calmac.co.uk/calmac.co.uk/blogs/roam-responsibly'}>
+          <p className={'mobile-p'}>
+            <a
+              className={'mobile-a'}
+              href={'https://www.calmac.co.uk/calmac.co.uk/blogs/roam-responsibly'}
+            >
               #RoamResponsibly with CalMac Ferries
             </a>
           </p>
           <br></br>
-          <p>
+          <p className={'mobile-p'}>
             #RoamResponsibly campaign included in <strong>Trespass'</strong> Corporate
             Responsibility page:
           </p>
-          <p>
-            <a href={'https://www.trespass.com/corporate-responsibility'}>
+          <p className={'mobile-p'}>
+            <a className={'mobile-a'} href={'https://www.trespass.com/corporate-responsibility'}>
               Trespass Corporate Responsibility
             </a>
           </p>
