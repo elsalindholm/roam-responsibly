@@ -52,7 +52,7 @@ export class MobilePartners extends React.PureComponent {
               #RoamResponsibly with CalMac Ferries
             </a>
           </p>
-          <br></br>
+
           <p className={'mobile-p'}>
             #RoamResponsibly campaign included in <strong>Trespass'</strong> Corporate
             Responsibility page:
