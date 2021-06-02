@@ -26,7 +26,7 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
     let page: JSX.Element;
     switch (appState.curPage) {
       case Page.HOME:
-        page = <Home />;
+        page = <Home appState={appState} />;
         break;
       case Page.ABOUT:
         page = <About appState={appState} />;
@@ -44,7 +44,7 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
         page = <SpreadWord />;
         break;
       default:
-        page = <Home />;
+        page = <Home appState={appState} />;
         break;
     }
 

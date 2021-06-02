@@ -1,10 +1,18 @@
 import React from 'react';
 
+import { AppState, Page } from '../../../AppState';
+
 import './home.scss';
 import '../../../appStyles/desktop-app-styles.scss';
 
-export class Home extends React.PureComponent {
+interface DesktopHomePageProps {
+  appState: AppState;
+}
+
+export class Home extends React.PureComponent<DesktopHomePageProps> {
   render() {
+    const { appState } = this.props;
+
     return (
       <main className={'home-page'}>
         <section>
@@ -19,11 +27,15 @@ export class Home extends React.PureComponent {
         <div className={'home-page-links'}>
           <section>
             <h2>What is the Scottish Outdoor Access Code?</h2>
-            <a className={'link-underlined'}>Read more here</a>
+            <a className={'link-underlined'} onClick={() => appState.setCurrentPage(Page.SOAC)}>
+              Read more here
+            </a>
           </section>
           <section>
             <h2>Want to know more about our social media campaign?</h2>
-            <a className={'link-underlined'}>Read more here</a>
+            <a className={'link-underlined'} onClick={() => appState.setCurrentPage(Page.ABOUT)}>
+              Read more here
+            </a>
           </section>
         </div>
       </main>

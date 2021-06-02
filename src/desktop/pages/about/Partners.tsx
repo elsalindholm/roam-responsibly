@@ -49,6 +49,7 @@ export class Partners extends React.PureComponent {
             <a
               className={'link-underlined'}
               href={'https://www.calmac.co.uk/calmac.co.uk/blogs/roam-responsibly'}
+              target={'_blank'}
             >
               #RoamResponsibly with CalMac Ferries
             </a>
@@ -62,6 +63,7 @@ export class Partners extends React.PureComponent {
             <a
               className={'link-underlined'}
               href={'https://www.trespass.com/corporate-responsibility'}
+              target={'_blank'}
             >
               Trespass Corporate Responsibility
             </a>
