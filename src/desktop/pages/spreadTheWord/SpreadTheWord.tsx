@@ -8,7 +8,7 @@ export class SpreadWord extends React.PureComponent {
     return (
       <main className={'spread-word-page'}>
         <section>
-          <h2>Help us spread the word</h2>
+          <p>Help us spread the word!</p>
           <p>
             Follow us on Instagram{' '}
             <a

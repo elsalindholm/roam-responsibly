@@ -10,11 +10,11 @@ export class Soac extends React.PureComponent {
     return (
       <main className={'soac-page'}>
         <section>
-          <h3>
+          <p>
             Scotland is one of a handful of countries with very good Access Rights for the general
             public. However, with this privilege comes responsibility to look after and not exploit
             the Scottish landscape.
-          </h3>
+          </p>
           <p>
             In Scotland, people can access most of the Scottish outdoors (set out in{' '}
             <a

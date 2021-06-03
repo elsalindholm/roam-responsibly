@@ -16,7 +16,7 @@ export class Home extends React.PureComponent<DesktopHomePageProps> {
     return (
       <main className={'home-page'}>
         <section>
-          <h2>WE WANT TO HELP CONSERVE SCOTTISH NATURE AND LANDSCAPES</h2>
+          <h2>We want to help conserve Scottish nature and landscapes</h2>
           <p>Scotland is a country of beautiful forests, lochs, munros, isles and beaches.</p>
           <p>
             With our social media campaign #RoamResponsibly we aim to raise awareness of the

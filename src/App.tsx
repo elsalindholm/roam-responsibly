@@ -28,7 +28,7 @@ export class App extends React.PureComponent {
         break;
     }
 
-    return <div>{app}</div>;
+    return <div id={'app-root'}>{app}</div>;
   }
 
   private readonly onResizeWindow = () => {

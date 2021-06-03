@@ -8,6 +8,8 @@ import {
   hiddenScotland,
   jmTrust,
   msc,
+  nevisport,
+  trespass,
   visitArran,
 } from '../../../../appData/CampaignPartners';
 import { MobilePartnerComp } from './MobilePartnerComp';
@@ -35,6 +37,8 @@ export class MobilePartners extends React.PureComponent {
             <MobilePartnerComp campaignPartner={hiddenScotland} />
             <MobilePartnerComp campaignPartner={jmTrust} />
             <MobilePartnerComp campaignPartner={msc} />
+            <MobilePartnerComp campaignPartner={nevisport} />
+            <MobilePartnerComp campaignPartner={trespass} />
             <MobilePartnerComp campaignPartner={visitArran} />
           </div>
         </section>

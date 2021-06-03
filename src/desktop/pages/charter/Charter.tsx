@@ -10,7 +10,6 @@ export class Charter extends React.PureComponent {
     return (
       <main className={'charter-page'}>
         <section>
-          <h2>#RoamResponsibly Charter</h2>
           <p>
             We, Scotland's Instagrammers, love our beautiful country. However, we are concerned
             about the natural environment and want to ensure that it is conserved in as beautiful a

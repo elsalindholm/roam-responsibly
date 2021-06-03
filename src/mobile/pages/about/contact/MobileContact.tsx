@@ -69,6 +69,7 @@ export class MobileContact extends React.PureComponent {
             <a className={'mobile-a'} href={'http://ruanaich.com/'} target={'_blank'}>
               www.ruanaich.com
             </a>
+            <div className={'rr-logo-mcontact-page'}></div>
           </p>
         </section>
         <section>

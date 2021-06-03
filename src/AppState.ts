@@ -38,7 +38,7 @@ export enum ViewMode {
 
 export class AppState {
   @observable public curPage: Page = Page.ABOUT;
-  @observable public curAboutPage: AboutPage = AboutPage.PARTNERS;
+  @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
   @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
   @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.CLOSED;
   @observable public aboutMenuOpen: boolean = false;
@@ -51,11 +51,13 @@ export class AppState {
       this.viewMode = ViewMode.DESKTOP;
     }
   }
-
-  @action public setCurrentPage(page: Page) {
+  @action public scrollPageUp() {
     var myDiv = document.getElementById('app-root');
     myDiv.scrollTop = 0;
+  }
 
+  @action public setCurrentPage(page: Page) {
+    this.scrollPageUp();
     this.curAboutPage = AboutPage.CAMPAIGN;
     this.curBlogPage = BlogPage.BLOGLIST;
     this.curPage = page;
@@ -66,8 +68,7 @@ export class AppState {
   }
 
   @action public setCurrentBlogPage(blogPage: BlogPage) {
-    var myDiv = document.getElementById('app-root');
-    myDiv.scrollTop = 0;
+    this.scrollPageUp();
     this.curBlogPage = blogPage;
   }
 

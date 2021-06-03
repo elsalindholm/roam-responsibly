@@ -77,5 +77,23 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+
+    &.nevisport {
+      height: 90%;
+      width: 100%;
+
+      background-image: url('../../../../../dist/assets/nevisport_logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.trespass {
+      height: 90%;
+      width: 100%;
+
+      background-image: url('../../../../../dist/assets/trespass_logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }

@@ -8,6 +8,8 @@ import {
   hiddenScotland,
   jmTrust,
   msc,
+  nevisport,
+  trespass,
   visitArran,
 } from '../../../appData/CampaignPartners';
 import { PartnerComp } from './PartnerComp';
@@ -36,6 +38,8 @@ export class Partners extends React.PureComponent {
             <PartnerComp campaignPartner={hiddenScotland} />
             <PartnerComp campaignPartner={jmTrust} />
             <PartnerComp campaignPartner={msc} />
+            <PartnerComp campaignPartner={nevisport} />
+            <PartnerComp campaignPartner={trespass} />
             <PartnerComp campaignPartner={visitArran} />
           </div>
         </section>

@@ -53,3 +53,17 @@ export const msc: CampaignPartner = {
   image: '../../../dist/assets/MSCLogo.png',
   link: 'https://www.mcsuk.org/',
 };
+
+export const nevisport: CampaignPartner = {
+  name: 'Nevisport',
+  styleClass: 'nevisport',
+  image: '../../../dist/assets/nevisport_logo.png',
+  link: 'https://www.nevisport.com/',
+};
+
+export const trespass: CampaignPartner = {
+  name: 'Trespass',
+  styleClass: 'trespass',
+  image: '../../../dist/assets/trespass_logo.png',
+  link: 'https://www.trespass.com/',
+};

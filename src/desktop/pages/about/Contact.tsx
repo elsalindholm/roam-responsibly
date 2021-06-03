@@ -14,30 +14,38 @@ export class Contact extends React.PureComponent {
         </section>
         <section>
           <h2>EMAIL</h2>
-          <p>
-            <strong>General Enquiries:</strong>
-            <br></br>
-            contactroamresponsibly@gmail.com
-          </p>
+          <p>contactroamresponsibly@gmail.com</p>
         </section>
         <section>
           <h2>SOCIAL MEDIA</h2>
           <p>You can find us on the following social media platforms:</p>
           <p>
             Instagram:{' '}
-            <a href={'https://www.instagram.com/roamresponsibly/'} target={'_blank'}>
+            <a
+              className={'link-underlined'}
+              href={'https://www.instagram.com/roamresponsibly/'}
+              target={'_blank'}
+            >
               @RoamResponsibly
             </a>
           </p>
           <p>
             Facebook:{' '}
-            <a href={'https://www.facebook.com/roamresponsibly/'} target={'_blank'}>
+            <a
+              className={'link-underlined'}
+              href={'https://www.facebook.com/roamresponsibly/'}
+              target={'_blank'}
+            >
               @RoamResponsibly
             </a>
           </p>
           <p>
             Twitter:{' '}
-            <a href={'https://twitter.com/rresponsiblysct'} target={'_blank'}>
+            <a
+              className={'link-underlined'}
+              href={'https://twitter.com/rresponsiblysct'}
+              target={'_blank'}
+            >
               @RResponsiblySct
             </a>
           </p>
@@ -59,6 +67,7 @@ export class Contact extends React.PureComponent {
             <a className={'link-underlined'} href={'http://ruanaich.com/'} target={'_blank'}>
               www.ruanaich.com
             </a>
+            <div className={'rr-logo-contact-page'}></div>
           </p>
         </section>
         <section>
