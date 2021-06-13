@@ -1,7 +1,7 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { AppState, ViewMode } from './AppState';
 
+import { AppState, ViewMode } from './AppState';
 import { DesktopApp } from './desktop/DesktopApp';
 import { MobileApp } from './mobile/MobileApp';
 
@@ -19,6 +19,8 @@ export class App extends React.PureComponent {
   }
 
   public render() {
+    this.appState.checkRoute();
+
     let app: JSX.Element;
     switch (this.appState.viewMode) {
       case ViewMode.DESKTOP:
@@ -29,7 +31,7 @@ export class App extends React.PureComponent {
         break;
     }
 
-    return <div id={'app-root'}>{app}</div>;
+    return <>{app}</>;
   }
 
   private readonly onResizeWindow = () => {

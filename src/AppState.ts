@@ -37,7 +37,7 @@ export enum ViewMode {
 }
 
 export class AppState {
-  @observable public curPage: Page = Page.ABOUT;
+  @observable public curPage: Page = Page.HOME;
   @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
   @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
   @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.CLOSED;
@@ -48,9 +48,40 @@ export class AppState {
     this.viewMode = w < 760 ? ViewMode.MOBILE : ViewMode.DESKTOP;
   }
 
+  public checkRoute() {
+    const query = window.location.hash;
+    console.log('query: ', query);
+    // '#/ - remove the leading hash & slashes
+    const splQuery: string[] = query.split('/');
+    splQuery.shift();
+    console.log('split query: ', splQuery);
+
+    // Check first level - home/about/charter etc
+    if (splQuery.length) {
+      const firstLevelQuery = splQuery[0];
+      switch (firstLevelQuery) {
+        case Page.HOME:
+          this.setCurrentPage(Page.HOME);
+          break;
+        case Page.ABOUT:
+          this.setCurrentPage(Page.ABOUT);
+          this.checkAboutSubRoute(splQuery);
+          break;
+      }
+    }
+  }
+
+  public checkAboutSubRoute(splQuery: string[]) {
+    if (splQuery.length > 1) {
+      const secondLevelQuery = splQuery[1];
+    }
+  }
+
   @action public scrollPageUp() {
     var myDiv = document.getElementById('app-container');
-    myDiv.scrollTop = 0;
+    if (myDiv) {
+      myDiv.scrollTop = 0;
+    }
   }
 
   @action public setCurrentPage(page: Page) {
@@ -58,6 +89,8 @@ export class AppState {
     this.curAboutPage = AboutPage.CAMPAIGN;
     this.curBlogPage = BlogPage.BLOGLIST;
     this.curPage = page;
+    // Update the url and tab title
+    window.history.replaceState(null, page, '/#/' + page);
   }
 
   @action public setCurrentAboutPage(aboutPage: AboutPage) {
