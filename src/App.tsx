@@ -11,6 +11,7 @@ export class App extends React.PureComponent {
 
   componentDidMount() {
     window.onresize = this.onResizeWindow;
+    this.onResizeWindow();
   }
 
   componentWillUnmount() {
