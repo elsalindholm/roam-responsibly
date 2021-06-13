@@ -49,7 +49,7 @@ export class DesktopApp extends React.PureComponent<DesktopAppProps> {
     }
 
     return (
-      <div className={'app-container'}>
+      <div className={'app-container'} id={'app-container'}>
         <Header appState={appState} />
         <div className={'body'}>
           <div className={'main-page-container'}>{page}</div>

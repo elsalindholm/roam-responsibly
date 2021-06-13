@@ -45,14 +45,11 @@ export class AppState {
   @observable public viewMode: ViewMode = ViewMode.DESKTOP;
 
   @action public checkViewMode(w: number) {
-    if (w < 760) {
-      this.viewMode = ViewMode.MOBILE;
-    } else {
-      this.viewMode = ViewMode.DESKTOP;
-    }
+    this.viewMode = w < 760 ? ViewMode.MOBILE : ViewMode.DESKTOP;
   }
+
   @action public scrollPageUp() {
-    var myDiv = document.getElementById('app-root');
+    var myDiv = document.getElementById('app-container');
     myDiv.scrollTop = 0;
   }
 
