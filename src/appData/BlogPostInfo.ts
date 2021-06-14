@@ -11,7 +11,7 @@ export const surfAndTurf: BlogPostInfo = {
   date: 'November 18, 2018',
   author: "Stephanie Cope, Tiree's Community Ranger",
   title: 'SURF AND TURF: ROAMING RESPONSIBLY ON THE ISLE OF TIREE',
-  subtitle: 'GUEST BLOG BY STEPHANIE COPE, TIREE’S COMMUNITY RANGER.',
+  subtitle: "Guest blog by Stephanie Cope, Tiree's Community Ranger.",
   blurb:
     '"For the Isle of Tiree, roaming responsibly is kind of a big deal. On a blustery January morning in 2017, I rolled off MV Clansman to become the island’s new community ranger (to those of you who only visit during the summer jollies - yes, those waxed paper bags are there with good reason). It is a post that I occupy alone; supported by my colleagues at Tiree Community Development Trust." ',
   image: 'surf-and-turf-blog',

@@ -71,7 +71,7 @@ export class MobileMcsBlog extends React.PureComponent<MobileMcsProps> {
             published brilliant guidance like the Good Fish Guide App, which gives advice on
             sustainable seafood, recipes and where to eat out (2).
           </p>
-          <div className={'mblog-img , mcs-logo'}></div>
+          <div className={'mblog-img , mmcs-logo'}></div>
 
           <h3>
             <strong>#SHOREYOUCARE</strong> EVENT BY SUSANNE ARBUCKLE{' '}
@@ -130,7 +130,7 @@ export class MobileMcsBlog extends React.PureComponent<MobileMcsProps> {
             </i>
           </p>
 
-          <div className={'mblog-img , mcs-instameet'}></div>
+          <div className={'mblog-img , mmcs-instameet'}></div>
           <p className={'mblog-img-caption'}>
             #ShoreYouCare event in North Queensferry on 1st June 2018. Photo by{' '}
             <a

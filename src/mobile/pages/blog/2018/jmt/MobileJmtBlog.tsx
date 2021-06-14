@@ -41,7 +41,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             </div>
             <div className={'mjmt-blog-quote-author'}>- John Muir</div>
           </div>
-          <div className={'mblog-img , jmt-img-logo'}></div>
+          <div className={'mblog-img , mjmt-img-logo'}></div>
 
           <p>
             At the outset of the #RoamResponsibly movement, we contacted a number of organisations
@@ -56,7 +56,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             opportunity to have a frank discussion on some of the key issues facing Scotland's wild
             places and the work that the organisation is doing to protect and manage these places.
           </p>
-          <div className={'mblog-img , jmt-img-one'}></div>
+          <div className={'mblog-img , mjmt-img-one'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
             <a
@@ -69,7 +69,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             .
           </p>
 
-          <div className={'mblog-img , jmt-img-two'}></div>
+          <div className={'mblog-img , mjmt-img-two'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
             <a
@@ -102,7 +102,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             </a>
             ).
           </p>
-          <div className={'mblog-img , jmt-img-three'}></div>
+          <div className={'mblog-img , mjmt-img-three'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
             <a
@@ -115,7 +115,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             .
           </p>
 
-          <div className={'mblog-img , jmt-img-four'}></div>
+          <div className={'mblog-img , mjmt-img-four'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
             <a
@@ -137,7 +137,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             derive just as much enjoyment from them as we currently do.{' '}
           </p>
 
-          <div className={'mblog-img , jmt-img-five'}></div>
+          <div className={'mblog-img , mjmt-img-five'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
             <a
@@ -181,7 +181,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             Read the blog post here.
           </p>
 
-          <div className={'mblog-img , jmt-img-six'}></div>
+          <div className={'mblog-img , mjmt-img-six'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
             <a
@@ -221,7 +221,7 @@ export class MobileJMTInstameetBlog extends React.PureComponent<MobileJMTIProps>
             </li>
           </ul>
 
-          <div className={'mblog-img , jmt-img-seven'}></div>
+          <div className={'mblog-img , mjmt-img-seven'}></div>
           <p className={'mblog-img-caption'}>
             Schiehallion Instameet by{' '}
             <a

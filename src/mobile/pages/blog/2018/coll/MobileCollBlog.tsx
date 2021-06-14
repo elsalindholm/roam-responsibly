@@ -74,7 +74,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
             </a>
             .
           </p>
-          <div className={'mblog-img , coll-clansman'}></div>
+          <div className={'mblog-img , mcoll-clansman'}></div>
           <p className={'mblog-img-caption'}>
             The Clansman approaching Coll. Photo by{' '}
             <a
@@ -98,7 +98,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
             and so glad to check in to our holiday apartment.
           </p>
 
-          <div className={'mblog-img , coll-beach'}></div>
+          <div className={'mblog-img , mcoll-beach'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
@@ -145,10 +145,10 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
             .
           </p>
 
-          <div className={'mblog-img , coll-an-cridhe-logo'}></div>
-          <div className={'mblog-img , coll-bunkhouse-logo'}></div>
+          <div className={'mblog-img , mcoll-an-cridhe-logo'}></div>
+          <div className={'mblog-img , mcoll-bunkhouse-logo'}></div>
 
-          <div className={'mblog-img , coll-seals'}></div>
+          <div className={'mblog-img , mcoll-seals'}></div>
           <p className={'mblog-img-caption'}>
             A group of seals were following us along the beach. Photo by{' '}
             <a
@@ -161,7 +161,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
             .
           </p>
 
-          <div className={'mblog-img , coll-rocky-beach'}></div>
+          <div className={'mblog-img , mcoll-rocky-beach'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
@@ -186,7 +186,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
             already.
           </p>
 
-          <div className={'mblog-img , coll-beach-clean-one'}></div>
+          <div className={'mblog-img , mcoll-beach-clean-one'}></div>
           <p className={'mblog-img-caption'}>
             Crossapol beach clean. Photo by{' '}
             <a
@@ -212,8 +212,8 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
             there is a bin that visitors can use at the Crossapol carpark.
           </p>
 
-          <div className={'mblog-img , coll-beach-clean-two'}></div>
-          <div className={'mblog-img , coll-beach-clean-three'}></div>
+          <div className={'mblog-img , mcoll-beach-clean-two'}></div>
+          <div className={'mblog-img , mcoll-beach-clean-three'}></div>
 
           <p>
             Earlier in the the day, in the spirit of the beach clean I had picked up plastic bottles
@@ -227,7 +227,7 @@ export class MobileCollBlog extends React.PureComponent<MobileCBCProps> {
             back and help the local community, environment and wildlife.
           </p>
 
-          <div className={'mblog-img , coll-sunset'}></div>
+          <div className={'mblog-img , mcoll-sunset'}></div>
           <p className={'mblog-img-caption'}>
             Sunset in Arinagour. Photo by{' '}
             <a

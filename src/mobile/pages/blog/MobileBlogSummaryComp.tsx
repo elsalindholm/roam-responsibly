@@ -16,7 +16,7 @@ export class MobileBlogSummaryComp extends React.PureComponent<MobileBlogSummary
   render() {
     const { blogPostInfo, onClick } = this.props;
     return (
-      <div className={'mblog-post-comp'}>
+      <div className={'mblog-post-comp'} onClick={() => onClick()}>
         <div className={'mblog-post-comp-img ' + blogPostInfo.image}></div>
         <div className={'mblog-post-comp-date'}>{blogPostInfo.date}</div>
         <div className={'mblog-post-comp-title'}>{blogPostInfo.title}</div>

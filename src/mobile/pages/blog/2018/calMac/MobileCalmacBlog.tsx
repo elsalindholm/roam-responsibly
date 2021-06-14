@@ -43,9 +43,9 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
             , who are joining us in a mission to promote responsible outdoor access in Scotland.
           </p>
 
-          <div className={'mblog-img , calmac-blog-logo'}></div>
+          <div className={'mblog-img , mcalmac-blog-logo'}></div>
 
-          <div className={'mblog-img , calmac-blog-harris'}></div>
+          <div className={'mblog-img , mcalmac-blog-harris'}></div>
           <p className={'mblog-img-caption'}>
             Isle of Harris by{' '}
             <a
@@ -67,7 +67,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
             Lewis in the north, spanning 28 destinations in total.
           </p>
 
-          <div className={'mblog-img , calmac-blog-eigg-one'}></div>
+          <div className={'mblog-img , mcalmac-blog-eigg-one'}></div>
           <p className={'mblog-img-caption'}>
             Isle of Eigg by{' '}
             <a
@@ -91,7 +91,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
             of their waste and aims to reduce their fuel consumption.
           </p>
 
-          <div className={'mblog-img , calmac-blog-lewis'}></div>
+          <div className={'mblog-img , mcalmac-blog-lewis'}></div>
           <p className={'mblog-img-caption'}>
             Isle of Lewis by{' '}
             <a
@@ -135,7 +135,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
             .
           </p>
 
-          <div className={'mblog-img , calmac-blog-uist'}></div>
+          <div className={'mblog-img , mcalmac-blog-uist'}></div>
           <p className={'mblog-img-caption'}>
             South Uist by{' '}
             <a
@@ -184,7 +184,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
             </i>
           </p>
 
-          <div className={'mblog-img , calmac-blog-eigg-two'}></div>
+          <div className={'mblog-img , mcalmac-blog-eigg-two'}></div>
           <p className={'mblog-img-caption'}>
             Isle of Eigg by{' '}
             <a
@@ -227,7 +227,7 @@ export class MobileCalMacBlog extends React.PureComponent<MobileCalMacProps> {
             </li>
           </ul>
 
-          <div className={'mblog-img , calmac-blog-bernera'}></div>
+          <div className={'mblog-img , mcalmac-blog-bernera'}></div>
           <p className={'mblog-img-caption'}>
             Great Bernera by{' '}
             <a

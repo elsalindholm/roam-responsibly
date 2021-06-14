@@ -62,7 +62,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
             </i>
           </p>
 
-          <div className={'mblog-img , hs-storr'}></div>
+          <div className={'mblog-img , mhs-storr'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
@@ -92,7 +92,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
             </i>
           </p>
 
-          <div className={'mblog-img , hs-tours'}></div>
+          <div className={'mblog-img , mhs-tours'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
@@ -117,7 +117,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
             </i>
           </p>
 
-          <div className={'mblog-img , hs-neist-point'}></div>
+          <div className={'mblog-img , mhs-neist-point'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
@@ -166,7 +166,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
             </i>
           </p>
 
-          <div className={'mblog-img , hs-trotternish'}></div>
+          <div className={'mblog-img , mhs-trotternish'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
@@ -200,7 +200,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
             </i>
           </p>
 
-          <div className={'mblog-img , hs-roam-responsibly'}></div>
+          <div className={'mblog-img , mhs-roam-responsibly'}></div>
           <p className={'mblog-img-caption'}>
             An excerpt from{' '}
             <a
@@ -213,7 +213,7 @@ export class MobileHiddenScotlandBlog extends React.PureComponent<MobileHiddenSc
             .
           </p>
 
-          <div className={'mblog-img , hs-wigwam'}></div>
+          <div className={'mblog-img , mhs-wigwam'}></div>
           <p className={'mblog-img-caption'}>
             Photo by{' '}
             <a
