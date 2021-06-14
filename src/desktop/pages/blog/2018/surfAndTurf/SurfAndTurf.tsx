@@ -35,19 +35,16 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
             <p className={'blog-post-author'}>GUEST BLOG BY: {blogPostInfo.author}</p>
           </div>
 
-          <div className={'saf-intro'}>
-            <p>
-              For the Isle of Tiree, roaming responsibly is kind of a big deal. On a blustery
-              January morning in 2017, I rolled off MV Clansman to become the island’s new community
-              ranger (to those of you who only visit during the summer jollies - yes, those waxed
-              paper bags are there with good reason). It is a post that I occupy alone; supported by
-              my colleagues at Tiree Community Development Trust.
-            </p>
-            <div className={'saf-intro-img'}>
-              <div className={'blog-img , saf-stephanie-cope'}></div>
-              <p className={'blog-img-caption'}>Stephanie Cope</p>
-            </div>
-          </div>
+          <p>
+            For the Isle of Tiree, roaming responsibly is kind of a big deal. On a blustery January
+            morning in 2017, I rolled off MV Clansman to become the island’s new community ranger
+            (to those of you who only visit during the summer jollies - yes, those waxed paper bags
+            are there with good reason). It is a post that I occupy alone; supported by my
+            colleagues at Tiree Community Development Trust.
+          </p>
+
+          <div className={'blog-img , saf-stephanie-cope'}></div>
+          <p className={'blog-img-caption'}>Stephanie Cope</p>
 
           <p>
             Tiree Ranger Service is supported by: Scottish Natural Heritage; Tiree Community

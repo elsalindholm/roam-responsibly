@@ -43,7 +43,7 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
             colleagues at Tiree Community Development Trust.
           </p>
 
-          <div className={'mblog-img , saf-stephanie-cope'}></div>
+          <div className={'mblog-img , msaf-stephanie-cope'}></div>
           <p className={'mblog-img-caption'}>Stephanie Cope</p>
 
           <p>
@@ -96,7 +96,7 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
             is why I’m so passionate about helping people to enjoy it responsibly.{' '}
           </p>
 
-          <div className={'mblog-img , saf-view-of-tiree'}></div>
+          <div className={'mblog-img , msaf-view-of-tiree'}></div>
           <p className={'mblog-img-caption'}>
             Looking out towards Coll and Tiree from north-west Mull. Photo by Stephanie Cope.
           </p>
@@ -113,11 +113,11 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
             windsurfing event in the world) then trust me, you need to.
           </p>
 
-          <div className={'mblog-img , saf-finn-mellon'}></div>
+          <div className={'mblog-img , msaf-finn-mellon'}></div>
           <p className={'mblog-img-caption'}>
             Finn Mellon, competing at Tiree Wave Classic 2017. Photo by Stephanie Cope.
           </p>
-          <div className={'mblog-img , saf-traigh-thodhrasdail'}></div>
+          <div className={'mblog-img , msaf-traigh-thodhrasdail'}></div>
           <p className={'mblog-img-caption'}>
             Gearing up for a full day on Traigh Thodhrasdail. Photo by Stephanie Cope.
           </p>
@@ -131,11 +131,11 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
             (which we rarely get, thanks to our maritime climate).
           </p>
 
-          <div className={'mblog-img , saf-first-machair'}></div>
+          <div className={'mblog-img , msaf-first-machair'}></div>
           <p className={'mblog-img-caption'}>
             The first machair flowers in April. Photo by Stephanie Cope.
           </p>
-          <div className={'mblog-img , saf-machair-evening'}></div>
+          <div className={'mblog-img , msaf-machair-evening'}></div>
           <p className={'mblog-img-caption'}>
             Tiree machair on a late summer evening. Photo by Stephanie Cope.
           </p>
@@ -148,12 +148,12 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
             throughout winter. These systems are achingly beautiful, and they are fragile.
           </p>
 
-          <div className={'mblog-img , saf-corncrake'}></div>
+          <div className={'mblog-img , msaf-corncrake'}></div>
           <p className={'mblog-img-caption'}>
             Crofting on Tiree supports a third of our UK Corncrake population. Photo by Stephanie
             Cope.
           </p>
-          <div className={'mblog-img , saf-brown-hare'}></div>
+          <div className={'mblog-img , msaf-brown-hare'}></div>
           <p className={'mblog-img-caption'}>
             Tiree is famous for its population of introduced Brown Hares. Photo by Stephanie Cope.
           </p>
@@ -215,12 +215,12 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
             not without squashing quite a few lapwing chicks.
           </p>
 
-          <div className={'mblog-img , saf-redshank'}></div>
+          <div className={'mblog-img , msaf-redshank'}></div>
           <p className={'mblog-img-caption'}>
             This Redshank chick is just one of the many groundnesting birds that breed on Tiree.
             Photo by Stephanie Cope.
           </p>
-          <div className={'mblog-img , saf-highland-cow'}></div>
+          <div className={'mblog-img , msaf-highland-cow'}></div>
           <p className={'mblog-img-caption'}>
             Small-scale, traditional crofting underpins Tiree's incredible biodiversity. Photo by
             Stephanie Cope.
@@ -288,11 +288,11 @@ export class MobileSurfAndTurfBlog extends React.PureComponent<MobileSurfAndTurf
             </a>
           </p>
 
-          <div className={'mblog-img , saf-wildflowers'}></div>
+          <div className={'mblog-img , msaf-wildflowers'}></div>
           <p className={'mblog-img-caption'}>
             Wildflower vereges along Traigh Sorobidh. Photo by Stephanie Cope.
           </p>
-          <div className={'mblog-img , saf-traigh-caolas'}></div>
+          <div className={'mblog-img , msaf-traigh-caolas'}></div>
           <p className={'mblog-img-caption'}>
             Traigh Caolas, with Ben More of Mull in the distance. Photo by Stephanie Cope.
           </p>

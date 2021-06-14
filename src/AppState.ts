@@ -4,7 +4,7 @@ export enum Page {
   HOME = 'home',
   ABOUT = 'about',
   CHARTER = 'charter',
-  SOAC = 'soac',
+  SOAC = 'scottish-outdoor-access-code',
   BLOG = 'blog',
   SPREADWORD = 'spread-the-word',
 }
@@ -37,9 +37,9 @@ export enum ViewMode {
 }
 
 export class AppState {
-  @observable public curPage: Page = Page.HOME;
+  @observable public curPage: Page = Page.BLOG;
   @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
-  @observable public curBlogPage: BlogPage = BlogPage.CALMAC;
+  @observable public curBlogPage: BlogPage = BlogPage.SURFANDTURF;
   @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.CLOSED;
   @observable public aboutMenuOpen: boolean = false;
   @observable public viewMode: ViewMode = ViewMode.DESKTOP;
