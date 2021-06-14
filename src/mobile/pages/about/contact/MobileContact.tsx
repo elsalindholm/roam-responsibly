@@ -69,14 +69,13 @@ export class MobileContact extends React.PureComponent {
             <a className={'mobile-a'} href={'http://ruanaich.com/'} target={'_blank'}>
               www.ruanaich.com
             </a>
-            <div className={'rr-logo-mcontact-page'}></div>
           </p>
+          <div className={'rr-logo-mcontact-page'}></div>
         </section>
         <section>
           <h2 className={'mobile-h2'}>WEBSITE AND IMAGES</h2>
           <p className={'mobile-p'}>
-            Website and images used on this website (unless otherwise stated) are the work of Elsa
-            Lindholm.
+            Website and images used on this website (unless otherwise stated) are by Elsa Lindholm.
             <br></br>
             <a
               className={'mobile-a'}
@@ -85,6 +84,10 @@ export class MobileContact extends React.PureComponent {
             >
               @elsaannukka
             </a>
+            <br></br>
+            <br></br>
+            If you have any feedback on the website, please email us at
+            contactroamresponsibly@gmail.com.
           </p>
         </section>
       </main>

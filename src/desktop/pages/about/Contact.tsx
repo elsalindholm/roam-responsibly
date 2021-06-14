@@ -67,8 +67,8 @@ export class Contact extends React.PureComponent {
             <a className={'link-underlined'} href={'http://ruanaich.com/'} target={'_blank'}>
               www.ruanaich.com
             </a>
-            <div className={'rr-logo-contact-page'}></div>
           </p>
+          <div className={'rr-logo-contact-page'}></div>
         </section>
         <section>
           <h2>WEBSITE AND IMAGES</h2>
@@ -83,6 +83,10 @@ export class Contact extends React.PureComponent {
             >
               @elsaannukka
             </a>
+            <br></br>
+            <br></br>
+            If you have any feedback on the website, please email us at
+            contactroamresponsibly@gmail.com.
           </p>
         </section>
       </main>

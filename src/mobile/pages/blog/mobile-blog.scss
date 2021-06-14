@@ -17,8 +17,6 @@
   height: auto;
   width: 100%;
 
-  //border: 1px solid red;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,8 +25,6 @@
   .mblog-content {
     height: auto;
     width: 100%;
-
-    //border: 1px solid green;
 
     display: flex;
     flex-direction: column;
@@ -46,8 +42,8 @@
         margin: 5% 0 5% 0;
         font-weight: 700;
         letter-spacing: 0.2vw;
-        background-color: transparent;
-        color: $links;
+        background-color: $links;
+        color: $light-text;
         border: 3px solid $links;
         border-radius: 15vw;
         outline: none;
@@ -154,5 +150,4 @@
 .mblog-img {
   background-size: cover;
   background-repeat: no-repeat;
-  //border: 1px solid red;
 }
