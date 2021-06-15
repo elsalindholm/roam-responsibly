@@ -37,9 +37,9 @@ export enum ViewMode {
 }
 
 export class AppState {
-  @observable public curPage: Page = Page.BLOG;
-  @observable public curAboutPage: AboutPage = AboutPage.CONTACT;
-  @observable public curBlogPage: BlogPage = BlogPage.SURFANDTURF;
+  @observable public curPage: Page = Page.HOME;
+  @observable public curAboutPage: AboutPage = AboutPage.CAMPAIGN;
+  @observable public curBlogPage: BlogPage = BlogPage.BLOGLIST;
   @observable public mobileMenuState: MobileMenuStage = MobileMenuStage.CLOSED;
   @observable public aboutMenuOpen: boolean = false;
   @observable public viewMode: ViewMode = ViewMode.DESKTOP;
