@@ -10,7 +10,6 @@ export class Instagrammers extends React.PureComponent {
     return (
       <main className={'ig-page'}>
         <section>
-          <h2>A GREAT COMMUNITY OF INSTAGRAMMERS</h2>
           <p>
             Scotland's Instagrammer community is an inspiring group of people who not only take
             wonderful photographs and fill Instagram with lovely content, but also do not hesitate
