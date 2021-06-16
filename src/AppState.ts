@@ -67,6 +67,18 @@ export class AppState {
           this.setCurrentPage(Page.ABOUT);
           this.checkAboutSubRoute(splQuery);
           break;
+        case Page.CHARTER:
+          this.setCurrentPage(Page.CHARTER);
+          break;
+        case Page.SOAC:
+          this.setCurrentPage(Page.SOAC);
+          break;
+        case Page.BLOG:
+          this.setCurrentPage(Page.BLOG);
+          break;
+        case Page.SPREADWORD:
+          this.setCurrentPage(Page.SPREADWORD);
+          break;
       }
     }
   }
@@ -74,6 +86,49 @@ export class AppState {
   public checkAboutSubRoute(splQuery: string[]) {
     if (splQuery.length > 1) {
       const secondLevelQuery = splQuery[1];
+      switch (secondLevelQuery) {
+        case AboutPage.CAMPAIGN:
+          this.setCurrentAboutPage(AboutPage.CAMPAIGN);
+          break;
+        case AboutPage.INSTAGRAMMERS:
+          this.setCurrentAboutPage(AboutPage.INSTAGRAMMERS);
+          break;
+        case AboutPage.PARTNERS:
+          this.setCurrentAboutPage(AboutPage.PARTNERS);
+          break;
+        case AboutPage.CONTACT:
+          this.setCurrentAboutPage(AboutPage.CONTACT);
+          break;
+      }
+    }
+  }
+
+  public checkBlogSubRoute(splQuery: string[]) {
+    if (splQuery.length > 1) {
+      const secondLevelQuery = splQuery[1];
+      switch (secondLevelQuery) {
+        case BlogPage.BLOGLIST:
+          this.setCurrentBlogPage(BlogPage.BLOGLIST);
+          break;
+        case BlogPage.SURFANDTURF:
+          this.setCurrentBlogPage(BlogPage.SURFANDTURF);
+          break;
+        case BlogPage.HIDDENSCOTLAND:
+          this.setCurrentBlogPage(BlogPage.HIDDENSCOTLAND);
+          break;
+        case BlogPage.MCS:
+          this.setCurrentBlogPage(BlogPage.MCS);
+          break;
+        case BlogPage.COLL:
+          this.setCurrentBlogPage(BlogPage.COLL);
+          break;
+        case BlogPage.JMT:
+          this.setCurrentBlogPage(BlogPage.JMT);
+          break;
+        case BlogPage.CALMAC:
+          this.setCurrentBlogPage(BlogPage.CALMAC);
+          break;
+      }
     }
   }
 
