@@ -3,7 +3,7 @@
 .blog-post-comp {
   height: auto;
   width: 30vw;
-  margin: 2%;
+  margin: 5% 2%;
 
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@
   .blog-post-comp-date {
     margin: 2%;
     font-family: $lora;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-style: italic;
   }
 
@@ -65,14 +65,14 @@
     margin: 2%;
 
     font-family: $lato;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: 500;
   }
 
   .blog-post-comp-subtitle {
     margin: 2%;
     font-family: $lato;
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 600;
   }
 
@@ -81,7 +81,7 @@
 
     font-family: $navbar;
 
-    font-size: 1vw;
+    font-size: 1.3vw;
     text-align: center;
   }
 

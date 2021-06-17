@@ -45,7 +45,7 @@ export class AppState {
   @observable public viewMode: ViewMode = ViewMode.DESKTOP;
 
   @action public checkViewMode(w: number) {
-    this.viewMode = w < 760 ? ViewMode.MOBILE : ViewMode.DESKTOP;
+    this.viewMode = w < 640 ? ViewMode.MOBILE : ViewMode.DESKTOP;
   }
 
   public checkRoute() {
