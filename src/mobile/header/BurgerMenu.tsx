@@ -20,7 +20,7 @@ export class BurgerMenuButton extends React.PureComponent {
             transform='translate(5825.5 -1642)'
             fill='none'
             stroke='#fff'
-            stroke-width='3'
+            strokeWidth='3'
           />
           <line
             id='Line_12'
@@ -29,7 +29,7 @@ export class BurgerMenuButton extends React.PureComponent {
             transform='translate(5825.5 -1649)'
             fill='none'
             stroke='#fff'
-            stroke-width='3'
+            strokeWidth='3'
           />
           <line
             id='Line_13'
@@ -38,7 +38,7 @@ export class BurgerMenuButton extends React.PureComponent {
             transform='translate(5825.5 -1635)'
             fill='none'
             stroke='#fff'
-            stroke-width='3'
+            strokeWidth='3'
           />
         </g>
       </svg>

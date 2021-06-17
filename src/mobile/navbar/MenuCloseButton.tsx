@@ -20,7 +20,7 @@ export class MobileMenuCloseButton extends React.PureComponent {
             transform='translate(5829 -1698.839) rotate(45)'
             fill='none'
             stroke='#fff'
-            stroke-width='3'
+            strokeWidth='3'
           />
           <line
             id='Line_10'
@@ -29,7 +29,7 @@ export class MobileMenuCloseButton extends React.PureComponent {
             transform='translate(5846.678 -1698.839) rotate(135)'
             fill='none'
             stroke='#fff'
-            stroke-width='3'
+            strokeWidth='3'
           />
         </g>
       </svg>

@@ -113,34 +113,33 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
             event and one of the lovely people who run An Cridhe and Coll Bunkhouse.
           </p>
 
-          <div className={'coll-two-columns'}>
-            <p>
-              With this blog post, I am pleased to introduce you to our newest partners:{' '}
-              <a className={'blog-link'} href={'https://ancridhe.com/'} target={'_blank'}>
-                An Cridhe
-              </a>{' '}
-              and{' '}
-              <a className={'blog-link'} href={'https://collbunkhouse.com/'} target={'_blank'}>
-                Coll Bunkhouse
-              </a>
-              . Together, we had very inspiring conservations about sustainable travel and the
-              #RoamResponsibly campaign and both organisations were thrilled to get involved. An
-              Cridhe is Coll's recently built community centre and Coll Bunkhouse is a very
-              affordably-priced 5-star hostel right next to it in the centre of Coll's main village
-              Arinagour. Both are managed by lovely and hospitable staff and housed in beautiful new
-              buildings, which have been built to a high environmentally friendly standard. They
-              provide income, facilities and fun activities for the local community and visitors.
-              Both An Cridhe and Coll Bunkhouse are owned and operated by the Coll community through
-              their development trust and charity{' '}
-              <a className={'blog-link'} href={'https://developmentcoll.org.uk/'} target={'_blank'}>
-                Development Coll Limited
-              </a>
-              .
-            </p>
-            <div className={'coll-img-column'}>
-              <div className={'blog-img , coll-an-cridhe-logo'}></div>
-              <div className={'blog-img , coll-bunkhouse-logo'}></div>
-            </div>
+          <p>
+            With this blog post, I am pleased to introduce you to our newest partners:{' '}
+            <a className={'blog-link'} href={'https://ancridhe.com/'} target={'_blank'}>
+              An Cridhe
+            </a>{' '}
+            and{' '}
+            <a className={'blog-link'} href={'https://collbunkhouse.com/'} target={'_blank'}>
+              Coll Bunkhouse
+            </a>
+            . Together, we had very inspiring conservations about sustainable travel and the
+            #RoamResponsibly campaign and both organisations were thrilled to get involved. An
+            Cridhe is Coll's recently built community centre and Coll Bunkhouse is a very
+            affordably-priced 5-star hostel right next to it in the centre of Coll's main village
+            Arinagour. Both are managed by lovely and hospitable staff and housed in beautiful new
+            buildings, which have been built to a high environmentally friendly standard. They
+            provide income, facilities and fun activities for the local community and visitors. Both
+            An Cridhe and Coll Bunkhouse are owned and operated by the Coll community through their
+            development trust and charity{' '}
+            <a className={'blog-link'} href={'https://developmentcoll.org.uk/'} target={'_blank'}>
+              Development Coll Limited
+            </a>
+            .
+          </p>
+
+          <div className={'coll-img-column'}>
+            <div className={'blog-img , coll-an-cridhe-logo'}></div>
+            <div className={'blog-img , coll-bunkhouse-logo'}></div>
           </div>
 
           <div className={'blog-img , coll-seals'}></div>
