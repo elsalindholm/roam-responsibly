@@ -99,6 +99,9 @@ export class AppState {
         case AboutPage.CONTACT:
           this.setCurrentAboutPage(AboutPage.CONTACT);
           break;
+        case null:
+          this.setCurrentAboutPage(AboutPage.CAMPAIGN);
+          break;
       }
     }
   }
