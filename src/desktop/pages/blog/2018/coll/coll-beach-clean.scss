@@ -12,6 +12,15 @@
   align-items: center;
 }
 
+.coll-two-columns {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .coll-clansman {
   background-image: url('../../../../../../dist/assets/blogPosts/coll/collHarbour.jpg');
   height: 38vw;
