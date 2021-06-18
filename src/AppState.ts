@@ -149,6 +149,7 @@ export class AppState {
       urlSubPage = this.curBlogPage;
     }
     window.history.replaceState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
+    window.history.pushState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
   }
 
   @action public setCurrentPage(page: Page) {
