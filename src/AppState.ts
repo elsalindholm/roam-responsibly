@@ -152,7 +152,7 @@ export class AppState {
     } else if (urlMainPage === Page.BLOG) {
       urlSubPage = this.curBlogPage;
     }
-    window.history.replaceState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
+    //window.history.replaceState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
     window.history.pushState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
   }
 
