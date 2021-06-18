@@ -17,12 +17,12 @@ export enum AboutPage {
 }
 
 export enum BlogPage {
-  SURFANDTURF = 'surf-and-turf',
-  HIDDENSCOTLAND = 'hidden-scotland',
-  MCS = 'mcs',
-  COLL = 'coll',
-  JMT = 'jmt',
-  CALMAC = 'calmac',
+  SURFANDTURF = 'surf-and-turf-roaming-responsibly-on-the-isle-of-tiree',
+  HIDDENSCOTLAND = 'an-interview-with-hidden-scotland',
+  MCS = 'marine-conservation-society',
+  COLL = 'beach-cleaning-on-coll',
+  JMT = 'partnering-up-with-john-muir-trust',
+  CALMAC = 'introducing-our-first-partner-calmac-ferries',
   BLOGLIST = 'blog-list',
 }
 
@@ -139,22 +139,36 @@ export class AppState {
     }
   }
 
+  @action public updateUrl(page: Page) {
+    let urlMainPage = page;
+    let urlSubPage = '';
+
+    if (urlMainPage === Page.ABOUT) {
+      urlSubPage = this.curAboutPage;
+    } else if (urlMainPage === Page.BLOG) {
+      urlSubPage = this.curBlogPage;
+    }
+    window.history.replaceState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
+  }
+
   @action public setCurrentPage(page: Page) {
     this.scrollPageUp();
     this.curAboutPage = AboutPage.CAMPAIGN;
     this.curBlogPage = BlogPage.BLOGLIST;
     this.curPage = page;
     // Update the url and tab title
-    window.history.replaceState(null, page, '/#/' + page);
+    this.updateUrl(page);
   }
 
   @action public setCurrentAboutPage(aboutPage: AboutPage) {
     this.curAboutPage = aboutPage;
+    this.updateUrl(Page.ABOUT);
   }
 
   @action public setCurrentBlogPage(blogPage: BlogPage) {
     this.scrollPageUp();
     this.curBlogPage = blogPage;
+    this.updateUrl(Page.BLOG);
   }
 
   @action public setMobileMenuOpen() {
