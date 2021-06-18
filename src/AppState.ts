@@ -100,6 +100,8 @@ export class AppState {
           this.setCurrentAboutPage(AboutPage.CONTACT);
           break;
       }
+    } else {
+      this.setCurrentAboutPage(AboutPage.CAMPAIGN);
     }
   }
 
@@ -129,6 +131,8 @@ export class AppState {
           this.setCurrentBlogPage(BlogPage.CALMAC);
           break;
       }
+    } else {
+      this.setCurrentBlogPage(BlogPage.BLOGLIST);
     }
   }
 
