@@ -20,7 +20,7 @@ export class MobileBlogSummaryComp extends React.PureComponent<MobileBlogSummary
         <div className={'mblog-post-comp-img ' + blogPostInfo.image}></div>
         <div className={'mblog-post-comp-date'}>{blogPostInfo.date}</div>
         <div className={'mblog-post-comp-title'}>{blogPostInfo.title}</div>
-        <div className={'mblog-post-comp-subtitle'}>{blogPostInfo.subtitle}</div>
+
         <div className={'mblog-post-comp-blurb'}>{blogPostInfo.blurb}</div>
         <button className={'mblog-post-comp-btn'} onClick={() => onClick()}>
           READ MORE...

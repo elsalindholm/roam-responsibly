@@ -30,7 +30,7 @@ export class Partners extends React.PureComponent {
           </p>
         </section>
         <section>
-          <h2>PARTNERS</h2>
+          <h2>OUR PARTNERS</h2>
           <div className={'partner-logos'}>
             <PartnerComp campaignPartner={anCridhe} />
             <PartnerComp campaignPartner={calMac} />

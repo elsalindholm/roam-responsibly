@@ -29,7 +29,7 @@ export class MobilePartners extends React.PureComponent {
           </p>
         </section>
         <section>
-          <h2 className={'mobile-h2'}>PARTNERS</h2>
+          <h2 className={'mobile-h2'}>OUR PARTNERS</h2>
           <div className={'mpartner-logos'}>
             <MobilePartnerComp campaignPartner={anCridhe} />
             <MobilePartnerComp campaignPartner={calMac} />

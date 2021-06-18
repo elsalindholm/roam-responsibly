@@ -16,7 +16,7 @@ export class MobileHome extends React.PureComponent<MobileHomeProps> {
     return (
       <main className={'mhome-page'}>
         <section>
-          <h2 className={'mobile-h2'}>WE WANT TO HELP CONSERVE SCOTTISH NATURE AND LANDSCAPES</h2>
+          <h2 className={'mobile-h2'}>We want to help conserve Scottish nature and landscapes</h2>
           <p className={'mobile-p'}>
             Scotland is a country of beautiful forests, lochs, munros, isles and beaches.
           </p>

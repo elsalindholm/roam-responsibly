@@ -22,7 +22,7 @@ export const hiddenScotland: BlogPostInfo = {
   author: 'Jack Cairney and Elsa Lindholm',
   title: 'AN INTERVIEW WITH HIDDEN SCOTLAND',
   blurb:
-    'This week we welcome Hidden Scotland as our newest parter. No doubt many of you might have come across @hiddenscotland Instagram, which features beautiful and dramatic photographs of Scotland. But there is more to it. ',
+    'This week we welcome Hidden Scotland as our newest parter. No doubt many of you might have come across @hiddenscotland Instagram profile, which features beautiful and dramatic photographs of Scotland. But there is more to it. ',
   image: 'hidden-scotland-blog',
 };
 
