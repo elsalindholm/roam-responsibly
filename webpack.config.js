@@ -40,6 +40,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
+      favicon: './src/RR_round_logo_black.png',
     }),
   ],
 };

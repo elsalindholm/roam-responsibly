@@ -44,67 +44,77 @@ export class AppState {
   @observable public aboutMenuOpen: boolean = false;
   @observable public viewMode: ViewMode = ViewMode.DESKTOP;
 
+  constructor() {
+    this.checkRoute();
+  }
+
   @action public checkViewMode(w: number) {
     this.viewMode = w < 640 ? ViewMode.MOBILE : ViewMode.DESKTOP;
   }
 
   public checkRoute() {
     const query = window.location.hash;
-    console.log('query: ', query);
+    //console.log('query: ', query);
     // '#/ - remove the leading hash & slashes
     const splQuery: string[] = query.split('/');
     splQuery.shift();
-    console.log('split query: ', splQuery);
+    //console.log('split query: ', splQuery);
 
     // Check first level - home/about/charter etc
-    if (splQuery.length) {
-      const firstLevelQuery = splQuery[0];
-      switch (firstLevelQuery) {
-        case Page.HOME:
-          this.setCurrentPage(Page.HOME);
-          break;
-        case Page.ABOUT:
-          this.setCurrentPage(Page.ABOUT);
-          this.checkAboutSubRoute(splQuery);
-          break;
-        case Page.CHARTER:
-          this.setCurrentPage(Page.CHARTER);
-          break;
-        case Page.SOAC:
-          this.setCurrentPage(Page.SOAC);
-          break;
-        case Page.BLOG:
-          this.setCurrentPage(Page.BLOG);
-          break;
-        case Page.SPREADWORD:
-          this.setCurrentPage(Page.SPREADWORD);
-          break;
-      }
+    if (!splQuery.length) {
+      this.setCurrentPage(Page.HOME);
+      return;
+    }
+
+    const firstLevelQuery = splQuery[0];
+    switch (firstLevelQuery) {
+      case Page.HOME:
+        this.setCurrentPage(Page.HOME);
+        break;
+      case Page.ABOUT:
+        this.setCurrentPage(Page.ABOUT);
+        this.checkAboutSubRoute(splQuery);
+        break;
+      case Page.CHARTER:
+        this.setCurrentPage(Page.CHARTER);
+        break;
+      case Page.SOAC:
+        this.setCurrentPage(Page.SOAC);
+        break;
+      case Page.BLOG:
+        this.setCurrentPage(Page.BLOG);
+        this.checkBlogSubRoute(splQuery);
+        break;
+      case Page.SPREADWORD:
+        this.setCurrentPage(Page.SPREADWORD);
+        break;
     }
   }
 
   public checkAboutSubRoute(splQuery: string[]) {
-    if (splQuery.length > 1) {
-      const secondLevelQuery = splQuery[1];
-      switch (secondLevelQuery) {
-        case AboutPage.CAMPAIGN:
-          this.setCurrentAboutPage(AboutPage.CAMPAIGN);
-          break;
-        case AboutPage.INSTAGRAMMERS:
-          this.setCurrentAboutPage(AboutPage.INSTAGRAMMERS);
-          break;
-        case AboutPage.PARTNERS:
-          this.setCurrentAboutPage(AboutPage.PARTNERS);
-          break;
-        case AboutPage.CONTACT:
-          this.setCurrentAboutPage(AboutPage.CONTACT);
-          break;
-      }
-    } else {
+    if (splQuery.length < 2) {
       this.setCurrentAboutPage(AboutPage.CAMPAIGN);
+      return;
+    }
+
+    const secondLevelQuery = splQuery[1];
+    switch (secondLevelQuery) {
+      case AboutPage.CAMPAIGN:
+        this.setCurrentAboutPage(AboutPage.CAMPAIGN);
+        break;
+      case AboutPage.INSTAGRAMMERS:
+        this.setCurrentAboutPage(AboutPage.INSTAGRAMMERS);
+        break;
+      case AboutPage.PARTNERS:
+        this.setCurrentAboutPage(AboutPage.PARTNERS);
+        break;
+      case AboutPage.CONTACT:
+        this.setCurrentAboutPage(AboutPage.CONTACT);
+        break;
     }
   }
 
+  // TODO - refactor to match about format, make these functions private and move them below public functions
   public checkBlogSubRoute(splQuery: string[]) {
     if (splQuery.length > 1) {
       const secondLevelQuery = splQuery[1];
@@ -152,7 +162,7 @@ export class AppState {
     } else if (urlMainPage === Page.BLOG) {
       urlSubPage = this.curBlogPage;
     }
-    //window.history.replaceState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
+
     window.history.pushState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
   }
 

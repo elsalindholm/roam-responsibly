@@ -10,11 +10,13 @@ export class App extends React.PureComponent {
   private readonly appState = new AppState();
 
   componentDidMount() {
+    window.onpopstate = this.onHistoryChange;
     window.onresize = this.onResizeWindow;
     this.onResizeWindow();
   }
 
   componentWillUnmount() {
+    window.onpopstate = undefined;
     window.onresize = undefined;
   }
 
@@ -33,6 +35,10 @@ export class App extends React.PureComponent {
 
     return <>{app}</>;
   }
+
+  private readonly onHistoryChange = () => {
+    this.appState.checkRoute();
+  };
 
   private readonly onResizeWindow = () => {
     this.appState.checkViewMode(window.innerWidth);
