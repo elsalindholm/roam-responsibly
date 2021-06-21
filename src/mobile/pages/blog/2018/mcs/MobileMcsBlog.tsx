@@ -229,7 +229,11 @@ export class MobileMcsBlog extends React.PureComponent<MobileMcsProps> {
                 @RResponsiblySct
               </a>{' '}
               (Twitter) and{' '}
-              <a className={'mblog-link'} href={'https://www.facebook.com/roamresponsibly/'}>
+              <a
+                className={'mblog-link'}
+                href={'https://www.facebook.com/roamresponsibly/'}
+                target={'_blank'}
+              >
                 RoamResponsibly
               </a>
               (Facebook)

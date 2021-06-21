@@ -52,6 +52,7 @@ export class MobilePartners extends React.PureComponent {
             <a
               className={'mobile-a'}
               href={'https://www.calmac.co.uk/calmac.co.uk/blogs/roam-responsibly'}
+              target={'_blank'}
             >
               #RoamResponsibly with CalMac Ferries
             </a>
@@ -62,7 +63,11 @@ export class MobilePartners extends React.PureComponent {
             Responsibility page:
           </p>
           <p className={'mobile-p'}>
-            <a className={'mobile-a'} href={'https://www.trespass.com/corporate-responsibility'}>
+            <a
+              className={'mobile-a'}
+              href={'https://www.trespass.com/corporate-responsibility'}
+              target={'_blank'}
+            >
               Trespass Corporate Responsibility
             </a>
           </p>

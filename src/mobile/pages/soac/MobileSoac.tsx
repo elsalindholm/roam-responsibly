@@ -9,7 +9,7 @@ export class MobileSoac extends React.PureComponent {
       <main className={'msoac-page'}>
         <section>
           <p className={'mobile-p'}>
-            Scotland is one of a handful of countries with very good Access Rights for the general
+            Scotland is one of a handful of countries with wide Access Rights for the general
             public.
           </p>
           <p className={'mobile-p'}>
@@ -37,9 +37,10 @@ export class MobileSoac extends React.PureComponent {
             >
               The Scottish Outdoor Access Code
             </a>{' '}
-            is a guide for the responsibilities that people have, which are to respect landowners'
-            and other people's privacy and livelyhood, respect and protect the Scottish wildlife and
-            nature and to take responsibility of your own actions when you are out and about.
+            is a guide for the responsibilities that people have when enjoying the outdoors. These
+            responsibilities include respecting landowners' and other people's privacy and
+            livelyhood, respecting and protecting Scottish wildlife and nature and taking
+            responsibility of your own actions when you are out and about.
           </p>
           <p className={'mobile-p'}>
             <a

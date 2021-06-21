@@ -12,8 +12,8 @@ export class Instagrammers extends React.PureComponent {
         <section>
           <p>
             Scotland's Instagrammer community is an inspiring group of people who not only take
-            wonderful photographs and fill Instagram with lovely content, but also do not hesitate
-            to stand up and speak up about issues that they see around them.
+            wonderful photographs and produce engaging content, but also do not hesitate to stand up
+            and speak up about issues that they see around them.
           </p>
         </section>
         <section>

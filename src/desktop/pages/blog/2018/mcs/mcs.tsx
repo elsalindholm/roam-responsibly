@@ -223,7 +223,11 @@ export class McsBlog extends React.PureComponent<McsProps> {
                 @RResponsiblySct
               </a>{' '}
               (Twitter) and{' '}
-              <a className={'blog-link'} href={'https://www.facebook.com/roamresponsibly/'}>
+              <a
+                className={'blog-link'}
+                href={'https://www.facebook.com/roamresponsibly/'}
+                target={'_blank'}
+              >
                 RoamResponsibly
               </a>
               (Facebook)

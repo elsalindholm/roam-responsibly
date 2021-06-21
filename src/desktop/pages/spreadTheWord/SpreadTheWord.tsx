@@ -18,7 +18,7 @@ export class SpreadWord extends React.PureComponent {
             >
               @RoamResponsibly
             </a>{' '}
-            and tag your photos and stories of the Scottish Outdoors with{' '}
+            and tag your photos and stories of the Scottish outdoors with{' '}
             <strong>#roamresponsibly</strong>.
           </p>
           <p>

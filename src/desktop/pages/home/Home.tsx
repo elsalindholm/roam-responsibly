@@ -17,10 +17,7 @@ export class Home extends React.PureComponent<DesktopHomePageProps> {
       <main className={'home-page'}>
         <section>
           <h2>We want to help conserve Scottish nature and landscapes</h2>
-          <p>
-            Scotland is a country of beautiful forests, lochs, munros, isles and beaches. We want to
-            help conserve Scottish nature and landscapes.
-          </p>
+          <p>Scotland is a country of beautiful forests, lochs, munros, isles and beaches.</p>
           <p>
             With our social media campaign #RoamResponsibly we aim to raise awareness of the
             Scottish Outdoor Access Code and preserve these stunning and unique landscapes as
