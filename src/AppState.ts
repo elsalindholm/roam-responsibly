@@ -52,15 +52,66 @@ export class AppState {
     this.viewMode = w < 640 ? ViewMode.MOBILE : ViewMode.DESKTOP;
   }
 
+  @action public scrollPageUp() {
+    var myDiv = document.getElementById('app-container');
+    if (myDiv) {
+      myDiv.scrollTop = 0;
+    }
+  }
+
+  @action public updateUrl(page: Page) {
+    let urlMainPage = page;
+    let urlSubPage = '';
+
+    if (urlMainPage === Page.ABOUT) {
+      urlSubPage = this.curAboutPage;
+    } else if (urlMainPage === Page.BLOG) {
+      urlSubPage = this.curBlogPage;
+    }
+
+    window.history.pushState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
+  }
+
+  @action public setCurrentPage(page: Page) {
+    this.scrollPageUp();
+    this.curAboutPage = AboutPage.CAMPAIGN;
+    this.curBlogPage = BlogPage.BLOGLIST;
+    this.curPage = page;
+
+    this.updateUrl(page);
+  }
+
+  @action public setCurrentAboutPage(aboutPage: AboutPage) {
+    this.curAboutPage = aboutPage;
+    this.updateUrl(Page.ABOUT);
+  }
+
+  @action public setCurrentBlogPage(blogPage: BlogPage) {
+    this.scrollPageUp();
+    this.curBlogPage = blogPage;
+    this.updateUrl(Page.BLOG);
+  }
+
+  @action public setMobileMenuOpen() {
+    this.mobileMenuState = MobileMenuStage.OPEN;
+  }
+
+  @action public setMobileMenuClosed() {
+    this.mobileMenuState = MobileMenuStage.CLOSED;
+
+    setTimeout(() => (this.aboutMenuOpen = false), 500);
+  }
+
+  @action public toggleAboutMenu() {
+    this.aboutMenuOpen = !this.aboutMenuOpen;
+  }
+
   public checkRoute() {
     const query = window.location.hash;
-    //console.log('query: ', query);
-    // '#/ - remove the leading hash & slashes
+
     const splQuery: string[] = query.split('/');
     splQuery.shift();
-    //console.log('split query: ', splQuery);
 
-    // Check first level - home/about/charter etc
     if (!splQuery.length) {
       this.setCurrentPage(Page.HOME);
       return;
@@ -91,7 +142,7 @@ export class AppState {
     }
   }
 
-  public checkAboutSubRoute(splQuery: string[]) {
+  private checkAboutSubRoute(splQuery: string[]) {
     if (splQuery.length < 2) {
       this.setCurrentAboutPage(AboutPage.CAMPAIGN);
       return;
@@ -114,89 +165,34 @@ export class AppState {
     }
   }
 
-  // TODO - refactor to match about format, make these functions private and move them below public functions
-  public checkBlogSubRoute(splQuery: string[]) {
-    if (splQuery.length > 1) {
-      const secondLevelQuery = splQuery[1];
-      switch (secondLevelQuery) {
-        case BlogPage.BLOGLIST:
-          this.setCurrentBlogPage(BlogPage.BLOGLIST);
-          break;
-        case BlogPage.SURFANDTURF:
-          this.setCurrentBlogPage(BlogPage.SURFANDTURF);
-          break;
-        case BlogPage.HIDDENSCOTLAND:
-          this.setCurrentBlogPage(BlogPage.HIDDENSCOTLAND);
-          break;
-        case BlogPage.MCS:
-          this.setCurrentBlogPage(BlogPage.MCS);
-          break;
-        case BlogPage.COLL:
-          this.setCurrentBlogPage(BlogPage.COLL);
-          break;
-        case BlogPage.JMT:
-          this.setCurrentBlogPage(BlogPage.JMT);
-          break;
-        case BlogPage.CALMAC:
-          this.setCurrentBlogPage(BlogPage.CALMAC);
-          break;
-      }
-    } else {
+  private checkBlogSubRoute(splQuery: string[]) {
+    if (splQuery.length < 2) {
       this.setCurrentBlogPage(BlogPage.BLOGLIST);
     }
-  }
 
-  @action public scrollPageUp() {
-    var myDiv = document.getElementById('app-container');
-    if (myDiv) {
-      myDiv.scrollTop = 0;
+    const secondLevelQuery = splQuery[1];
+    switch (secondLevelQuery) {
+      case BlogPage.BLOGLIST:
+        this.setCurrentBlogPage(BlogPage.BLOGLIST);
+        break;
+      case BlogPage.SURFANDTURF:
+        this.setCurrentBlogPage(BlogPage.SURFANDTURF);
+        break;
+      case BlogPage.HIDDENSCOTLAND:
+        this.setCurrentBlogPage(BlogPage.HIDDENSCOTLAND);
+        break;
+      case BlogPage.MCS:
+        this.setCurrentBlogPage(BlogPage.MCS);
+        break;
+      case BlogPage.COLL:
+        this.setCurrentBlogPage(BlogPage.COLL);
+        break;
+      case BlogPage.JMT:
+        this.setCurrentBlogPage(BlogPage.JMT);
+        break;
+      case BlogPage.CALMAC:
+        this.setCurrentBlogPage(BlogPage.CALMAC);
+        break;
     }
-  }
-
-  @action public updateUrl(page: Page) {
-    let urlMainPage = page;
-    let urlSubPage = '';
-
-    if (urlMainPage === Page.ABOUT) {
-      urlSubPage = this.curAboutPage;
-    } else if (urlMainPage === Page.BLOG) {
-      urlSubPage = this.curBlogPage;
-    }
-
-    window.history.pushState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
-  }
-
-  @action public setCurrentPage(page: Page) {
-    this.scrollPageUp();
-    this.curAboutPage = AboutPage.CAMPAIGN;
-    this.curBlogPage = BlogPage.BLOGLIST;
-    this.curPage = page;
-    // Update the url and tab title
-    this.updateUrl(page);
-  }
-
-  @action public setCurrentAboutPage(aboutPage: AboutPage) {
-    this.curAboutPage = aboutPage;
-    this.updateUrl(Page.ABOUT);
-  }
-
-  @action public setCurrentBlogPage(blogPage: BlogPage) {
-    this.scrollPageUp();
-    this.curBlogPage = blogPage;
-    this.updateUrl(Page.BLOG);
-  }
-
-  @action public setMobileMenuOpen() {
-    this.mobileMenuState = MobileMenuStage.OPEN;
-  }
-
-  @action public setMobileMenuClosed() {
-    this.mobileMenuState = MobileMenuStage.CLOSED;
-
-    setTimeout(() => (this.aboutMenuOpen = false), 500);
-  }
-
-  @action public toggleAboutMenu() {
-    this.aboutMenuOpen = !this.aboutMenuOpen;
   }
 }
