@@ -52,7 +52,6 @@ export class AppState {
 
   constructor() {
     const urlParams: UrlParams = this.validateUrlParams();
-    this.updateHistory(urlParams);
     this.goToUrl(urlParams);
   }
 
