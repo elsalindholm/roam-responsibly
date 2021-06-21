@@ -119,7 +119,6 @@ export class MobileNavbar extends React.PureComponent<MobileNavbarProps> {
   private selectAboutPage(aboutPage: AboutPage) {
     const { appState } = this.props;
 
-    appState.setCurrentPage(Page.ABOUT);
     appState.setCurrentAboutPage(aboutPage);
     appState.setMobileMenuClosed();
   }

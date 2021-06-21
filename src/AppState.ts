@@ -1,5 +1,11 @@
 import { action, observable } from 'mobx';
 
+interface UrlParams {
+  mainPage: Page;
+  aboutPage?: AboutPage;
+  blogPage?: BlogPage;
+}
+
 export enum Page {
   HOME = 'home',
   ABOUT = 'about',
@@ -45,7 +51,9 @@ export class AppState {
   @observable public viewMode: ViewMode = ViewMode.DESKTOP;
 
   constructor() {
-    this.checkRoute();
+    const urlParams: UrlParams = this.validateUrlParams();
+    this.updateHistory(urlParams);
+    this.goToUrl(urlParams);
   }
 
   @action public checkViewMode(w: number) {
@@ -59,37 +67,37 @@ export class AppState {
     }
   }
 
-  @action public updateUrl(page: Page) {
-    let urlMainPage = page;
-    let urlSubPage = '';
-
-    if (urlMainPage === Page.ABOUT) {
-      urlSubPage = this.curAboutPage;
-    } else if (urlMainPage === Page.BLOG) {
-      urlSubPage = this.curBlogPage;
-    }
-
-    window.history.pushState(null, page, '/#/' + urlMainPage + '/' + urlSubPage);
+  @action public setCurrentPage(page: Page) {
+    this.updateHistory({ mainPage: page });
+    this.setPage(page);
   }
 
-  @action public setCurrentPage(page: Page) {
+  @action private setPage(page: Page) {
     this.scrollPageUp();
     this.curAboutPage = AboutPage.CAMPAIGN;
     this.curBlogPage = BlogPage.BLOGLIST;
     this.curPage = page;
-
-    this.updateUrl(page);
   }
 
   @action public setCurrentAboutPage(aboutPage: AboutPage) {
+    this.curPage = Page.ABOUT;
+    this.updateHistory({ mainPage: this.curPage, aboutPage });
+    this.setAboutPage(aboutPage);
+  }
+
+  @action private setAboutPage(aboutPage: AboutPage) {
     this.curAboutPage = aboutPage;
-    this.updateUrl(Page.ABOUT);
   }
 
   @action public setCurrentBlogPage(blogPage: BlogPage) {
+    this.curPage = Page.BLOG;
+    this.updateHistory({ mainPage: this.curPage, blogPage });
+    this.setBlogPage(blogPage);
+  }
+
+  @action private setBlogPage(blogPage: BlogPage) {
     this.scrollPageUp();
     this.curBlogPage = blogPage;
-    this.updateUrl(Page.BLOG);
   }
 
   @action public setMobileMenuOpen() {
@@ -106,93 +114,69 @@ export class AppState {
     this.aboutMenuOpen = !this.aboutMenuOpen;
   }
 
-  public checkRoute() {
-    const query = window.location.hash;
+  public goToPreviousHistory() {
+    const urlParams: UrlParams = this.validateUrlParams();
+    this.goToUrl(urlParams);
+  }
 
+  private validateUrlParams(): UrlParams {
+    const query = window.location.hash;
     const splQuery: string[] = query.split('/');
+    // Get rid of the leading #
     splQuery.shift();
 
+    // No subdomain to check
     if (!splQuery.length) {
-      this.setCurrentPage(Page.HOME);
-      return;
+      return { mainPage: Page.HOME };
     }
 
-    const firstLevelQuery = splQuery[0];
-    switch (firstLevelQuery) {
-      case Page.HOME:
-        this.setCurrentPage(Page.HOME);
-        break;
-      case Page.ABOUT:
-        this.setCurrentPage(Page.ABOUT);
-        this.checkAboutSubRoute(splQuery);
-        break;
-      case Page.CHARTER:
-        this.setCurrentPage(Page.CHARTER);
-        break;
-      case Page.SOAC:
-        this.setCurrentPage(Page.SOAC);
-        break;
-      case Page.BLOG:
-        this.setCurrentPage(Page.BLOG);
-        this.checkBlogSubRoute(splQuery);
-        break;
-      case Page.SPREADWORD:
-        this.setCurrentPage(Page.SPREADWORD);
-        break;
+    // Check sub page first
+    if (splQuery.length > 1) {
+      const secondPage = splQuery[1];
+
+      // About sub pages
+      const aboutPages = Object.values(AboutPage);
+      const aboutSubPage = aboutPages.find((aPage) => aPage === secondPage);
+      if (aboutSubPage) {
+        // Url matches an about sub page
+        return { mainPage: Page.ABOUT, aboutPage: aboutSubPage };
+      }
+
+      // Blog sub pages
+      const blogPages = Object.values(BlogPage);
+      const blogSubPage = blogPages.find((bPage) => bPage === secondPage);
+      if (blogSubPage) {
+        return { mainPage: Page.BLOG, blogPage: blogSubPage };
+      }
     }
+
+    // Then check first page
+    const firstPage = splQuery[0];
+    const page = Object.values(Page).find((page) => page === firstPage);
+    return { mainPage: page };
   }
 
-  private checkAboutSubRoute(splQuery: string[]) {
-    if (splQuery.length < 2) {
-      this.setCurrentAboutPage(AboutPage.CAMPAIGN);
-      return;
+  // Update the browser history and URL with new location
+  private updateHistory(urlParams: UrlParams) {
+    let url = `/#/${urlParams.mainPage}`;
+
+    if (urlParams.aboutPage) {
+      url += `/${urlParams.aboutPage}`;
+    } else if (urlParams.blogPage) {
+      url += `/${urlParams.blogPage}`;
     }
 
-    const secondLevelQuery = splQuery[1];
-    switch (secondLevelQuery) {
-      case AboutPage.CAMPAIGN:
-        this.setCurrentAboutPage(AboutPage.CAMPAIGN);
-        break;
-      case AboutPage.INSTAGRAMMERS:
-        this.setCurrentAboutPage(AboutPage.INSTAGRAMMERS);
-        break;
-      case AboutPage.PARTNERS:
-        this.setCurrentAboutPage(AboutPage.PARTNERS);
-        break;
-      case AboutPage.CONTACT:
-        this.setCurrentAboutPage(AboutPage.CONTACT);
-        break;
-    }
+    window.history.pushState(null, urlParams.mainPage, url);
   }
 
-  private checkBlogSubRoute(splQuery: string[]) {
-    if (splQuery.length < 2) {
-      this.setCurrentBlogPage(BlogPage.BLOGLIST);
-    }
+  // Got to Url params location
+  @action private goToUrl(urlParams: UrlParams) {
+    this.setPage(urlParams.mainPage);
 
-    const secondLevelQuery = splQuery[1];
-    switch (secondLevelQuery) {
-      case BlogPage.BLOGLIST:
-        this.setCurrentBlogPage(BlogPage.BLOGLIST);
-        break;
-      case BlogPage.SURFANDTURF:
-        this.setCurrentBlogPage(BlogPage.SURFANDTURF);
-        break;
-      case BlogPage.HIDDENSCOTLAND:
-        this.setCurrentBlogPage(BlogPage.HIDDENSCOTLAND);
-        break;
-      case BlogPage.MCS:
-        this.setCurrentBlogPage(BlogPage.MCS);
-        break;
-      case BlogPage.COLL:
-        this.setCurrentBlogPage(BlogPage.COLL);
-        break;
-      case BlogPage.JMT:
-        this.setCurrentBlogPage(BlogPage.JMT);
-        break;
-      case BlogPage.CALMAC:
-        this.setCurrentBlogPage(BlogPage.CALMAC);
-        break;
+    if (urlParams.aboutPage) {
+      this.setAboutPage(urlParams.aboutPage);
+    } else if (urlParams.blogPage) {
+      this.setBlogPage(urlParams.blogPage);
     }
   }
 }

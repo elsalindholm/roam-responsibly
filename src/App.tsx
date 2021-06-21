@@ -21,8 +21,6 @@ export class App extends React.PureComponent {
   }
 
   public render() {
-    this.appState.checkRoute();
-
     let app: JSX.Element;
     switch (this.appState.viewMode) {
       case ViewMode.DESKTOP:
@@ -37,7 +35,7 @@ export class App extends React.PureComponent {
   }
 
   private readonly onHistoryChange = () => {
-    this.appState.checkRoute();
+    this.appState.goToPreviousHistory();
   };
 
   private readonly onResizeWindow = () => {
