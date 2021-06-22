@@ -41,8 +41,8 @@ export class App extends React.PureComponent {
             property={'og:description'}
             content={"Scotland's Instagrammers campaign to #RoamResponsibly"}
           />
-          <meta property={'og:url'} content={'https://www.roamresponsibly.com/#/about/campaign'} />
-          <meta property={'og:image'} content={'../../../dist/assets/bannerImages/about.JPG'} />
+          <meta property={'og:url'} content={'https://www.roamresponsibly.com/'} />
+          <meta property={'og:image'} content={'./RR_Logo_With_Background.png'} />
           <meta name='viewport' content='width=device-width, initial-scale=1.0' />
           <meta http-equiv='X-UA-Compatible' content='ie=edge' />
           <meta property={'og:type'} content={'website'} />
