@@ -11,7 +11,7 @@ export class MobileContact extends React.PureComponent {
       <main className={'mcontact-page'}>
         <section>
           <p className={'mobile-p'}>
-            If you would like to contact us please do not hesitate to send us an email.
+            Want to get in touch with us? Drop us an email or get in touch via social media.
           </p>
         </section>
         <section>

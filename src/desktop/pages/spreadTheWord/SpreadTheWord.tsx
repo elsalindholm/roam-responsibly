@@ -22,8 +22,9 @@ export class SpreadWord extends React.PureComponent {
             <strong>#roamresponsibly</strong>.
           </p>
           <p>
-            Help us spread the word by telling your friends and family about the Scottish Outdoor
-            Access Code and preserve Scotland as beautiful as it is.
+            Help us spread the word by talking about the Scottish Outdoor Access Code with your
+            friends and family. Together, we can raise awareness of responsible ways to enjoy nature
+            and preserve Scotland as beautiful as it is.
           </p>
         </section>
       </main>

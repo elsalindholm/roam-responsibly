@@ -10,7 +10,7 @@ export class Contact extends React.PureComponent {
     return (
       <main className={'contact-page'}>
         <section>
-          <p>If you would like to contact us please do not hesitate to send us an email.</p>
+          <p>Want to get in touch with us? Drop us an email or get in touch via social media.</p>
         </section>
         <section>
           <h2>EMAIL</h2>

@@ -12,15 +12,15 @@ export class Instagrammers extends React.PureComponent {
         <section>
           <p>
             Scotland's Instagrammer community is an inspiring group of people who not only take
-            wonderful photographs and produce engaging content, but also do not hesitate to stand up
-            and speak up about issues that they see around them.
+            wonderful photographs and produce engaging content, but also do not hesitate to speak up
+            about issues that they see around them.
           </p>
         </section>
         <section>
           <h2>INSTAGRAMMERS</h2>
           <p>
-            Below is a list of Scotland's Instagrammers who have signed the charter. Follow the
-            links to see their work.
+            Below is a list of Scotland's Instagrammers who have signed the #RoamResponsibly
+            Charter. Follow the links to see their work.
           </p>
           <ul className={'ig-list'}>
             <li>
