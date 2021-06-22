@@ -32,25 +32,7 @@ export class App extends React.PureComponent {
         break;
     }
 
-    return (
-      <>
-        <Helmet>
-          <title>RoamResponsibly</title>
-          <meta property={'og:title'} content={'RoamResponsibly'} />
-          <meta
-            property={'og:description'}
-            content={"Scotland's Instagrammers campaign to #RoamResponsibly"}
-          />
-          <meta property={'og:url'} content={'https://www.roamresponsibly.com/'} />
-          <meta property={'og:image'} content={'./RR_Logo_With_Background.png'} />
-          <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-          <meta http-equiv='X-UA-Compatible' content='ie=edge' />
-          <meta property={'og:type'} content={'website'} />
-          <meta property={'og:locale'} content={'en_GB'} />
-        </Helmet>
-        {app}
-      </>
-    );
+    return <>{app}</>;
   }
 
   private readonly onHistoryChange = () => {

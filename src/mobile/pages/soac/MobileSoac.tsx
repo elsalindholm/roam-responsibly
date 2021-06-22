@@ -13,7 +13,7 @@ export class MobileSoac extends React.PureComponent {
             public.
           </p>
           <p className={'mobile-p'}>
-            However, with this privilege comes responsibility to look after and not exploit the
+            However, with this privilege comes the responsibility to look after and not exploit the
             Scottish landscape.
           </p>
           <p className={'mobile-p'}>
@@ -39,7 +39,7 @@ export class MobileSoac extends React.PureComponent {
             </a>{' '}
             is a guide for the responsibilities that people have when enjoying the outdoors. These
             responsibilities include respecting landowners' and other people's privacy and
-            livelyhood, respecting and protecting Scottish wildlife and nature and taking
+            livelihood, respecting and protecting Scottish wildlife and nature and taking
             responsibility of your own actions when you are out and about.
           </p>
           <p className={'mobile-p'}>

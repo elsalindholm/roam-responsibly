@@ -12,7 +12,7 @@ export class MobileCharter extends React.PureComponent {
         <section>
           <p className={'mobile-p'}>
             We, Scotland's Instagrammers, love our beautiful country. However, we are concerned
-            about the natural environment and want to ensure that it is conserved in as beautiful a
+            about the natural environment and want to ensure that it is conserved in a beautiful
             condition for future generations to enjoy.
           </p>
           <p className={'mobile-p'}>

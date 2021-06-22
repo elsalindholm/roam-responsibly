@@ -20,8 +20,8 @@ export class Home extends React.PureComponent<DesktopHomePageProps> {
           <p>Scotland is a country of beautiful forests, lochs, munros, isles and beaches.</p>
           <p>
             With our social media campaign #RoamResponsibly we aim to raise awareness of the
-            Scottish Outdoor Access Code and preserve these stunning and unique landscapes as
-            beautiful as they are for future generations to enjoy.
+            Scottish Outdoor Access Code and preserve these stunning and unique landscapes in all
+            their beauty for future generations to enjoy.
           </p>
         </section>
         <div className={'home-page-links'}>

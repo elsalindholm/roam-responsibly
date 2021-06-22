@@ -22,8 +22,8 @@ export class MobileHome extends React.PureComponent<MobileHomeProps> {
           </p>
           <p className={'mobile-p'}>
             With our social media campaign #RoamResponsibly we aim to raise awareness of the
-            Scottish Outdoor Access Code and preserve these stunning and unique landscapes as
-            beautiful as they are for future generations to enjoy.
+            Scottish Outdoor Access Code and preserve these stunning and unique landscapes in all
+            their beauty for future generations to enjoy.
           </p>
         </section>
         <div className={'mhome-page-links'}>

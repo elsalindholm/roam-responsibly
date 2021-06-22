@@ -24,7 +24,7 @@ export class MobileSpreadWord extends React.PureComponent {
           <p className={'mobile-p'}>
             Help us spread the word by talking about the Scottish Outdoor Access Code with your
             friends and family. Together, we can raise awareness of responsible ways to enjoy nature
-            and preserve Scotland as beautiful as it is.
+            and preserve Scotland in all its beauty.
           </p>
         </section>
       </main>

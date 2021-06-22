@@ -12,7 +12,7 @@ export class Charter extends React.PureComponent {
         <section>
           <p>
             We, Scotland's Instagrammers, love our beautiful country. However, we are concerned
-            about the natural environment and want to ensure that it is conserved in as beautiful a
+            about the natural environment and want to ensure that it is conserved in a beautiful
             condition for future generations to enjoy. We recognise the rare privilege of statutory
             access rights to most of the Scottish outdoors, and wish to guarantee that such a
             privilege is not being wrongfully exploited. We acknowledge that we can only hold access
