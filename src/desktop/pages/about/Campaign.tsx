@@ -1,5 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './campaign.scss';
 import '../../../appStyles/desktop-app-styles.scss';
@@ -9,6 +10,18 @@ export class Campaign extends React.PureComponent {
   render() {
     return (
       <main className={'campaign-page'}>
+        <Helmet>
+          <title>Campaign</title>
+          <meta property={'og:title'} content={'Campaign to #RoamResponsibly'} />
+          <meta
+            property={'og:description'}
+            content={'Learn more about the #RoamResponsibly social media campaign.'}
+          />
+          <meta property={'og:url'} content={'https://www.roamresponsibly.com/#/about/campaign'} />
+          <meta property={'og:image'} content={'../../../dist/assets/bannerImages/abut.JPG'} />
+          <meta property={'og:type'} content={'website'} />
+          <meta property={'og:locale'} content={'en_GB'} />
+        </Helmet>
         <section>
           <p>
             Scotland's Instagrammer community voiced out its concern over the Scottish outdoors in
