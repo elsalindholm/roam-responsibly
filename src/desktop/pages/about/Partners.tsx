@@ -1,5 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import {
   anCridhe,
@@ -18,11 +19,15 @@ import './partners.scss';
 import '../../desktop-app.scss';
 import '../../../appStyles/desktop-app-styles.scss';
 
+
 @observer
 export class Partners extends React.PureComponent {
   render() {
     return (
       <main className={'partners-page'}>
+        <Helmet>
+          <title>About | Partners</title>
+        </Helmet>
         <section>
           <p>
             With the #RoamResponsibly campaign we aim to emphasize the importance of preserving the

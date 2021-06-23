@@ -20,6 +20,7 @@ import { CalMacBlog } from './2018/calmac/CalMacBlog';
 
 import './blog.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+import { Helmet } from 'react-helmet';
 
 export interface BlogProps {
   appState: AppState;
@@ -56,6 +57,9 @@ export class Blog extends React.PureComponent<BlogProps> {
 
     return (
       <main className={'blog-page'}>
+        <Helmet>
+          <title>Blog</title>
+        </Helmet>
         <section>{blogPage}</section>
       </main>
     );

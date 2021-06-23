@@ -1,11 +1,13 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
 
 import './jmt-blog.scss';
 import '../../../../../appStyles/desktop-app-styles.scss';
+
 
 interface JMTIProps {
   blogPostInfo: BlogPostInfo;
@@ -19,6 +21,9 @@ export class JMTInstameetBlog extends React.PureComponent<JMTIProps> {
 
     return (
       <div className={'blog-post-container'}>
+        <Helmet>
+          <title>Partnering up with John Muir Trust</title>
+        </Helmet>
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
             <button

@@ -1,14 +1,19 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './instagrammers.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 @observer
 export class Instagrammers extends React.PureComponent {
   render() {
     return (
       <main className={'ig-page'}>
+        <Helmet>
+          <title>About | Instagrammers</title>
+        </Helmet>
         <section>
           <p>
             Scotland's Instagrammer community is an inspiring group of people who not only take

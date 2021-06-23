@@ -10,6 +10,9 @@ export class Campaign extends React.PureComponent {
   render() {
     return (
       <main className={'campaign-page'}>
+        <Helmet>
+          <title>About | Campaign</title>
+        </Helmet>
         <section>
           <p>
             Scotland's Instagrammer community voiced out its concern over the Scottish outdoors in

@@ -1,12 +1,17 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './spread-the-word.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 export class SpreadWord extends React.PureComponent {
   render() {
     return (
       <main className={'spread-word-page'}>
+        <Helmet>
+          <title>Spread the Word</title>
+        </Helmet>
         <section>
           <p>Help us spread the word!</p>
           <p>

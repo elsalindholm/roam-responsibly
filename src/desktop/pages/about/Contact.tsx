@@ -1,14 +1,19 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './contact.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 @observer
 export class Contact extends React.PureComponent {
   render() {
     return (
       <main className={'contact-page'}>
+        <Helmet>
+          <title>About | Contact</title>
+        </Helmet>
         <section>
           <p>Want to get in touch with us? Drop us an email or get in touch via social media.</p>
         </section>

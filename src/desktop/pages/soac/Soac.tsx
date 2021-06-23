@@ -1,14 +1,19 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './soac.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 @observer
 export class Soac extends React.PureComponent {
   render() {
     return (
       <main className={'soac-page'}>
+        <Helmet>
+          <title>Scottish Outdoor Access Code</title>
+        </Helmet>
         <section>
           <p>
             Scotland is one of a handful of countries with wide Access Rights for the general

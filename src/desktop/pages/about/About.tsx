@@ -9,6 +9,7 @@ import { Contact } from './Contact';
 
 import './about.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+import { Helmet } from 'react-helmet';
 
 export interface AboutPageProps {
   appState: AppState;
@@ -39,6 +40,7 @@ export class About extends React.PureComponent<AboutPageProps> {
     }
     return (
       <div className={'about-page'}>
+        
         <nav className={'about-page-nav'}>
           <p className={'about-nav-title'}>ABOUT</p>
           <button

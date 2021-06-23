@@ -1,11 +1,13 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
 
 import './mcs.scss';
 import '../../../../../appStyles/desktop-app-styles.scss';
+
 
 interface McsProps {
   blogPostInfo: BlogPostInfo;
@@ -19,6 +21,9 @@ export class McsBlog extends React.PureComponent<McsProps> {
 
     return (
       <div className={'blog-post-container'}>
+        <Helmet>
+          <title>Marine Conservation Society</title>
+        </Helmet>
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
             <button

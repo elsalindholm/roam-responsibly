@@ -1,9 +1,11 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { AppState, Page } from '../../../AppState';
 
 import './home.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 interface DesktopHomePageProps {
   appState: AppState;
@@ -15,6 +17,9 @@ export class Home extends React.PureComponent<DesktopHomePageProps> {
 
     return (
       <main className={'home-page'}>
+        <Helmet>
+          <title>RoamResponsibly</title>
+        </Helmet>
         <section>
           <h2>We want to help conserve Scottish nature and landscapes</h2>
           <p>Scotland is a country of beautiful forests, lochs, munros, isles and beaches.</p>

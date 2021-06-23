@@ -1,11 +1,13 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
 
 import './surf-and-turf-blog.scss';
 import '../../../../../appStyles/desktop-app-styles.scss';
+
 
 interface SurfAndTurfProps {
   blogPostInfo: BlogPostInfo;
@@ -19,6 +21,9 @@ export class SurfAndTurfBlog extends React.PureComponent<SurfAndTurfProps> {
 
     return (
       <div className={'blog-post-container'}>
+        <Helmet>
+          <title>Surf and Turf: Roaming Responsibly on the Isle of Tiree</title>
+        </Helmet>
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
             <button

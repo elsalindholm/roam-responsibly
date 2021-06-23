@@ -1,11 +1,13 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
 
 import './hidden-scotland.scss';
 import '../../../../../appStyles/desktop-app-styles.scss';
+
 
 interface HiddenScotlandProps {
   blogPostInfo: BlogPostInfo;
@@ -19,6 +21,9 @@ export class HiddenScotlandBlog extends React.PureComponent<HiddenScotlandProps>
 
     return (
       <div className={'blog-post-container'}>
+        <Helmet>
+          <title>An Interview with Hidden Scotland</title>
+        </Helmet>
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
             <button

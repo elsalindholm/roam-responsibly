@@ -1,14 +1,19 @@
 import { observer } from 'mobx-react';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 import './charter.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 @observer
 export class Charter extends React.PureComponent {
   render() {
     return (
       <main className={'charter-page'}>
+        <Helmet>
+          <title>Charter</title>
+        </Helmet>
         <section>
           <p>
             We, Scotland's Instagrammers, love our beautiful country. However, we are concerned
