@@ -19,6 +19,7 @@ export class Home extends React.PureComponent<DesktopHomePageProps> {
       <main className={'home-page'}>
         <Helmet>
           <title>RoamResponsibly</title>
+          <meta property={"og:title"} content={"RoamResponsibly"}/>
         </Helmet>
         <section>
           <h2>We want to help conserve Scottish nature and landscapes</h2>

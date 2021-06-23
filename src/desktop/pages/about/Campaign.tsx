@@ -12,6 +12,7 @@ export class Campaign extends React.PureComponent {
       <main className={'campaign-page'}>
         <Helmet>
           <title>About | Campaign</title>
+          <meta property={"og:title"} content={"RoamResponsibly Campaign"}/>
         </Helmet>
         <section>
           <p>

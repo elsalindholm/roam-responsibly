@@ -13,6 +13,7 @@ export class Instagrammers extends React.PureComponent {
       <main className={'ig-page'}>
         <Helmet>
           <title>About | Instagrammers</title>
+          <meta property={"og:title"} content={"Instagrammers"}/>
         </Helmet>
         <section>
           <p>

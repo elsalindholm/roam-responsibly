@@ -27,6 +27,7 @@ export class Partners extends React.PureComponent {
       <main className={'partners-page'}>
         <Helmet>
           <title>About | Partners</title>
+          <meta property={"og:title"} content={"RoamResponsibly Campaign Partners"}/>
         </Helmet>
         <section>
           <p>

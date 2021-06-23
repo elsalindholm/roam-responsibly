@@ -13,6 +13,7 @@ export class Charter extends React.PureComponent {
       <main className={'charter-page'}>
         <Helmet>
           <title>Charter</title>
+          <meta property={"og:title"} content={"RoamResponsibly Charter"}/>
         </Helmet>
         <section>
           <p>

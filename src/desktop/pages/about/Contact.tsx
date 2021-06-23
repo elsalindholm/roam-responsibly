@@ -13,6 +13,7 @@ export class Contact extends React.PureComponent {
       <main className={'contact-page'}>
         <Helmet>
           <title>About | Contact</title>
+          <meta property={"og:title"} content={"About | Contact"}/>
         </Helmet>
         <section>
           <p>Want to get in touch with us? Drop us an email or get in touch via social media.</p>

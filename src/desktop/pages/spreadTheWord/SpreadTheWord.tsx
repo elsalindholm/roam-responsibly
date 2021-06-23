@@ -11,6 +11,7 @@ export class SpreadWord extends React.PureComponent {
       <main className={'spread-word-page'}>
         <Helmet>
           <title>Spread the Word</title>
+          <meta property={"og:title"} content={"Spread The Word"}/>
         </Helmet>
         <section>
           <p>Help us spread the word!</p>
