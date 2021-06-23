@@ -1,18 +1,19 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
+import { HelmetComp } from '../../../HelmetComp';
+import { SpreadWordMeta } from '../../../appData/PageMeta';
 
 import './spread-the-word.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
+
 
 
 export class SpreadWord extends React.PureComponent {
   render() {
     return (
       <main className={'spread-word-page'}>
-        <Helmet>
-          <title>Spread the Word</title>
-          <meta property={"og:title"} content={"Spread The Word"}/>
-        </Helmet>
+        <HelmetComp pageMetaData={SpreadWordMeta} />
         <section>
           <p>Help us spread the word!</p>
           <p>

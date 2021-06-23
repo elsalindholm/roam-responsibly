@@ -1,12 +1,14 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
+import { HelmetComp } from '../../../../../HelmetComp';
+import { CalMacMeta } from '../../../../../appData/PageMeta';
 
 import './calmac-blog.scss';
 import '../../../../../appStyles/desktop-app-styles.scss';
+
 
 
 interface CalMacProps {
@@ -21,9 +23,7 @@ export class CalMacBlog extends React.PureComponent<CalMacProps> {
 
     return (
       <div className={'blog-post-container'}>
-        <Helmet>
-          <title>Introducing Our First Partner: CalMac Ferries</title>
-        </Helmet>
+        <HelmetComp pageMetaData={CalMacMeta}/>
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
             <button

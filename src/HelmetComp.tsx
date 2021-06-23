@@ -2,11 +2,11 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { PageMetaData } from './appData/PageMeta';
 
-export interface PageHelmetProps {
+export interface HelmetCompProps {
   pageMetaData: PageMetaData;
 }
 
-export class PageHelmet extends React.PureComponent<PageHelmetProps> {
+export class HelmetComp extends React.PureComponent<HelmetCompProps> {
   render() {
     const { pageMetaData } = this.props;
 

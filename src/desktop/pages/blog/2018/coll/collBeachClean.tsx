@@ -1,12 +1,14 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import { AppState, BlogPage } from '../../../../../AppState';
 import { BlogPostInfo } from '../../../../../appData/BlogPostInfo';
+import { HelmetComp } from '../../../../../HelmetComp';
+import { CollMeta } from '../../../../../appData/PageMeta';
 
 import './coll-beach-clean.scss';
 import '../../../../../appStyles/desktop-app-styles.scss';
+
 
 
 interface CBCProps {
@@ -21,9 +23,7 @@ export class CollBeachCleanBlog extends React.PureComponent<CBCProps> {
 
     return (
       <div className={'blog-post-container'}>
-        <Helmet>
-          <title>Beach Cleaning on Coll</title>
-        </Helmet>
+        <HelmetComp pageMetaData={CollMeta} />
         <article className={'blog-content'}>
           <div className={'blog-button-container'}>
             <button

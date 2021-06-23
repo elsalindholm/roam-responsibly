@@ -1,9 +1,12 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
+import { HelmetComp } from '../../../HelmetComp';
+import { AboutContactMeta } from '../../../appData/PageMeta';
 
 import './contact.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 
 @observer
@@ -11,10 +14,7 @@ export class Contact extends React.PureComponent {
   render() {
     return (
       <main className={'contact-page'}>
-        <Helmet>
-          <title>About | Contact</title>
-          <meta property={"og:title"} content={"About | Contact"}/>
-        </Helmet>
+        <HelmetComp pageMetaData={AboutContactMeta} />
         <section>
           <p>Want to get in touch with us? Drop us an email or get in touch via social media.</p>
         </section>

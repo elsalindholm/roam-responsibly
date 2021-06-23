@@ -1,9 +1,12 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
+import { HelmetComp } from '../../../HelmetComp';
+import { CharterMeta } from '../../../appData/PageMeta';
 
 import './charter.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 
 @observer
@@ -11,10 +14,7 @@ export class Charter extends React.PureComponent {
   render() {
     return (
       <main className={'charter-page'}>
-        <Helmet>
-          <title>Charter</title>
-          <meta property={"og:title"} content={"RoamResponsibly Charter"}/>
-        </Helmet>
+        <HelmetComp pageMetaData={CharterMeta} />
         <section>
           <p>
             We, Scotland's Instagrammers, love our beautiful country. However, we are concerned

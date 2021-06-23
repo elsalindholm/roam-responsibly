@@ -1,10 +1,15 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
 
 import { AppState, Page } from '../../../AppState';
 
+import { HelmetComp } from '../../../HelmetComp';
+import { HomeMeta } from '../../../appData/PageMeta';
+
 import './home.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
+
 
 
 interface DesktopHomePageProps {
@@ -17,10 +22,7 @@ export class Home extends React.PureComponent<DesktopHomePageProps> {
 
     return (
       <main className={'home-page'}>
-        <Helmet>
-          <title>RoamResponsibly</title>
-          <meta property={"og:title"} content={"RoamResponsibly"}/>
-        </Helmet>
+        <HelmetComp pageMetaData={HomeMeta} />
         <section>
           <h2>We want to help conserve Scottish nature and landscapes</h2>
           <p>Scotland is a country of beautiful forests, lochs, munros, isles and beaches.</p>

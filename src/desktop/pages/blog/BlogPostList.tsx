@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
 
 import { BlogSummaryComp } from './BlogPostSummaryComp';
 import {
@@ -12,6 +12,8 @@ import {
   surfAndTurf,
 } from '../../../appData/BlogPostInfo';
 import { AppState, BlogPage } from '../../../AppState';
+import { HelmetComp } from '../../../HelmetComp';
+import { BlogMeta } from '../../../appData/PageMeta';
 
 
 interface BlogPostListProps {
@@ -25,9 +27,7 @@ export class BlogPostList extends React.PureComponent<BlogPostListProps> {
 
     return (
       <main className={'blog-list'}>
-        <Helmet>
-          <title>Blog</title>
-        </Helmet>
+        <HelmetComp pageMetaData={BlogMeta} />
         <section>
           <BlogSummaryComp
             blogPostInfo={surfAndTurf}

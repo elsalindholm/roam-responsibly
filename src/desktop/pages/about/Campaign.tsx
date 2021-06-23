@@ -1,19 +1,19 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+
+import { HelmetComp } from '../../../HelmetComp';
+import { AboutCampaignMeta } from '../../../appData/PageMeta';
 
 import './campaign.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 @observer
 export class Campaign extends React.PureComponent {
   render() {
     return (
       <main className={'campaign-page'}>
-        <Helmet>
-          <title>About | Campaign</title>
-          <meta property={"og:title"} content={"RoamResponsibly Campaign"}/>
-        </Helmet>
+        <HelmetComp pageMetaData={AboutCampaignMeta}/>
         <section>
           <p>
             Scotland's Instagrammer community voiced out its concern over the Scottish outdoors in

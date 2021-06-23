@@ -1,6 +1,5 @@
 import { observer } from 'mobx-react';
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import {
   anCridhe,
@@ -14,10 +13,13 @@ import {
   visitArran,
 } from '../../../appData/CampaignPartners';
 import { PartnerComp } from './PartnerComp';
+import { HelmetComp } from '../../../HelmetComp';
+import { AboutPartnersMeta } from '../../../appData/PageMeta';
 
 import './partners.scss';
 import '../../desktop-app.scss';
 import '../../../appStyles/desktop-app-styles.scss';
+
 
 
 @observer
@@ -25,10 +27,7 @@ export class Partners extends React.PureComponent {
   render() {
     return (
       <main className={'partners-page'}>
-        <Helmet>
-          <title>About | Partners</title>
-          <meta property={"og:title"} content={"RoamResponsibly Campaign Partners"}/>
-        </Helmet>
+        <HelmetComp pageMetaData={AboutPartnersMeta}/>
         <section>
           <p>
             With the #RoamResponsibly campaign we aim to emphasize the importance of preserving the
