@@ -84,9 +84,10 @@
 
     .msmall-banner-heading {
       width: 85%;
+      margin-bottom: 1%;
       font-family: $lora;
       font-style: italic;
-      font-size: 3vw;
+      font-size: 3.5vw;
     }
 
     .mlarge-banner-heading {
@@ -95,7 +96,7 @@
       margin: 1%;
       font-family: $lato;
       font-weight: 600;
-      font-size: 7vw;
+      font-size: 7.5vw;
     }
   }
 }
