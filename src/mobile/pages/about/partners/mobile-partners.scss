@@ -19,3 +19,24 @@
     align-items: center;
   }
 }
+
+.mpartners-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2%;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.nevisport-one {
+    background-image: url('../../../../../dist/assets/campaignPageImages/nevisport_banner_one.png');
+    width: 100%;
+    height: 140vw;
+  }
+
+  &.nevisport-two {
+    background-image: url('../../../../../dist/assets/campaignPageImages/nevisport_shop_one.jpg');
+    width: 100%;
+    height: 110vw;
+  }
+}

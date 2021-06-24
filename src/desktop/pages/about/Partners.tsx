@@ -20,14 +20,12 @@ import './partners.scss';
 import '../../desktop-app.scss';
 import '../../../appStyles/desktop-app-styles.scss';
 
-
-
 @observer
 export class Partners extends React.PureComponent {
   render() {
     return (
       <main className={'partners-page'}>
-        <HelmetComp pageMetaData={AboutPartnersMeta}/>
+        <HelmetComp pageMetaData={AboutPartnersMeta} />
         <section>
           <p>
             With the #RoamResponsibly campaign we aim to emphasize the importance of preserving the
@@ -53,8 +51,7 @@ export class Partners extends React.PureComponent {
 
           <p>
             #RoamResponsibly campaign mentioned in <strong>CalMac's</strong> blog:
-          </p>
-          <p>
+            <br></br>
             <a
               className={'link-underlined'}
               href={'https://www.calmac.co.uk/calmac.co.uk/blogs/roam-responsibly'}
@@ -63,12 +60,11 @@ export class Partners extends React.PureComponent {
               #RoamResponsibly with CalMac Ferries
             </a>
           </p>
-          <br></br>
+
           <p>
             #RoamResponsibly campaign included in <strong>Trespass'</strong> Corporate
             Responsibility page:
-          </p>
-          <p>
+            <br></br>
             <a
               className={'link-underlined'}
               href={'https://www.trespass.com/corporate-responsibility'}
@@ -77,6 +73,29 @@ export class Partners extends React.PureComponent {
               Trespass Corporate Responsibility
             </a>
           </p>
+        </section>
+        <section>
+          <h2>COLLABORATIONS</h2>
+          <h2>Nevisport X RoamResponsibly</h2>
+          <p>
+            In July 2018, we had the pleasure of having information about our campaign alongside{' '}
+            <a
+              className={'link-underlined'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
+              @ruanaich's
+            </a>{' '}
+            beautiful photos displayed in the{' '}
+            <a className={'link-underlined'} href={'https://www.nevisport.com/'} target={'_blank'}>
+              Nevisport
+            </a>{' '}
+            Sauchiehall Street shop window in Glasgow. Photos by Michael MacDonald.
+          </p>
+          <div className={'partners-img-container'}>
+            <div className={'partners-img , nevisport-one'}></div>
+            <div className={'partners-img , nevisport-two'}></div>
+          </div>
         </section>
       </main>
     );

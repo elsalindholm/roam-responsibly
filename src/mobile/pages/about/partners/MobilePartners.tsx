@@ -47,8 +47,7 @@ export class MobilePartners extends React.PureComponent {
 
           <p className={'mobile-p'}>
             #RoamResponsibly campaign mentioned in <strong>CalMac's</strong> blog:
-          </p>
-          <p className={'mobile-p'}>
+            <br></br>
             <a
               className={'mobile-a'}
               href={'https://www.calmac.co.uk/calmac.co.uk/blogs/roam-responsibly'}
@@ -61,8 +60,7 @@ export class MobilePartners extends React.PureComponent {
           <p className={'mobile-p'}>
             #RoamResponsibly campaign included in <strong>Trespass'</strong> Corporate
             Responsibility page:
-          </p>
-          <p className={'mobile-p'}>
+            <br></br>
             <a
               className={'mobile-a'}
               href={'https://www.trespass.com/corporate-responsibility'}
@@ -71,6 +69,28 @@ export class MobilePartners extends React.PureComponent {
               Trespass Corporate Responsibility
             </a>
           </p>
+        </section>
+        <section>
+          <h2 className={'mobile-h2'}>COLLABORATIONS</h2>
+          <h2 className={'mobile-h2'}>Nevisport X RoamResponsibly</h2>
+          <p className={'mobile-p'}>
+            In July 2018, we had the pleasure of having information about our campaign alongside{' '}
+            <a
+              className={'mobile-a'}
+              href={'https://www.instagram.com/ruanaich/'}
+              target={'_blank'}
+            >
+              @ruanaich's
+            </a>{' '}
+            beautiful photos displayed in the{' '}
+            <a className={'mobile-a'} href={'https://www.nevisport.com/'} target={'_blank'}>
+              Nevisport
+            </a>{' '}
+            Sauchiehall Street shop window in Glasgow. Photos by Michael MacDonald.
+          </p>
+
+          <div className={'mpartners-img , nevisport-one'}></div>
+          <div className={'mpartners-img , nevisport-two'}></div>
         </section>
       </main>
     );
