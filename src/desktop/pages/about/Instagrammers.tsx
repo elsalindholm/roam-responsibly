@@ -91,7 +91,6 @@ export class Instagrammers extends React.PureComponent {
               <a href={'https://www.instagram.com/edienthusiast/'} target={'_blank'}>
                 @edienthusiast
               </a>{' '}
-              - Ildiko R
             </li>
             <li>
               <a href={'https://www.instagram.com/itsrab/'} target={'_blank'}>

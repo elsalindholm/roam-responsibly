@@ -131,7 +131,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @edienthusiast
               </a>{' '}
-              - Ildiko R
             </li>
             <li>
               <a
