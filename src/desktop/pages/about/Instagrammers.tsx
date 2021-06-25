@@ -7,8 +7,6 @@ import { AboutInstagrammersMeta } from '../../../appData/PageMeta';
 import './instagrammers.scss';
 import '../../../appStyles/desktop-app-styles.scss';
 
-
-
 @observer
 export class Instagrammers extends React.PureComponent {
   render() {
@@ -93,7 +91,7 @@ export class Instagrammers extends React.PureComponent {
               <a href={'https://www.instagram.com/edienthusiast/'} target={'_blank'}>
                 @edienthusiast
               </a>{' '}
-              - Ildiko Rusvai
+              - Ildiko R
             </li>
             <li>
               <a href={'https://www.instagram.com/itsrab/'} target={'_blank'}>
