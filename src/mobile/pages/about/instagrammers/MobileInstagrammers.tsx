@@ -31,7 +31,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @elsaannukka
               </a>{' '}
-              - Elsa Lindholm
             </li>
             <li>
               <a
@@ -41,7 +40,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @ruanaich
               </a>{' '}
-              - Michael MacDonald
             </li>
             <li>
               <a
@@ -51,7 +49,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @katstewart01
               </a>{' '}
-              - Katrina Stewart
             </li>
             <li>
               <a
@@ -61,7 +58,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @loosemooose
               </a>{' '}
-              - Lucy Hamilton
             </li>
             <li>
               <a
@@ -71,7 +67,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @virginiechl
               </a>{' '}
-              - Virginie Chabrol
             </li>
             <li>
               <a
@@ -81,7 +76,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @mark_harris_photography
               </a>{' '}
-              - Mark Harris
             </li>
             <li>
               <a
@@ -91,7 +85,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @lochgmarcp
               </a>{' '}
-              - Marc Pickering
             </li>
             <li>
               <a
@@ -101,7 +94,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @berriestagram
               </a>{' '}
-              - Fariba Stoddart
             </li>
             <li>
               <a
@@ -111,7 +103,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @willmackenzie
               </a>{' '}
-              - Will Mackenzie
             </li>
             <li>
               <a
@@ -121,7 +112,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @ramseyselim
               </a>{' '}
-              - Ramsey Selim
             </li>
             <li>
               <a
@@ -140,7 +130,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @itsrab
               </a>{' '}
-              - Rab Fyfe
             </li>
             <li>
               <a
@@ -150,7 +139,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @clairegouldphotography
               </a>{' '}
-              - Claire Gould
             </li>
             <li>
               <a
@@ -160,7 +148,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @nixo83
               </a>{' '}
-              - Sarah Nixon
             </li>
             <li>
               <a
@@ -170,7 +157,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @_dsutherland_
               </a>{' '}
-              - David Sutherland
             </li>
             <li>
               <a
@@ -180,7 +166,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @scotlandwithfluffywolf
               </a>{' '}
-              - Claire Roulston
             </li>
 
             <li>
@@ -191,7 +176,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @torsdk
               </a>{' '}
-              - Victoria Davidson-Kinghorn
             </li>
             <li>
               <a
@@ -201,7 +185,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @eilidh_cameron
               </a>{' '}
-              - Eilidh Cameron
             </li>
             <li>
               <a
@@ -211,7 +194,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @bumblebambi
               </a>{' '}
-              - Bee Leask
             </li>
             <li>
               <a
@@ -221,7 +203,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @grantbullocharch
               </a>{' '}
-              - Grant Bulloch
             </li>
             <li>
               <a
@@ -231,7 +212,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @olivergmlewis
               </a>{' '}
-              - Oliver Lewis
             </li>
             <li>
               <a
@@ -241,7 +221,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @finn_caldwell
               </a>{' '}
-              - Finn Caldwell
             </li>
             <li>
               <a
@@ -251,7 +230,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @laretour
               </a>{' '}
-              - Laura Brown
             </li>
             <li>
               <a
@@ -261,7 +239,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @beholdscotland
               </a>{' '}
-              - Bryan McArthur
             </li>
             <li>
               <a
@@ -271,7 +248,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @dominicbsimmons
               </a>{' '}
-              - Dominic Simmons
             </li>
             <li>
               <a
@@ -281,7 +257,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @robertbirtles
               </a>{' '}
-              - Robert Birtles
             </li>
             <li>
               <a
@@ -291,7 +266,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @little.scottish.one
               </a>{' '}
-              - Andrea Mason
             </li>
             <li>
               <a
@@ -301,7 +275,6 @@ export class MobileInstagrammers extends React.PureComponent {
               >
                 @adventuresaroundscotland
               </a>{' '}
-              - Susanne Arbuckle
             </li>
           </ul>
         </section>
